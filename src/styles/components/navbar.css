@@ -1,0 +1,38 @@
+.navbarlayout {
+  height: 5vmax;
+  background-color: #0e164b;
+}
+.icon-navbar {
+  color: #fff;
+  font-size: 22px;
+}
+.icon-navbar:hover {
+  color: #57b1ef;
+}
+.icon-navbar .active {
+  color: #57b1ef;
+}
+.hyperlink {
+  color: #fff;
+  font-size: 18px;
+}
+.hyperlink:hover {
+  color: #57b1ef;
+}
+.hyperlink .active {
+  color: #57b1ef;
+}
+.btnaccess{
+    border: none;
+    border-radius: 15px;
+    background-color: #57b1ef;
+    color: #fff;
+    font-size: 16px;
+    height: 2.5vmax;
+    padding: 0em 2em;
+    font-weight: 600;
+}
+.btnaccess:hover{
+    background-color: #E7F5FF;
+    color: #0e164b;
+}

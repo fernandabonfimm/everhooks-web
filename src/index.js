@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './styles/index.css';
+import 'antd/dist/antd.css';
+import {ConfigProvider} from 'antd';
+import Home from './pages/home';
+import ptBR from 'antd/lib/locale/pt_BR'
 import reportWebVitals from './reportWebVitals';
 import { sendToVercelAnalytics } from './vitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ConfigProvider locale={ptBR}>
+    <Home />
+    </ConfigProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

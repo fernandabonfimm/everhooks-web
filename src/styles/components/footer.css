@@ -1,0 +1,34 @@
+.footer-layout {
+  background-color: #0e164b;
+}
+.divider {
+  background-color: #fff;
+}
+.hyperlink-footer {
+  color: #fff;
+  font-size: 18px;
+}
+.hyperlink-footer-evermart {
+  color: #fff;
+  font-size: 18px;
+}
+.hyperlink-footer-evermart:hover {
+  color: #57b1ef;
+}
+.hyperlink-footer-evermart .active {
+  color: #57b1ef;
+}
+.rounded-icon {
+  background-color: transparent;
+  border-radius: 100%;
+  border: 3px solid #ffffff;
+  font-size: 18px;
+  color: #ffffff;
+  height: 3vmax;
+  padding: 0.3em 0.5em;
+}
+.rounded-icon:hover {
+  background-color: transparent;
+  border: 3px solid #57b1ef;
+  color: #57b1ef;
+}
