@@ -36,3 +36,21 @@
     background-color: #E7F5FF;
     color: #0e164b;
 }
+.content-announcement{
+  background-color: #0e164b;
+  padding: 5em 10em;
+  height: 35vmax;
+}
+
+.btnfaq{
+  border: none;
+  border-radius: 15px;
+  padding: 0em 6em;
+  font-size: 20px;
+  color: #fff;
+  background-color: #57B1EF;
+  height: 3.5vmax;
+}
+.whiteicon-btn{
+  margin-right: 15px;
+}

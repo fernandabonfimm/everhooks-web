@@ -1,0 +1,31 @@
+.content-home{
+    background-color: #fff;
+    padding: 5em;
+}
+
+.card-home{
+    background-color: #E7F5FF;
+    padding: 1em;
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+    min-height: 100vmax;
+}
+.titlegray{
+    color: #9497AB;
+    font-size: 18px;
+}
+.search-input{
+    border-radius: 15px;
+    border: none;
+    background-color: #fff;
+    color: #9497AB;
+    height: 2.5vmax;
+}
+
+.card-request{
+    background-color: #0E164B;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+}

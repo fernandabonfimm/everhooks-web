@@ -10,7 +10,6 @@ import logo from "../logofooter.png";
 
 const { Footer } = Layout;
 
-
 const FooterComponent = ({ history }) => {
   return (
     <>
@@ -31,9 +30,7 @@ const FooterComponent = ({ history }) => {
               by{" "}
               <a
                 className="hyperlink-footer-evermart"
-                onClick={() =>
-                  history.push({ pathname: "https://www.evermart.com.br/" })
-                }
+                onClick={() => history.push("https://www.evermart.com.br/")}
               >
                 Evermart
               </a>
@@ -45,10 +42,9 @@ const FooterComponent = ({ history }) => {
                 <Button
                   className="rounded-icon"
                   onClick={() =>
-                    history.push({
-                      pathname:
-                        "https://www.linkedin.com/company/evermart/mycompany/",
-                    })
+                    history.push(
+                      "https://www.linkedin.com/company/evermart/mycompany/"
+                    )
                   }
                 >
                   <RiLinkedinFill />
@@ -58,9 +54,7 @@ const FooterComponent = ({ history }) => {
                 <Button
                   className="rounded-icon"
                   onClick={() =>
-                    history.push({
-                      pathname: "https://www.instagram.com/evermart.br/",
-                    })
+                    history.push("https://www.instagram.com/evermart.br/")
                   }
                 >
                   <RiInstagramFill />
@@ -70,10 +64,9 @@ const FooterComponent = ({ history }) => {
                 <Button
                   className="rounded-icon"
                   onClick={() =>
-                    history.push({
-                      pathname:
-                        "https://api.whatsapp.com/send?phone=+5511994979707&text=Ol%C3%A1!%20Preciso%20de%20suporte,%20pode%20me%20ajudar?",
-                    })
+                    history.push(
+                      "https://api.whatsapp.com/send?phone=+5511994979707&text=Ol%C3%A1!%20Preciso%20de%20suporte,%20pode%20me%20ajudar?"
+                    )
                   }
                 >
                   <RiWhatsappFill />
