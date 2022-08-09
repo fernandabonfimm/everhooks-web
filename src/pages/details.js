@@ -1,13 +1,19 @@
 import React from "react";
-import { Layout, Row, Col, Card } from "antd";
+import { Layout, Row, Col, Card, Button } from "antd";
 import NavbarComponent from "../components/Navbar";
 import FooterComponent from "../components/Footer";
 import CardRequests from "../components/CardRequests";
+import {useNavigate} from 'react-router-dom';
 import "../styles/pages/details.css";
 
 const { Content } = Layout;
 
 const Details = () => {
+  const navigate = useNavigate();
+
+  const goToHome = () => {
+    navigate("/");
+  }
   return (
     <>
       <Layout style={{ minHeight: "100vh" }}>
@@ -18,7 +24,10 @@ const Details = () => {
               <CardRequests />
             </Col>
             <Col xs={8} xl={8}>
-              <Card className="card-home"></Card>
+              <Card className="card-home">
+                <Button href="https://ant.design/components/button/#API" target="_blank"
+                >Clique aqui!</Button>
+              </Card>
             </Col>
           </Row>
         </Content>
