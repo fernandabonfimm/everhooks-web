@@ -37,19 +37,16 @@ const CardRequests = () => {
                         POST
                       </Tag>
                     </Col>
-                    <Col xs={24} xl={24}>
-                      <span className="with-description">#201abc</span>
+                    <Col xs={24} xl={10}>
+                      <span className="white-description">#201abc</span>
                     </Col>
-                    <Col xs={14} xl={14}>
-                      {moment("2020/08/11").format("DD/MM/YYYY")}
-                    </Col>
-                    <Col xs={4} xl={4}>
-                      {moment("03:53").format("HH:mm")}
+                    <Col xs={24} xl={12}>
+                    <span className="white-description"> {moment("2020/08/11").format("DD/MM/YYYY")}</span>
                     </Col>
                   </Row>
                 </Col>
                 <Col xs={6} xl={6}>
-                  <Button>X</Button>
+                  <Button className="delete" type="primary" danger>X</Button>
                 </Col>
               </Row>
             </Card>
