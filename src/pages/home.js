@@ -4,27 +4,21 @@ import NavbarComponent from "../components/Navbar";
 import FooterComponent from "../components/Footer";
 import { Layout, Row, Col, Card, Input, Tag, Button, Divider } from "antd";
 import "../styles/pages/home.css";
-import { MdOutlineSearch, MdFileCopy, MdOutlineHelp } from "react-icons/md";
-import moment from "moment";
+import { MdFileCopy, MdOutlineHelp } from "react-icons/md";
 import platformeverhooks from "../platform-everhooks.png";
 import platformevermart from "../platform-evermart.png";
 import platformapi from "../platform-api.png";
 import faq from "../faq.png";
 import { useNavigate } from "react-router-dom";
+import CardRequests from "../components/CardRequests";
 
 const { Content } = Layout;
 
 const Home = () => {
   const [data, setData] = useState(null);
-  const [search, setSearch] = useState("");
-  const [post, setPost] = useState({});
   const [https, setHttps] = useState("https://everhooks.site/uuidgenerate");
 
   const navigate = useNavigate();
-
-  const goToDetails = (e) => {
-    navigate("/details");
-  };
 
   useEffect(() => {
     api.get("api").then((res) => {
@@ -41,48 +35,7 @@ const Home = () => {
         <Content className="content-home">
           <Row gutter={[32, 22]}>
             <Col xs={8} xl={8}>
-              <Card className="card-home">
-                <Row gutter={[32, 22]}>
-                  <Col xs={24} xl={24}>
-                    <span className="titlegray">Requests</span>
-                  </Col>
-                  <Col xs={24} xl={24}>
-                    <Input
-                      value={search}
-                      onChange={(e) => setSearch(e.target.value)}
-                      className="search-input"
-                      prefix={<MdOutlineSearch />}
-                    />
-                  </Col>
-                  <Col xs={24} xl={24}>
-                    <Card className="card-request" onClick={goToDetails}>
-                      <Row gutter={[32, 22]}>
-                        <Col xs={18} xl={18}>
-                          <Row gutter={[32, 22]}>
-                            <Col xs={24} xl={24}>
-                              <Tag className="tag-post" value={post} >
-                                POST
-                              </Tag>
-                            </Col>
-                            <Col xs={24} xl={24}>
-                              <span className="with-description">#201abc</span>
-                            </Col>
-                            <Col xs={14} xl={14}>
-                              {moment("2020/08/11").format("DD/MM/YYYY")}
-                            </Col>
-                            <Col xs={4} xl={4}>
-                              {moment("03:53").format("HH:mm")}
-                            </Col>
-                          </Row>
-                        </Col>
-                        <Col xs={6} xl={6}>
-                          <Button>X</Button>
-                        </Col>
-                      </Row>
-                    </Card>
-                  </Col>
-                </Row>
-              </Card>
+              <CardRequests />
             </Col>
             <Col xs={16} xl={16}>
               <Card className="card-home">
@@ -131,7 +84,13 @@ const Home = () => {
                               <Col xs={24} xl={24}>
                                 <span>
                                   Inserir a chave https na plataforma
-                                  <a href="https://qa-dashboard.mycheckout.com.br/login" target="_blank">Evermart</a>em:
+                                  <a
+                                    href="https://qa-dashboard.mycheckout.com.br/login"
+                                    target="_blank"
+                                  >
+                                    Evermart
+                                  </a>
+                                  em:
                                 </span>
                               </Col>
                               <Col xs={24} xl={24}>
@@ -167,8 +126,13 @@ const Home = () => {
                             <span>
                               Inserir a chave https e a URL Encoded, gerada na
                               plataforma
-                              <a href="https://qa-dashboard.mycheckout.com.br/login" target="_blank">Evermart</a>, no Software de Teste de Api’s
-                              desejado.
+                              <a
+                                href="https://qa-dashboard.mycheckout.com.br/login"
+                                target="_blank"
+                              >
+                                Evermart
+                              </a>
+                              , no Software de Teste de Api’s desejado.
                             </span>
                           </Col>
                         </Row>

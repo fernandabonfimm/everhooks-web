@@ -16,7 +16,14 @@ const NavbarComponent = () => {
       <Header className="navbarlayout">
         <Row gutter={[32, 22]}>
           <Col xs={7} xl={7}>
-            <img src={logo} width={110} height={60} alt="logo-everhooks" />
+            <img
+              src={logo}
+              width={110}
+              height={60}
+              alt="logo-everhooks"
+              style={{ cursor: "pointer" }}
+              onClick={() => navigate("/")}
+            />
           </Col>
           <Col xs={5} xl={5}>
             <Row gutter={[22, 8]}>
@@ -60,29 +67,31 @@ const NavbarComponent = () => {
 
       <Header className="content-announcement">
         <Row gutter={[32, 22]}>
-          <Col xs={16} xl={16}>
+          <Col xs={24} xl={16}>
             <Row>
-                <h1 className="white-title">Seja Bem-vindo à</h1>
               <Col xs={24} xl={24}>
-                <img src={evermart} width={300} heighalt="evermart" />
-              </Col>
-              <Col xs={15} xl={15}>
-                <span className="white-subtitle">
-                  Nós permitimos inspecionar, testar e automatizar facilmente
-                  (com o construtor visual de ações personalizadas) qualquer
-                  solicitação HTTPS.
-                </span>
+              <span className="white-titlenavbar">Seja Bem-vindo à</span>
               </Col>
               <Col xs={24} xl={24}>
-                <Button className="btnfaq" onClick={() => navigate("/")}>
-                  <MdOutlineHelpOutline className="whiteicon-btn" />
-                  O’que é o Everhooks
-                </Button>
+              <img src={evermart} width={300} heighalt="evermart" />
+              </Col>
+              <Col xs={18} xl={18}>
+              <p className="white-subtitlenavbar">
+              Nós permitimos inspecionar, testar e automatizar facilmente com o
+              construtor visual de ações personalizadas qualquer solicitação
+              HTTPS.
+            </p>
+              </Col>
+              <Col xs={24} xl={24}>
+              <Button className="btnfaq" onClick={() => navigate("/")}>
+              <MdOutlineHelpOutline className="whiteicon-btn"  />
+              O’que é o Everhooks
+            </Button>
               </Col>
             </Row>
           </Col>
-          <Col xs={8} xl={8}>
-            <img src={woman} width={320} height={300} alt="person-woman" />
+          <Col xs={24} xl={8}>
+            <img src={woman} width={360} height={320} alt="person-woman" />
           </Col>
         </Row>
       </Header>
