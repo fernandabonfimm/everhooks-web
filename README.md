@@ -1,3 +1,9 @@
+/* Como instalar o projeto */
+Digite no terminal: yarn
+
+/* Como rodar o projeto */
+Digite no terminal: yarn start
+
 # Create React App
 
 This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
