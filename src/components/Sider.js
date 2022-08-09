@@ -8,14 +8,26 @@ const SiderComponent = ({children}) => {
   return (
     <>
       <Row gutter={[32, 22]}>
-        <Col xs={24} xl={24}>
-         <Button>
+      <Col xs={24} xl={24}>
+         <Button className="button">
           <FaNodeJs/>
-          Documentação API
-         </Button>
+          Sobre
+          </Button>
         </Col>
         <Col xs={24} xl={24}>
-         <Button>
+         <Button className="button">
+          <FaNodeJs/>
+          Documentação API
+          </Button>
+        </Col>
+        <Col xs={24} xl={24}>
+          <Button className="button">
+            <FaNodeJs/>
+            FAQ
+          </Button>
+        </Col>
+        <Col xs={24} xl={24}>
+         <Button className="button">
           <FaRegBellSlash/>
           Ajuda
          </Button>
@@ -24,4 +36,5 @@ const SiderComponent = ({children}) => {
     </>
   );
 };
+
 export default SiderComponent;
