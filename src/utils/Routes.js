@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "../pages/home";
 import Details from "../pages/details";
-import Documentation from "../pages/documentation";
+import Documentation from "../pages/documentation/index";
 const RoutesComponent = () => {
   return (
     <>
