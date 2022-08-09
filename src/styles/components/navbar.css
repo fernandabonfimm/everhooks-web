@@ -2,14 +2,16 @@
   height: 5vmax;
   background-color: #0e164b;
 }
-.white-title{
+.white-titlenavbar{
   color: #fff;
   font-size: 25px;
   font-weight: 600;
+  line-height: 2mm;
 }
-.white-subtitle{
+.white-subtitlenavbar{
   color: #fff;
   font-size: 18px;
+  line-height: 8mm;
 }
 .icon-navbar {
   color: #fff;
@@ -59,6 +61,10 @@
   color: #fff;
   background-color: #57B1EF;
   height: 3.5vmax;
+}
+.btnfaq:hover{
+  color: #fff;
+  background-color: #57B1EF;
 }
 .whiteicon-btn{
   margin-right: 15px;
