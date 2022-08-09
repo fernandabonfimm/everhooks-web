@@ -2,3 +2,28 @@
     background-color: #fff;
     padding: 5em;
 }
+.purple-title{
+    color: #0E164B;
+    font-size: 20px;
+    font-weight: 700;
+}
+.raw-content{
+    background-color: #fff;
+    font-size: 15px;
+    height: 15vmax;
+    border-radius: 15px !important;
+}
+.btn-copy{
+    border-radius: 15px;
+    border: none;
+    background-color: #57B1EF;
+    color: #fff;
+    font-size: 15px;
+    height: 3vmax;
+    padding: 0em 2em;
+    font-weight: 550;
+}
+.btn-copy:hover{
+    background-color: #57B1EF;
+    color: #fff; 
+}
