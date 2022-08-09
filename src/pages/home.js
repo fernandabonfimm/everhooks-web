@@ -10,6 +10,7 @@ import platformeverhooks from "../platform-everhooks.png";
 import platformevermart from "../platform-evermart.png";
 import platformapi from "../platform-api.png";
 import faq from "../faq.png";
+import { useNavigate } from "react-router-dom";
 
 const { Content } = Layout;
 
@@ -18,6 +19,13 @@ const Home = () => {
   const [search, setSearch] = useState("");
   const [post, setPost] = useState({});
   const [https, setHttps] = useState("https://everhooks.site/uuidgenerate");
+
+  const navigate = useNavigate();
+
+  const goToDetails = (e) => {
+    navigate("/details");
+  };
+
   useEffect(() => {
     api.get("api").then((res) => {
       console.log(res.data);
@@ -47,12 +55,12 @@ const Home = () => {
                     />
                   </Col>
                   <Col xs={24} xl={24}>
-                    <Card className="card-request">
+                    <Card className="card-request" onClick={goToDetails}>
                       <Row gutter={[32, 22]}>
                         <Col xs={18} xl={18}>
                           <Row gutter={[32, 22]}>
                             <Col xs={24} xl={24}>
-                              <Tag className="tag-post" value={post}>
+                              <Tag className="tag-post" value={post} >
                                 POST
                               </Tag>
                             </Col>
@@ -81,7 +89,7 @@ const Home = () => {
                 <Row gutter={[32, 22]}>
                   <Col xs={24} xl={24}>
                     <h3>
-                      Como utilizar o <a>EverHooks</a> ?
+                      Como utilizar o <a target="_blank">EverHooks</a> ?
                     </h3>
                   </Col>
                   <Col xs={24} xl={24}>
@@ -97,7 +105,7 @@ const Home = () => {
                           <Col xs={24} xl={24}>
                             <span>
                               Copiar a chave https disponibilizada no site da{" "}
-                              <a>Everhooks</a>.
+                              <a target="_blank">Everhooks</a>.
                             </span>
                           </Col>
                         </Row>
@@ -123,7 +131,7 @@ const Home = () => {
                               <Col xs={24} xl={24}>
                                 <span>
                                   Inserir a chave https na plataforma
-                                  <a>Evermart</a>em:
+                                  <a href="https://qa-dashboard.mycheckout.com.br/login" target="_blank">Evermart</a>em:
                                 </span>
                               </Col>
                               <Col xs={24} xl={24}>
@@ -159,7 +167,7 @@ const Home = () => {
                             <span>
                               Inserir a chave https e a URL Encoded, gerada na
                               plataforma
-                              <a>Evermart</a>, no Software de Teste de Api’s
+                              <a href="https://qa-dashboard.mycheckout.com.br/login" target="_blank">Evermart</a>, no Software de Teste de Api’s
                               desejado.
                             </span>
                           </Col>

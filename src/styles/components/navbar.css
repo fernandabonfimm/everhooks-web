@@ -2,6 +2,15 @@
   height: 5vmax;
   background-color: #0e164b;
 }
+.white-title{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+.white-subtitle{
+  color: #fff;
+  font-size: 18px;
+}
 .icon-navbar {
   color: #fff;
   font-size: 22px;
@@ -33,8 +42,8 @@
     font-weight: 600;
 }
 .btnaccess:hover{
-    background-color: #E7F5FF;
-    color: #0e164b;
+  background-color: #57b1ef;
+  color: #fff;
 }
 .content-announcement{
   background-color: #0e164b;

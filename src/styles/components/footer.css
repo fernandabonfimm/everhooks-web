@@ -1,6 +1,16 @@
 .footer-layout {
   background-color: #0e164b;
 }
+.white-title{
+  color: #fff;
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 2vmax;
+}
+.white-subtitle{
+  color: #fff;
+  font-size: 16px;
+}
 .divider {
   background-color: #fff;
 }
@@ -20,12 +30,8 @@
 }
 .rounded-icon {
   background-color: transparent;
-  border-radius: 100%;
   border: 3px solid #ffffff;
-  font-size: 18px;
   color: #ffffff;
-  height: 3vmax;
-  padding: 0.3em 0.5em;
 }
 .rounded-icon:hover {
   background-color: transparent;

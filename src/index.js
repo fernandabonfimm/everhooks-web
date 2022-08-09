@@ -1,20 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles/index.css';
-import 'antd/dist/antd.css';
-import {ConfigProvider} from 'antd';
-import Home from './pages/home';
-import ptBR from 'antd/lib/locale/pt_BR'
-import reportWebVitals from './reportWebVitals';
-import { sendToVercelAnalytics } from './vitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./styles/index.css";
+import "antd/dist/antd.css";
+import { ConfigProvider } from "antd";
+import RoutesComponent from './utils/Routes'
+import ptBR from "antd/lib/locale/pt_BR";
+import reportWebVitals from "./reportWebVitals";
+import { sendToVercelAnalytics } from "./vitals";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ConfigProvider locale={ptBR}>
-    <Home />
-    </ConfigProvider>
+    <BrowserRouter>
+      <ConfigProvider locale={ptBR}>
+        <RoutesComponent/>
+      </ConfigProvider>
+    </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 reportWebVitals(sendToVercelAnalytics);
