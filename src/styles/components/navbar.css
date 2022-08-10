@@ -77,12 +77,19 @@
   height: 50;
   cursor: pointer;
 }
-.btnaccess-responsive{
+.btnaccess-responsive {
   visibility: collapse;
 }
+.logo-evermart {
+  width: 300px;
+}
+.person-woman {
+  width: 360px;
+  height: 320px;
+}
 
-@media screen and (max-width: 380px){
-  .logo-everhooks{
+@media screen and (max-width: 380px) {
+  .logo-everhooks {
     width: 80px !important;
     height: 50px !important;
   }
@@ -90,13 +97,13 @@
     height: 10vmax !important;
     padding: 0em 1em;
   }
-  .hyperlink{
+  .hyperlink {
     display: none;
   }
-  .btnaccess{
+  .btnaccess {
     display: none;
   }
-  .btnaccess-responsive{
+  .btnaccess-responsive {
     visibility: visible;
     color: #fff;
     background-color: #57b1ef;
@@ -107,9 +114,28 @@
     margin-top: 15px;
   }
   /* css da segunda parte da navbar */
-  .content-announcement{
+  .content-announcement {
     padding: 3em 2em;
-    height: 50vmax;
+    height: 80vmax;
   }
-
+  .white-titlenavbar {
+    font-size: 20px;
+  }
+  .logo-evermart {
+    width: 200px;
+  }
+  .white-subtitlenavbar {
+    font-size: 14px !important;
+    line-height: 5mm !important;
+  }
+  .btnfaq {
+    padding: 0em 1em !important;
+    font-size: 17px !important;
+    height: 5vmax !important;
+  }
+  .person-woman {
+    width: 220px;
+    height: 170px;
+    margin-left: 45px;
+  }
 }
