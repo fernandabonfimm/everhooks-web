@@ -6,6 +6,7 @@ import evermart from "../evermart.png";
 import woman from "../woman.png";
 import { MdOutlineHelpOutline } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import {IoInfiniteOutline} from 'react-icons/io5'
 
 const { Header } = Layout;
 
@@ -15,13 +16,10 @@ const NavbarComponent = () => {
     <>
       <Header className="navbarlayout">
         <Row gutter={[32, 22]}>
-          <Col xs={7} xl={7}>
+          <Col xs={8} xl={7}>
             <img
               src={logo}
-              width={110}
-              height={60}
-              alt="logo-everhooks"
-              style={{ cursor: "pointer" }}
+              className="logo-everhooks"
               onClick={() => navigate("/")}
             />
           </Col>
@@ -30,19 +28,19 @@ const NavbarComponent = () => {
               <Col xs={4} xl={4} style={{ marginTop: 5 }}>
                 <FaNodeJs className="icon-navbar" />
               </Col>
-              <Col xs={20} xl={20}>
+              <Col xs={0} xl={20}>
                 <a className="hyperlink" onClick={() => navigate("/")}>
                   Documentação
                 </a>
               </Col>
             </Row>
           </Col>
-          <Col xs={7} xl={7}>
+          <Col xs={5} xl={7}>
             <Row gutter={[22, 8]}>
-              <Col xs={4} xl={4} style={{ marginTop: 5 }}>
+              <Col xs={2} xl={4} style={{ marginTop: 5 }}>
                 <FaHeadset className="icon-navbar" />
               </Col>
-              <Col xs={20} xl={20}>
+              <Col xs={0} xl={20}>
                 <a
                   className="hyperlink"
                   href="https://ajuda.evermart.com.br/docs/sobre/integracoes/o-que-sao-e-como-usar-os-webhooks"
@@ -60,6 +58,13 @@ const NavbarComponent = () => {
               target="_blank"
             >
               Acessar Evermart
+            </Button>
+            <Button
+              className="btnaccess-responsive"
+              href="https://qa-dashboard.mycheckout.com.br/integrations/webhooks/new"
+              target="_blank"
+            >
+             <IoInfiniteOutline/>
             </Button>
           </Col>
         </Row>

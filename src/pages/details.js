@@ -5,7 +5,9 @@ import FooterComponent from "../components/Footer";
 import CardRequests from "../components/cards/CardRequests";
 import { useNavigate } from "react-router-dom";
 import { MdOutlineContentCopy } from "react-icons/md";
+import TableRequest from "../components/tables/TableRequest";
 import "../styles/pages/details.css";
+import TableHeaders from "../components/tables/TableHeaders";
 
 const { Content } = Layout;
 
@@ -18,9 +20,9 @@ const Details = () => {
   function copiarTexto() {
     let textoCopiado = document.getElementById("text");
     textoCopiado.select();
-    textoCopiado.setSelectionRange(0, 99999)
+    textoCopiado.setSelectionRange(0, 99999);
     document.execCommand("copy");
-}
+  }
   return (
     <>
       <Layout style={{ minHeight: "100vh" }}>
@@ -38,6 +40,9 @@ const Details = () => {
                       <Col xs={24} xl={24}>
                         <h3 className="purple-title">Detalhes da Request</h3>
                       </Col>
+                      <Col xs={24} xl={24}>
+                        <TableRequest />
+                      </Col>
                     </Row>
                   </Col>
                   <Divider />
@@ -45,6 +50,9 @@ const Details = () => {
                     <Row gutter={[32, 22]}>
                       <Col xs={24} xl={24}>
                         <h3 className="purple-title">Headers</h3>
+                      </Col>
+                      <Col xs={24} xl={24}>
+                        <TableHeaders />
                       </Col>
                     </Row>
                   </Col>
@@ -68,7 +76,11 @@ const Details = () => {
                       </Col>
                     </Row>
                     <Row justify="end">
-                      <Button className="btn-copy" style={{ marginTop: 15 }} onClick={copiarTexto}>
+                      <Button
+                        className="btn-copy"
+                        style={{ marginTop: 15 }}
+                        onClick={copiarTexto}
+                      >
                         <MdOutlineContentCopy style={{ marginRight: 10 }} />
                         Copiar URL Enconded
                       </Button>

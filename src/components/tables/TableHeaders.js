@@ -2,57 +2,53 @@ import React, { useState } from "react";
 import "../../styles/components/tables.css";
 import { Tag } from "antd";
 
-const TableRequest = () => {
+const TableHeaders = () => {
   return (
     <>
-      <div style={{overflowX: "auto"}}>
+      <div style={{ overflowX: "auto" }}>
         {" "}
         <table className="table">
           <thead>
             <tr>
               <th className="th">
-                <Tag className="tag-table">Post</Tag>
-              </th>
-              <th className="th">
                 <span className="title-table">Host</span>
               </th>
               <th className="th">
-                <span className="title-table">Date</span>
+                <span className="title-table">Postman Token</span>
               </th>
               <th className="th">
-                <span className="title-table">Size</span>
+                <span className="title-table">User-Agent</span>
               </th>
               <th className="th">
-                <span className="title-table">ID</span>
+                <span className="title-table">Content-Type</span>
+              </th>
+              <th className="th">
+                <span className="title-table">Connection</span>
               </th>
             </tr>
           </thead>
           <tbody>
             <tr role="col" className="odd">
               <td className="td">
-                <span className="description-table">
-                  https://everhooks.site/uuidgenerate
-                </span>
-              </td>
-              <td className="td">
-                {" "}
-                <span className="description-table">131.100.73.196</span>
+                <span className="description-table">everhooks.site</span>
               </td>
               <td className="td">
                 {" "}
                 <span className="description-table">
-                  08/04/2022
+                  92a8b6ad-2f91-4c7c-84f6-8f05d0d1cec1
                 </span>
+              </td>
+              <td className="td">
+                {" "}
+                <span className="description-table">PostmanRuntime/7.29.2</span>
               </td>
               <td>
                 {" "}
-                <span className="description-table">1011 bytes</span>
+                <span className="description-table">application/json</span>
               </td>
               <td className="td">
-                {" " }
-                <span className="description-table">
-                  ef4b3d84-f56f-4d02-8a4d-745ee8e7a649
-                </span>
+                {" "}
+                <span className="description-table">close</span>
               </td>
             </tr>
           </tbody>
@@ -61,4 +57,4 @@ const TableRequest = () => {
     </>
   );
 };
-export default TableRequest;
+export default TableHeaders;

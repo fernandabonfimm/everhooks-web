@@ -2,13 +2,13 @@
   height: 5vmax;
   background-color: #0e164b;
 }
-.white-titlenavbar{
+.white-titlenavbar {
   color: #fff;
   font-size: 25px;
   font-weight: 600;
   line-height: 2mm;
 }
-.white-subtitlenavbar{
+.white-subtitlenavbar {
   color: #fff;
   font-size: 18px;
   line-height: 8mm;
@@ -33,39 +33,82 @@
 .hyperlink .active {
   color: #57b1ef;
 }
-.btnaccess{
-    border: none;
-    border-radius: 15px;
-    background-color: #57b1ef;
-    color: #fff;
-    font-size: 16px;
-    height: 2.5vmax;
-    padding: 0em 2em;
-    font-weight: 600;
+.btnaccess {
+  border: none;
+  border-radius: 15px;
+  background-color: #57b1ef;
+  color: #fff;
+  font-size: 16px;
+  height: 2.5vmax;
+  padding: 0em 2em;
+  font-weight: 600;
 }
-.btnaccess:hover{
+.btnaccess:hover {
   background-color: #57b1ef;
   color: #fff;
 }
-.content-announcement{
+
+/* css da segunda parte da navbar */
+.content-announcement {
   background-color: #0e164b;
   padding: 5em 10em;
   height: 35vmax;
 }
 
-.btnfaq{
+.btnfaq {
   border: none;
   border-radius: 15px;
   padding: 0em 6em;
   font-size: 20px;
   color: #fff;
-  background-color: #57B1EF;
+  background-color: #57b1ef;
   height: 3.5vmax;
 }
-.btnfaq:hover{
+.btnfaq:hover {
   color: #fff;
-  background-color: #57B1EF;
+  background-color: #57b1ef;
 }
-.whiteicon-btn{
+.whiteicon-btn {
   margin-right: 15px;
+}
+
+.logo-everhooks {
+  width: 100px;
+  height: 50;
+  cursor: pointer;
+}
+.btnaccess-responsive{
+  visibility: collapse;
+}
+
+@media screen and (max-width: 380px){
+  .logo-everhooks{
+    width: 80px !important;
+    height: 50px !important;
+  }
+  .navbarlayout {
+    height: 10vmax !important;
+    padding: 0em 1em;
+  }
+  .hyperlink{
+    display: none;
+  }
+  .btnaccess{
+    display: none;
+  }
+  .btnaccess-responsive{
+    visibility: visible;
+    color: #fff;
+    background-color: #57b1ef;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 1em 0.3em;
+    margin-top: 15px;
+  }
+  /* css da segunda parte da navbar */
+  .content-announcement{
+    padding: 2em 2em;
+    height: 50vmax;
+  }
 }
