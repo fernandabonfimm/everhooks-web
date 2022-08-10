@@ -4,16 +4,41 @@ import FooterComponent from "../../components/Footer";
 import { Layout, Row, Col, Card } from "antd";
 import '../../styles/pages/documentation.css';
 import SiderComponent from "../../components/Sider";
+import 'antd/dist/antd.css';
+import { HomeOutlined, UserOutlined } from '@ant-design/icons';
+import { Breadcrumb } from 'antd';
+import { Navigate, useNavigate } from "react-router-dom";
+import { BsHeadphones, BsQuestionSquare } from 'react-icons/bs';
+import { HiOutlineDocumentText } from 'react-icons/hi';
+import { AiOutlineInfoCircle } from 'react-icons/ai';
+import aboutPng from "../../buscandoArquivosLupa.png";
 
 const {Content} = Layout;
-
+ 
 const About = () => {
+    const navigate = useNavigate();
     return (
         <>
         <Layout style={{ minHeight: "100vh" }}>
             <HeaderDocumentation/>
             <Content className="content-home">
-             <Row gutter={[32, 22]}>
+                    <Row gutter={[32, 22]}>
+                    <Col xs={24} xl={24}>
+                    <Breadcrumb>
+                        <Breadcrumb.Item onClick={() => navigate("/")}>
+                            <HomeOutlined />
+                        </Breadcrumb.Item>
+                        <Breadcrumb.Item onClick={() => navigate("/documentation")}>
+                            <HiOutlineDocumentText className="icon"/>
+                            <span className="textSideBread">Documentação</span>
+                        </Breadcrumb.Item>
+                        <Breadcrumb.Item>
+                        <AiOutlineInfoCircle className="icon"/>
+                            <span>Sobre</span>
+                        </Breadcrumb.Item>
+                                
+                    </Breadcrumb>
+                </Col>
                 <Col xs={24} xl={5}>
                    <Card>
                     <SiderComponent/>
@@ -24,6 +49,7 @@ const About = () => {
                         <Row gutter={[32, 22]}>
                             <Col xs={24} xl={24}>
                                     <h2>Sobre o EverHook</h2>
+                                    <img src={aboutPng} width={200} />
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.

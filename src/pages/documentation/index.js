@@ -1,19 +1,39 @@
-import React from "react";
+import React from "react"; 
 import HeaderDocumentation from "../../components/HeaderDocumentation";
 import FooterComponent from "../../components/Footer";
 import { Layout, Row, Col, Card } from "antd";
 import '../../styles/pages/documentation.css';
 import SiderComponent from "../../components/Sider";
+import 'antd/dist/antd.css';
+import { HomeOutlined, UserOutlined } from '@ant-design/icons';
+import { Breadcrumb } from 'antd';
+import { useNavigate } from "react-router-dom";
+import { BsHeadphones, BsQuestionSquare } from 'react-icons/bs';
+import { HiOutlineDocumentText } from 'react-icons/hi';
+import { AiOutlineInfoCircle } from 'react-icons/ai';
+import faq from "../../buscandoArquivos.png";
 
 const {Content} = Layout;
 
 const Documentation = () => {
+    const navigate = useNavigate();
     return (
         <>
         <Layout style={{ minHeight: "100vh" }}>
             <HeaderDocumentation/>
             <Content className="content-home">
-             <Row gutter={[32, 22]}>
+                    <Row gutter={[32, 22]}>
+                    <Col xs={24} xl={24}>
+                    <Breadcrumb>
+                        <Breadcrumb.Item onClick={() => navigate("/")}>
+                            <HomeOutlined />
+                        </Breadcrumb.Item>
+                        <Breadcrumb.Item>
+                        <HiOutlineDocumentText className="icon"/>
+                            <span className="text">Documentação</span>
+                        </Breadcrumb.Item>
+                    </Breadcrumb>
+                </Col>
                 <Col xs={24} xl={5}>
                    <Card>
                     <SiderComponent/>
@@ -23,7 +43,8 @@ const Documentation = () => {
                     <Card>
                         <Row gutter={[32, 22]}>
                             <Col xs={24} xl={24}>
-                            <h2>Documentação</h2>
+                                <h2>Documentação</h2>
+                                <img src={faq} width={200} />
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.

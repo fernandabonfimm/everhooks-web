@@ -10,16 +10,16 @@ const SiderComponent = ({children}) => {
   return (
   <>
       <Row gutter={[32, 22]}>
-      <Col xs={24} xl={24}>
-         <Button className="button" href="../about">
-          <AiOutlineInfoCircle className="icon"/>
-          Sobre
-          </Button>
-        </Col>
         <Col xs={24} xl={24}>
          <Button className="button" href="../documentation">
           <HiOutlineDocumentText className="icon"/>
           Documentação API
+          </Button>
+        </Col>
+        <Col xs={24} xl={24}>
+         <Button className="button" href="../about">
+          <AiOutlineInfoCircle className="icon"/>
+          Sobre
           </Button>
         </Col>
         <Col xs={24} xl={24}>

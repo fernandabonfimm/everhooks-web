@@ -21,7 +21,6 @@ const BreadcrumbComponent = ({ children }) => {
                         <Breadcrumb.Item>Application</Breadcrumb.Item>
                     </Breadcrumb>
                 </Col>
-            
             </Row>
         </>
     );
