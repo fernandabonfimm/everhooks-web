@@ -14,7 +14,7 @@ const Faq = () => {
             <NavbarComponent/>
             <Content className="content-home">
              <Row gutter={[32, 22]}>
-                <Col xs={24} xl={8}>
+                <Col xs={24} xl={5}>
                    <Card>
                     <SiderComponent/>
                    </Card>
@@ -23,7 +23,7 @@ const Faq = () => {
                     <Card>
                         <Row gutter={[32, 22]}>
                             <Col xs={24} xl={24}>
-                            <h3>Sobre o Everhook</h3>
+                            <h2>Perguntas Frequentes</h2>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.

@@ -7,7 +7,7 @@ import SiderComponent from "../../components/Sider";
 
 const {Content} = Layout;
 
-const About = () => {
+const Help = () => {
     return (
         <>
         <Layout style={{ minHeight: "100vh" }}>
@@ -23,7 +23,7 @@ const About = () => {
                     <Card>
                         <Row gutter={[32, 22]}>
                             <Col xs={24} xl={24}>
-                                    <h2>Sobre o EverHook</h2>
+                                    <h2>Ajuda</h2>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -42,4 +42,4 @@ const About = () => {
         </>
     )
 }
-export default About;
+export default Help;
