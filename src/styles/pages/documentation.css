@@ -5,4 +5,23 @@
 
 .button {
     width: 12em;
+    border-radius: 0.7em;
+    color: white;
+    background: #57B1EF;
+}
+
+h2 {
+    color: black;
+    font-weight: bold;
+}
+text {
+    margin: 0 0 0 0;
+}
+
+.icon {
+    height: 1em;
+    width: 1em;
+    position: relative;
+    left: -0.3em;
+    top: 0.1em;
 }
