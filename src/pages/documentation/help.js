@@ -4,6 +4,7 @@ import FooterComponent from "../../components/Footer";
 import { Layout, Row, Col, Card } from "antd";
 import '../../styles/pages/documentation.css';
 import SiderComponent from "../../components/Sider";
+import BreadcrumbComponent from "../../components/Breadcrumb";
 
 const {Content} = Layout;
 
@@ -11,8 +12,8 @@ const Help = () => {
     return (
         <>
         <Layout style={{ minHeight: "100vh" }}>
-            <NavbarComponent/>
-            <Content className="content-home">
+            <HeaderDocumentation />
+            <Content className="content-home">  
              <Row gutter={[32, 22]}>
                 <Col xs={24} xl={5}>
                    <Card>

@@ -31,7 +31,7 @@ const NavbarComponent = () => {
                 <FaNodeJs className="icon-navbar" />
               </Col>
               <Col xs={20} xl={20}>
-                <a className="hyperlink" onClick={() => navigate("/documentation")}>
+                <a className="hyperlink" onClick={() => navigate("/documentation")} target="_blank">
                   Documentação
                 </a>
               </Col>

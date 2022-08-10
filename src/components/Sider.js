@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import { Row, Col, Layout, Button } from "antd";
-import { FaNodeJs, FaRegBellSlash } from 'react-icons/fa';
 import { BsHeadphones, BsQuestionSquare } from 'react-icons/bs';
 import { HiOutlineDocumentText } from 'react-icons/hi';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
@@ -9,7 +8,7 @@ const { Sider } = Layout;
 
 const SiderComponent = ({children}) => {
   return (
-    <>
+  <>
       <Row gutter={[32, 22]}>
       <Col xs={24} xl={24}>
          <Button className="button" href="../about">

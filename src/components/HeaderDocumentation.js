@@ -31,7 +31,7 @@ const HeaderDocumentation = () => {
                 <FaNodeJs className="icon-navbar" />
               </Col>
               <Col xs={20} xl={20}>
-                <a className="hyperlink" onClick={() => navigate("/")}>
+                <a className="hyperlink" onClick={() => navigate("/documentation")} target="_blank">
                   Documentação
                 </a>
               </Col>
@@ -43,11 +43,7 @@ const HeaderDocumentation = () => {
                 <FaHeadset className="icon-navbar" />
               </Col>
               <Col xs={20} xl={20}>
-                <a
-                  className="hyperlink"
-                  href="https://ajuda.evermart.com.br/docs/sobre/integracoes/o-que-sao-e-como-usar-os-webhooks"
-                  target="_blank"
-                >
+                <a className="hyperlink" onClick={() => navigate("/help")} target="_blank">
                   Suporte e Ajuda
                 </a>
               </Col>
