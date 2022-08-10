@@ -6,22 +6,19 @@ import evermart from "../evermart.png";
 import supportWoman from "../support-woman.png";
 import { MdOutlineHelpOutline } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-
+import {IoInfiniteOutline} from 'react-icons/io5'
 const { Header } = Layout;
 
 const HeaderDocumentation = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Header className="navbarlayout">
+       <Header className="navbarlayout">
         <Row gutter={[32, 22]}>
-          <Col xs={7} xl={7}>
+          <Col xs={8} xl={7}>
             <img
               src={logo}
-              width={110}
-              height={60}
-              alt="logo-everhooks"
-              style={{ cursor: "pointer" }}
+              className="logo-everhooks"
               onClick={() => navigate("/")}
             />
           </Col>
@@ -30,19 +27,19 @@ const HeaderDocumentation = () => {
               <Col xs={4} xl={4} style={{ marginTop: 5 }}>
                 <FaNodeJs className="icon-navbar" />
               </Col>
-              <Col xs={20} xl={20}>
+              <Col xs={0} xl={20}>
                 <a className="hyperlink" onClick={() => navigate("/")}>
                   Documentação
                 </a>
               </Col>
             </Row>
           </Col>
-          <Col xs={7} xl={7}>
+          <Col xs={5} xl={7}>
             <Row gutter={[22, 8]}>
-              <Col xs={4} xl={4} style={{ marginTop: 5 }}>
+              <Col xs={2} xl={4} style={{ marginTop: 5 }}>
                 <FaHeadset className="icon-navbar" />
               </Col>
-              <Col xs={20} xl={20}>
+              <Col xs={0} xl={20}>
                 <a
                   className="hyperlink"
                   href="https://ajuda.evermart.com.br/docs/sobre/integracoes/o-que-sao-e-como-usar-os-webhooks"
@@ -61,6 +58,13 @@ const HeaderDocumentation = () => {
             >
               Acessar Evermart
             </Button>
+            <Button
+              className="btnaccess-responsive"
+              href="https://qa-dashboard.mycheckout.com.br/integrations/webhooks/new"
+              target="_blank"
+            >
+              <IoInfiniteOutline />
+            </Button>
           </Col>
         </Row>
       </Header>
@@ -73,7 +77,7 @@ const HeaderDocumentation = () => {
               <span className="white-titlenavbar">Seja Bem-vindo ao Suporte</span>
               </Col>
               <Col xs={24} xl={24}>
-              <img src={evermart} width={300} heighalt="evermart" />
+              <img src={evermart} alt="evermart" className="logo-evermart" />
               </Col>
               <Col xs={18} xl={18}>
               <p className="white-subtitlenavbar">
@@ -89,7 +93,7 @@ const HeaderDocumentation = () => {
             </Row>
           </Col>
           <Col xs={24} xl={8}>
-            <img src={supportWoman} width={380} height={340} alt="support-woman" />
+            <img src={supportWoman} width={380} height={340} alt="support-woman" className="support-woman" />
           </Col>
         </Row>
       </Header>
