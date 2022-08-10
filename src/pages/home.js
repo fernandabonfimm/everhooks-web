@@ -28,6 +28,12 @@ const Home = () => {
     });
   }, []);
 
+  function copiarHttps() {
+    let httpsCopiada = document.getElementById("https");
+    httpsCopiada.select();
+    httpsCopiada.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+}
   return (
     <>
       <Layout style={{ minHeight: "100vh" }}>
@@ -41,7 +47,7 @@ const Home = () => {
               <Card className="card-home">
                 <Row gutter={[32, 22]}>
                   <Col xs={24} xl={24}>
-                    <h4 className="purple-title">
+                    <h4 className="purple-titlehome">
                       Como utilizar o <a target="_blank">EverHooks</a> ?
                     </h4>
                   </Col>
@@ -53,12 +59,12 @@ const Home = () => {
                             <Tag className="pass-tag">1°</Tag>
                           </Col>
                           <Col xs={20} xl={20}>
-                            <span>Passo</span>
+                            <span className="description-pass">Passo</span>
                           </Col>
                           <Col xs={24} xl={24}>
-                            <span>
+                            <span className="explication-pass">
                               Copiar a chave https disponibilizada no site da{" "}
-                              <a target="_blank">Everhooks</a>.
+                              <a target="_blank" className="link-pass">Everhooks</a>.
                             </span>
                           </Col>
                         </Row>
@@ -77,16 +83,17 @@ const Home = () => {
                             <Tag className="pass-tag">2°</Tag>
                           </Col>
                           <Col xs={20} xl={20}>
-                            <h4>Passo</h4>
+                            <span  className="description-pass">Passo</span>
                           </Col>
                           <Col xs={24} xl={24}>
                             <Row gutter={[32, 22]}>
                               <Col xs={24} xl={24}>
-                                <span>
+                                <span className="explication-pass">
                                   Inserir a chave https na plataforma
                                   <a
                                     href="https://qa-dashboard.mycheckout.com.br/login"
                                     target="_blank"
+                                    className="link-pass"
                                   >
                                     Evermart
                                   </a>
@@ -94,7 +101,7 @@ const Home = () => {
                                 </span>
                               </Col>
                               <Col xs={24} xl={24}>
-                                <span>
+                                <span className="explication-pass-gray">
                                   {" "}
                                   Integrações {">"} Webhooks {">"} Adicionar
                                 </span>
@@ -120,15 +127,16 @@ const Home = () => {
                             <Tag className="pass-tag">3°</Tag>
                           </Col>
                           <Col xs={20} xl={20}>
-                            <h4>Passo</h4>
+                            <span  className="description-pass">Passo</span>
                           </Col>
                           <Col xs={24} xl={24}>
-                            <span>
+                            <span className="explication-pass">
                               Inserir a chave https e a URL Encoded, gerada na
                               plataforma
                               <a
                                 href="https://qa-dashboard.mycheckout.com.br/login"
                                 target="_blank"
+                                className="link-pass"
                               >
                                 Evermart
                               </a>
@@ -146,16 +154,18 @@ const Home = () => {
                   <Col xs={24} xl={24}>
                     <Row gutter={[32, 22]}>
                       <Col xs={24} xl={24}>
-                        <h4 className="purple-title">
+                        <h4 className="purple-titlehome">
                           Sua URL exclusiva (copie-o daqui, não da barra de
                           endereço!)
                         </h4>
                       </Col>
                       <Col xs={20} xl={20}>
-                        <Input value={https} className="input-https" />
+                        <Input 
+                          name="https"
+                          id="https" value={https} className="input-https" />
                       </Col>
                       <Col xs={4} xl={4}>
-                        <Tag className="tag-copy">
+                        <Tag className="tag-copy" onClick={copiarHttps}>
                           <MdFileCopy />
                         </Tag>
                       </Col>
@@ -178,7 +188,7 @@ const Home = () => {
                         </span>
                       </Col>
                       <Col xs={24} xl={24}>
-                        <Button className="btn-help">
+                        <Button className="btn-help" onClick={() => navigate("/documentation")}>
                           <MdHelpOutline style={{marginRight: 10}}/>
                           Preciso de ajuda!
                         </Button>
