@@ -1,6 +1,6 @@
 import React, {useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/pages/home.css";
+import "../../styles/pages/home.css";
 import moment from "moment";
 import { MdOutlineSearch } from "react-icons/md";
 import { Row, Col, Card, Input, Tag, Button } from "antd";

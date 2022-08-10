@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Layout, Row, Col, Card, Button, Divider, Input } from "antd";
 import NavbarComponent from "../components/Navbar";
 import FooterComponent from "../components/Footer";
-import CardRequests from "../components/CardRequests";
+import CardRequests from "../components/cards/CardRequests";
 import { useNavigate } from "react-router-dom";
 import { MdOutlineContentCopy } from "react-icons/md";
 import "../styles/pages/details.css";

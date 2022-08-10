@@ -10,7 +10,7 @@ import platformevermart from "../platform-evermart.png";
 import platformapi from "../platform-api.png";
 import faq from "../faq.png";
 import { useNavigate } from "react-router-dom";
-import CardRequests from "../components/CardRequests";
+import CardRequests from "../components/cards/CardRequests";
 
 const { Content } = Layout;
 
