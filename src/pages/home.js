@@ -4,13 +4,13 @@ import NavbarComponent from "../components/Navbar";
 import FooterComponent from "../components/Footer";
 import { Layout, Row, Col, Card, Input, Tag, Button, Divider } from "antd";
 import "../styles/pages/home.css";
-import { MdFileCopy, MdOutlineHelp } from "react-icons/md";
+import { MdFileCopy, MdHelpOutline } from "react-icons/md";
 import platformeverhooks from "../platform-everhooks.png";
 import platformevermart from "../platform-evermart.png";
 import platformapi from "../platform-api.png";
 import faq from "../faq.png";
 import { useNavigate } from "react-router-dom";
-import CardRequests from "../components/CardRequests";
+import CardRequests from "../components/cards/CardRequests";
 
 const { Content } = Layout;
 
@@ -28,6 +28,12 @@ const Home = () => {
     });
   }, []);
 
+  function copiarHttps() {
+    let httpsCopiada = document.getElementById("https");
+    httpsCopiada.select();
+    httpsCopiada.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+}
   return (
     <>
       <Layout style={{ minHeight: "100vh" }}>
@@ -41,52 +47,53 @@ const Home = () => {
               <Card className="card-home">
                 <Row gutter={[32, 22]}>
                   <Col xs={24} xl={24}>
-                    <h3>
+                    <h4 className="purple-titlehome">
                       Como utilizar o <a target="_blank">EverHooks</a> ?
-                    </h3>
+                    </h4>
                   </Col>
                   <Col xs={24} xl={24}>
                     <Row gutter={[32, 22]}>
                       <Col xs={14} xl={14}>
-                        <Row gutter={[32, 22]} style={{ marginTop: 70 }}>
+                        <Row gutter={[32, 22]} >
                           <Col xs={4} xl={4}>
                             <Tag className="pass-tag">1°</Tag>
                           </Col>
                           <Col xs={20} xl={20}>
-                            <h4>Passo</h4>
+                            <span className="description-pass">Passo</span>
                           </Col>
                           <Col xs={24} xl={24}>
-                            <span>
+                            <span className="explication-pass">
                               Copiar a chave https disponibilizada no site da{" "}
-                              <a target="_blank">Everhooks</a>.
+                              <a target="_blank" className="link-pass">Everhooks</a>.
                             </span>
                           </Col>
                         </Row>
                       </Col>
                       <Col xs={10} xl={10}>
-                        <img src={platformeverhooks} width={200} />
+                        <img src={platformeverhooks} width={250} />
                       </Col>
-                      <Divider />
+                      <Divider className="white-divider" />
                     </Row>
                   </Col>
                   <Col xs={24} xl={24}>
                     <Row gutter={[32, 22]}>
                       <Col xs={14} xl={14}>
-                        <Row gutter={[32, 22]} style={{ marginTop: 70 }}>
+                        <Row gutter={[32, 22]}>
                           <Col xs={4} xl={4}>
                             <Tag className="pass-tag">2°</Tag>
                           </Col>
                           <Col xs={20} xl={20}>
-                            <h4>Passo</h4>
+                            <span  className="description-pass">Passo</span>
                           </Col>
                           <Col xs={24} xl={24}>
                             <Row gutter={[32, 22]}>
                               <Col xs={24} xl={24}>
-                                <span>
+                                <span className="explication-pass">
                                   Inserir a chave https na plataforma
                                   <a
                                     href="https://qa-dashboard.mycheckout.com.br/login"
                                     target="_blank"
+                                    className="link-pass"
                                   >
                                     Evermart
                                   </a>
@@ -94,7 +101,7 @@ const Home = () => {
                                 </span>
                               </Col>
                               <Col xs={24} xl={24}>
-                                <span>
+                                <span className="explication-pass-gray">
                                   {" "}
                                   Integrações {">"} Webhooks {">"} Adicionar
                                 </span>
@@ -107,28 +114,29 @@ const Home = () => {
                         </Row>
                       </Col>
                       <Col xs={10} xl={10}>
-                        <img src={platformevermart} width={200} />
+                        <img src={platformevermart} width={250} />
                       </Col>
-                      <Divider />
+                      <Divider className="white-divider" />
                     </Row>
                   </Col>
                   <Col xs={24} xl={24}>
                     <Row gutter={[32, 22]}>
                       <Col xs={14} xl={14}>
-                        <Row gutter={[32, 22]} style={{ marginTop: 70 }}>
+                        <Row gutter={[32, 22]} >
                           <Col xs={4} xl={4}>
                             <Tag className="pass-tag">3°</Tag>
                           </Col>
                           <Col xs={20} xl={20}>
-                            <h4>Passo</h4>
+                            <span  className="description-pass">Passo</span>
                           </Col>
                           <Col xs={24} xl={24}>
-                            <span>
+                            <span className="explication-pass">
                               Inserir a chave https e a URL Encoded, gerada na
                               plataforma
                               <a
                                 href="https://qa-dashboard.mycheckout.com.br/login"
                                 target="_blank"
+                                className="link-pass"
                               >
                                 Evermart
                               </a>
@@ -140,46 +148,48 @@ const Home = () => {
                       <Col xs={10} xl={10}>
                         <img src={platformapi} width={250} />
                       </Col>
-                      <Divider />
+                      <Divider className="white-divider" />
                     </Row>
                   </Col>
                   <Col xs={24} xl={24}>
                     <Row gutter={[32, 22]}>
                       <Col xs={24} xl={24}>
-                        <h4>
+                        <h4 className="purple-titlehome">
                           Sua URL exclusiva (copie-o daqui, não da barra de
                           endereço!)
                         </h4>
                       </Col>
                       <Col xs={20} xl={20}>
-                        <Input value={https} className="input-https" />
+                        <Input 
+                          name="https"
+                          id="https" value={https} className="input-https" />
                       </Col>
                       <Col xs={4} xl={4}>
-                        <Tag className="tag-copy">
+                        <Tag className="tag-copy" onClick={copiarHttps}>
                           <MdFileCopy />
                         </Tag>
                       </Col>
-                      <Divider />
+                      <Divider className="white-divider" />
                     </Row>
                   </Col>
                   <Col xs={14} xl={14}>
                     <Row gutter={[32, 22]}>
-                      <Col xs={24} xl={24}>
-                        <span>
+                      <Col xs={22} xl={22}>
+                        <span className="purple-description">
                           Você não está recebendo nada? Certifique-se de ter
                           copiado o URL acima, e não da barra de endereços do
                           navegador.
                         </span>
                       </Col>
-                      <Col xs={24} xl={24}>
-                        <span>
+                      <Col xs={22} xl={22}>
+                        <span className="purple-description">
                           Precisa de ajuda para navegar na plataforma Evermart?
                           Não se preocupe, nós temos um FAQ!
                         </span>
                       </Col>
                       <Col xs={24} xl={24}>
-                        <Button>
-                          <MdOutlineHelp />
+                        <Button className="btn-help" onClick={() => navigate("/documentation")}>
+                          <MdHelpOutline style={{marginRight: 10}}/>
                           Preciso de ajuda!
                         </Button>
                       </Col>

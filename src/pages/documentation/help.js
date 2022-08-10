@@ -1,5 +1,5 @@
 import React from "react";
-import NavbarComponent from "../../components/Navbar";
+import HeaderDocumentation from "../../components/HeaderDocumentation";
 import FooterComponent from "../../components/Footer";
 import { Layout, Row, Col, Card } from "antd";
 import '../../styles/pages/documentation.css';
