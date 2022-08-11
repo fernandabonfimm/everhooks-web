@@ -16,11 +16,11 @@ const FooterComponent = () => {
   return (
     <>
       <Footer className="footer-layout">
-        <Row gutter={[32, 22]} style={{ padding: "0 2em" }}>
-          <Col xs={8} xl={8}>
-            <img src={logo} width={320} height={200} alt="logo-footer" />
+        <Row gutter={[32, 22]} className="padding-row">
+          <Col xs={24} xl={8}>
+            <img src={logo} alt="logo-footer" className="logo-footer" />
           </Col>
-          <Col xs={9} xl={9}>
+          <Col xs={24} xl={9}>
             <Row gutter={[32, 22]} justify="center">
               <h3 className="white-title">EverHooks</h3>
               <br />
@@ -35,7 +35,7 @@ const FooterComponent = () => {
               </ul>
             </Row>
           </Col>
-          <Col xs={7} xl={7}>
+          <Col xs={24} xl={7}>
             <Row gutter={[32, 22]} justify="center">
               <h3 className="white-title">Evermart</h3>
               <br />
@@ -53,7 +53,7 @@ const FooterComponent = () => {
         </Row>
         <Divider className="divider" />
         <Row gutter={[32, 22]} style={{ padding: "0 2em" }}>
-          <Col xs={18} xl={18}>
+          <Col xs={24} xl={18}>
             <span className="hyperlink-footer">
               {" "}
               Powered with <FaHeart
@@ -69,7 +69,7 @@ const FooterComponent = () => {
               </a>
             </span>
           </Col>
-          <Col xs={6} xl={6}>
+          <Col xs={24} xl={6}>
             <Row gutter={[32, 22]}>
               <Col xs={8} xl={8}>
                 <Button

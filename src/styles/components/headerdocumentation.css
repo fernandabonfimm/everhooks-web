@@ -16,6 +16,7 @@
 .icon-navbar {
   color: #fff;
   font-size: 22px;
+  cursor: pointer;
 }
 .icon-navbar:hover {
   color: #57b1ef;

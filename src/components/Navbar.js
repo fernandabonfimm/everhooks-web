@@ -26,10 +26,10 @@ const NavbarComponent = () => {
           <Col xs={5} xl={5}>
             <Row gutter={[22, 8]}>
               <Col xs={4} xl={4} style={{ marginTop: 5 }}>
-                <FaNodeJs className="icon-navbar" />
+                <FaNodeJs className="icon-navbar" onClick={() => navigate("/documentation")}/>
               </Col>
               <Col xs={0} xl={20}>
-                <a className="hyperlink" onClick={() => navigate("/")}>
+                <a className="hyperlink" onClick={() => navigate("/documentation")}>
                   Documentação
                 </a>
               </Col>
@@ -43,7 +43,7 @@ const NavbarComponent = () => {
               <Col xs={0} xl={20}>
                 <a
                   className="hyperlink"
-                  href="https://ajuda.evermart.com.br/docs/sobre/integracoes/o-que-sao-e-como-usar-os-webhooks"
+                  onClick={() => navigate("/help")}
                   target="_blank"
                 >
                   Suporte e Ajuda

@@ -1,13 +1,20 @@
+.padding-row {
+  padding: 0em 2em;
+}
 .footer-layout {
   background-color: #0e164b;
 }
-.white-title{
+.logo-footer {
+  width: 320px;
+  height: 200px;
+}
+.white-title {
   color: #fff;
   font-weight: 600;
   font-size: 22px;
   margin-top: 2vmax;
 }
-.white-subtitle{
+.white-subtitle {
   color: #fff;
   font-size: 16px;
 }
@@ -37,4 +44,21 @@
   background-color: transparent;
   border: 3px solid #57b1ef;
   color: #57b1ef;
+}
+
+@media screen and (max-width: 380px) {
+  .padding-row {
+    padding: 0em !important;
+  }
+  .logo-footer{
+    width: 220px;
+    height: 150px;
+    margin-left: 20px;
+  }
+  .hyperlink-footer {
+    font-size: 15px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 15px;
+  }
 }
