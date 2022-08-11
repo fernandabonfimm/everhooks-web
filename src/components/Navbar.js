@@ -61,7 +61,7 @@ const NavbarComponent = () => {
             </Button>
             <Button
               className="btnaccess-responsive"
-              href="https://qa-dashboard.mycheckout.com.br/integrations/webhooks/new"
+              href="https://qa-dashboard.mycheckout.com.br/login"
               target="_blank"
             >
               <IoInfiniteOutline />
@@ -90,7 +90,7 @@ const NavbarComponent = () => {
               <Col xs={24} xl={24}>
                 <Button className="btnfaq" onClick={() => navigate("/")}>
                   <MdOutlineHelpOutline className="whiteicon-btn" />
-                  O’que é o Everhooks
+                  O que é o Everhooks
                 </Button>
               </Col>
             </Row>

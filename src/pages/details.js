@@ -23,6 +23,12 @@ const Details = () => {
     textoCopiado.setSelectionRange(0, 99999);
     document.execCommand("copy");
   }
+  function copiarJson() {
+    let textoCopiado = document.getElementById("json");
+    textoCopiado.select();
+    textoCopiado.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+  }
   return (
     <>
       <Layout style={{ minHeight: "100vh" }}>
@@ -38,17 +44,6 @@ const Details = () => {
                   <Col xs={24} xl={24}>
                     <Row gutter={[32, 22]}>
                       <Col xs={24} xl={24}>
-                        <h3 className="purple-title">Detalhes da Request</h3>
-                      </Col>
-                      <Col xs={24} xl={24}>
-                        <TableRequest />
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Divider />
-                  <Col xs={24} xl={24}>
-                    <Row gutter={[32, 22]}>
-                      <Col xs={24} xl={24}>
                         <h3 className="purple-title">Headers</h3>
                       </Col>
                       <Col xs={24} xl={24}>
@@ -57,6 +52,35 @@ const Details = () => {
                     </Row>
                   </Col>
                   <Divider />
+                  <Col xs={24} xl={24}>
+                    <Row gutter={[32, 22]}>
+                      <Col xs={24} xl={24}>
+                        <h3 className="purple-title">Conteúdo em JSON</h3>
+                      </Col>
+                      <Col xs={24} xl={24}>
+                        <TextArea
+                          type="json"
+                          name="json"
+                          id="json"
+                          showCount
+                          maxLength={2000}
+                          className="raw-content"
+                          value={rawContent}
+                          readonly
+                        />
+                      </Col>
+                    </Row>
+                    <Row justify="end">
+                      <Button
+                        className="btn-copy"
+                        style={{ marginTop: 15 }}
+                        onClick={copiarJson}
+                      >
+                        <MdOutlineContentCopy style={{ marginRight: 10 }} />
+                        Copiar JSON
+                      </Button>
+                    </Row>
+                  </Col>
                   <Col xs={24} xl={24}>
                     <Row gutter={[32, 22]}>
                       <Col xs={24} xl={24}>
