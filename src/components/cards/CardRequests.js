@@ -29,7 +29,6 @@ const CardRequests = () => {
               prefix={<MdOutlineSearch />}
             />
           </Col>
-          <PerfectScrollbar>
             <Row gutter={[32, 22]}>
               {" "}
               <Col xs={24} xl={24}>
@@ -62,7 +61,6 @@ const CardRequests = () => {
                 </Card>
               </Col>
             </Row>
-          </PerfectScrollbar>
         </Row>
       </Card>
     </>

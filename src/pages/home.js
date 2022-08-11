@@ -53,7 +53,7 @@ const Home = () => {
                   </Col>
                   <Col xs={24} xl={24}>
                     <Row gutter={[32, 22]}>
-                      <Col xs={14} xl={14}>
+                      <Col xs={24} xl={14}>
                         <Row gutter={[32, 22]} >
                           <Col xs={4} xl={4}>
                             <Tag className="pass-tag">1°</Tag>
@@ -69,15 +69,15 @@ const Home = () => {
                           </Col>
                         </Row>
                       </Col>
-                      <Col xs={10} xl={10}>
-                        <img src={platformeverhooks} width={250} />
+                      <Col xs={24} xl={10}>
+                        <img src={platformeverhooks}  className="imgs-home" />
                       </Col>
                       <Divider className="white-divider" />
                     </Row>
                   </Col>
                   <Col xs={24} xl={24}>
                     <Row gutter={[32, 22]}>
-                      <Col xs={14} xl={14}>
+                      <Col xs={24} xl={14}>
                         <Row gutter={[32, 22]}>
                           <Col xs={4} xl={4}>
                             <Tag className="pass-tag">2°</Tag>
@@ -106,22 +106,19 @@ const Home = () => {
                                   Integrações {">"} Webhooks {">"} Adicionar
                                 </span>
                               </Col>
-                              <Col xs={24} xl={24}>
-                                <Button></Button>
-                              </Col>
                             </Row>
                           </Col>
                         </Row>
                       </Col>
-                      <Col xs={10} xl={10}>
-                        <img src={platformevermart} width={250} />
+                      <Col xs={24} xl={10}>
+                        <img src={platformevermart} className="imgs-home" />
                       </Col>
                       <Divider className="white-divider" />
                     </Row>
                   </Col>
                   <Col xs={24} xl={24}>
                     <Row gutter={[32, 22]}>
-                      <Col xs={14} xl={14}>
+                      <Col xs={24} xl={14}>
                         <Row gutter={[32, 22]} >
                           <Col xs={4} xl={4}>
                             <Tag className="pass-tag">3°</Tag>
@@ -145,14 +142,14 @@ const Home = () => {
                           </Col>
                         </Row>
                       </Col>
-                      <Col xs={10} xl={10}>
-                        <img src={platformapi} width={250} />
+                      <Col xs={24} xl={10}>
+                        <img src={platformapi} className="imgs-home" />
                       </Col>
                       <Divider className="white-divider" />
                     </Row>
                   </Col>
                   <Col xs={24} xl={24}>
-                    <Row gutter={[32, 22]}>
+                    <Row gutter={[8, 22]}>
                       <Col xs={24} xl={24}>
                         <h4 className="purple-titlehome">
                           Sua URL exclusiva (copie-o daqui, não da barra de
@@ -172,7 +169,7 @@ const Home = () => {
                       <Divider className="white-divider" />
                     </Row>
                   </Col>
-                  <Col xs={14} xl={14}>
+                  <Col xs={24} xl={14}>
                     <Row gutter={[32, 22]}>
                       <Col xs={22} xl={22}>
                         <span className="purple-description">

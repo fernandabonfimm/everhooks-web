@@ -89,13 +89,81 @@
   height: 320px;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 900px) {
+  .logo-everhooks {
+    width: 90px !important;
+    height: 50px !important;
+  }
+  .navbarlayout {
+    height: 10vmax !important;
+    padding: 0em 1em;
+  }
+  .hyperlink {
+    display: none;
+  }
+  .btnaccess {
+  height: 4vmax !important;
+  padding: 0em 2em;
+  font-weight: 600;
+  }
+  .btnaccess-responsive {
+    visibility: none;
+  }
+  /* css da segunda parte da navbar */
+  .content-announcement {
+    padding: 3em 4em;
+    height: 68vmax !important;
+  }
+  .white-titlenavbar {
+    font-size: 25px !important;
+  }
+  .logo-evermart {
+    width: 300px;
+  }
+  .white-subtitlenavbar {
+    font-size: 17px !important;
+    line-height: 8mm !important;
+  }
+  .btnfaq {
+    padding: 0em 2em !important;
+    font-size: 20px !important;
+    height: 5vmax !important;
+  }
+  .person-woman {
+    width: 280px;
+    height: 200px;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .btnaccess {
+  display: none;
+  }
+  .btnaccess-responsive {
+    visibility: visible;
+    color: #fff;
+    background-color: #57b1ef;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 1em 0.3em;
+    margin-top: 15px;
+  }
+  /* css da segunda parte da navbar */
+  .content-announcement {
+    padding: 3em 4em;
+    height: 80vmax !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
   .logo-everhooks {
     width: 80px !important;
     height: 50px !important;
   }
   .navbarlayout {
-    height: 10vmax !important;
+    height: 15vmax !important;
     padding: 0em 1em;
   }
   .hyperlink {
@@ -117,7 +185,7 @@
   /* css da segunda parte da navbar */
   .content-announcement {
     padding: 3em 2em;
-    height: 80vmax;
+    height: 120vmax !important;
   }
   .white-titlenavbar {
     font-size: 20px;
@@ -130,9 +198,9 @@
     line-height: 5mm !important;
   }
   .btnfaq {
-    padding: 0em 1em !important;
+    padding: 0em 2em !important;
     font-size: 17px !important;
-    height: 5vmax !important;
+    height: 8vmax !important;
   }
   .person-woman {
     width: 220px;

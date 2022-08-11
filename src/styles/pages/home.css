@@ -128,3 +128,29 @@
   border-radius: 10px;
   font-size: 15px;
 }
+.imgs-home{
+  width:250px;
+}
+
+@media screen and (max-width: 400px){
+  .content-home {
+    padding: 2em !important;
+  }
+  .imgs-home{
+    margin-top: 10px;
+    width:200px;
+  }
+  .input-https{
+    font-size: 17px;
+    padding: 0.5em 1.1em;
+}
+.tag-copy{
+  padding: 0.7em 0.9em;
+  font-size: 17px;
+}
+.btn-help{
+  font-size: 17px;
+  padding: 0em 2.5em;
+  height: 7vmax;
+}
+}

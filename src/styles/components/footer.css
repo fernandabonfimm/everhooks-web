@@ -46,19 +46,86 @@
   color: #57b1ef;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 800px){
+  .logo-footer{
+    margin-left: 20vmax;
+  } 
+}
+@media screen and (max-width: 700px){
+  .logo-footer{
+    width: 300px;
+    height: 180px;
+    margin-left: 15vmax;
+  } 
+}
+@media screen and (max-width: 600px){
+.padding-row {
+    padding: 0em !important;
+  }
+  .logo-footer{
+    width: 290px;
+    height: 170px;
+    margin-left: 10vmax;
+  }
+  .hyperlink-footer {
+    font-size: 17px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 400px) {
   .padding-row {
     padding: 0em !important;
   }
   .logo-footer{
-    width: 220px;
+    width: 240px;
     height: 150px;
-    margin-left: 20px;
+    margin-left: 25px;
   }
   .hyperlink-footer {
     font-size: 15px;
   }
   .hyperlink-footer-evermart {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .logo-footer{
+    margin-left: 10px;
+  }
+  .white-subtitle {
+    font-size: 14px;
+  }
+  .hyperlink-footer {
+    font-size: 13px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 13px;
+  }
+  .white-title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .logo-footer{
+    width: 200px;
+    height: 120px;
+    margin-left: 0px !important;
+  }
+  .white-subtitle {
+    font-size: 13px;
+  }
+  .hyperlink-footer {
+    font-size: 11px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 11px;
+  }
+  .white-title {
+    font-size: 18px;
   }
 }

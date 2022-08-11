@@ -36,7 +36,7 @@ const FooterComponent = () => {
             </Row>
           </Col>
           <Col xs={24} xl={7}>
-            <Row gutter={[32, 22]} justify="center">
+            <Row gutter={[30, 22]} justify="center">
               <h3 className="white-title">Evermart</h3>
               <br />
               <ul>
