@@ -27,3 +27,13 @@
     background-color: #57B1EF;
     color: #fff; 
 }
+
+@media screen and (max-width: 415px){
+    .content-home{
+        padding: 2em !important;
+    } 
+    .btn-copy{
+        height: 5vmax;
+        padding: 0em 2em;
+    }
+}

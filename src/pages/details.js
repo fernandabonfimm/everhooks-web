@@ -35,10 +35,10 @@ const Details = () => {
         <NavbarComponent />
         <Content className="content-home">
           <Row gutter={[32, 22]}>
-            <Col xs={8} xl={8}>
+            <Col xs={24} xl={8}>
               <CardRequests />
             </Col>
-            <Col xs={16} xl={16}>
+            <Col xs={24} xl={16}>
               <Card className="card-home">
                 <Row gutter={[32, 22]}>
                   <Col xs={24} xl={24}>
