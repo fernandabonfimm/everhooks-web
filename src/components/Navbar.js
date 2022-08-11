@@ -54,7 +54,7 @@ const NavbarComponent = () => {
           <Col xs={5} xl={5}>
             <Button
               className="btnaccess"
-              href="https://qa-dashboard.mycheckout.com.br/integrations/webhooks/new"
+              href="https://qa-dashboard.mycheckout.com.br/login"
               target="_blank"
             >
               Acessar Evermart
@@ -88,7 +88,7 @@ const NavbarComponent = () => {
                 </p>
               </Col>
               <Col xs={24} xl={24}>
-                <Button className="btnfaq" onClick={() => navigate("/")}>
+                <Button className="btnfaq" onClick={() => navigate("/documentation")}>
                   <MdOutlineHelpOutline className="whiteicon-btn" />
                   O que é o Everhooks
                 </Button>
