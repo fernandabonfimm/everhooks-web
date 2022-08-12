@@ -5,7 +5,6 @@ import Details from "../pages/details";
 import Documentation from "../pages/documentation/index";
 import About from "../pages/documentation/pages/about";
 import Faq from "../pages/documentation/pages/faq";
-import Help from "../pages/documentation/pages/help";
 
 const RoutesComponent = () => {
   return (
@@ -16,7 +15,6 @@ const RoutesComponent = () => {
         <Route path="/documentation" element={<Documentation />} />
         <Route path="/about" element={<About />} />
         <Route path="/faq" element={<Faq />} />
-        <Route path="/help" element={<Help />} />
       </Routes>
     </>
   );
