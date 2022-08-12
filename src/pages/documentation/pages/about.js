@@ -5,7 +5,7 @@ import { Layout, Row, Col, Card, Breadcrumb } from "antd";
 import "../../../styles/pages/documentation.css";
 import SiderComponent from "../../../components/Sider";
 import { useNavigate } from "react-router-dom";
-import { IoLogoNodejs } from "react-icons/io";
+import { IoLogoNodejs, IoMdBook} from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
 import aboutPng from "../../../buscandoArquivosLupa.png";
 
@@ -20,9 +20,7 @@ const About = () => {
         <Content className="content-home">
           <Row gutter={[32, 22]}>
             <Col xs={24} xl={5}>
-              <Card>
                 <SiderComponent />
-              </Card>
             </Col>
             <Col xs={24} xl={19}>
               <Row gutter={[32, 22]}>
@@ -35,10 +33,14 @@ const About = () => {
                       <IoLogoNodejs className="icon-breadcrumb" />
                       <span>Documentação</span>
                     </Breadcrumb.Item>
+                    <Breadcrumb.Item onClick={() => navigate("/about")}>
+                      <IoMdBook className="icon-breadcrumb" />
+                      <span>Sobre</span>
+                    </Breadcrumb.Item>
                   </Breadcrumb>
                 </Col>
                 <Col xs={24} xl={24}>
-                  <Card>
+                  <Card className="card-documentation">
                     <Row gutter={[32, 22]}>
                       <Col xs={24} xl={24}>
                         <h2>Sobre o EverHook</h2>

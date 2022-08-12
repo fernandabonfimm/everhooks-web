@@ -28,9 +28,7 @@ const Faq = () => {
         <Content className="content-home">
           <Row gutter={[32, 22]}>
             <Col xs={24} xl={5}>
-              <Card className="card-documentation">
                 <SiderComponent />
-              </Card>
             </Col>
             <Col xs={24} xl={19}>
               <Row gutter={[32, 22]}>
