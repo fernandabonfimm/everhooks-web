@@ -1,39 +1,41 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Row, Col, Layout, Button } from "antd";
-import { BsHeadphones, BsQuestionSquare } from 'react-icons/bs';
-import { HiOutlineDocumentText } from 'react-icons/hi';
-import { AiOutlineInfoCircle } from 'react-icons/ai';
+import { IoLogoNodejs, IoMdHelpCircleOutline, IoMdBook } from "react-icons/io";
 
 const { Sider } = Layout;
 
-const SiderComponent = ({children}) => {
+const SiderComponent = ({ children }) => {
   return (
-  <>
-      <Row gutter={[32, 22]}>
-        <Col xs={24} xl={24}>
-         <Button className="button" href="../documentation">
-          <HiOutlineDocumentText className="icon"/>
-          Documentação API
-          </Button>
-        </Col>
-        <Col xs={24} xl={24}>
-         <Button className="button" href="../about">
-          <AiOutlineInfoCircle className="icon"/>
-          Sobre
-          </Button>
-        </Col>
-        <Col xs={24} xl={24}>
-          <Button className="button" href="../faq">
-            <BsQuestionSquare className="icon"/>
-            FAQ
-          </Button>
-        </Col>
-        <Col xs={24} xl={24}>
-         <Button className="button" href="../help">
-          <BsHeadphones className="icon"/>
-          Ajuda
-         </Button>
-        </Col>
+    <>
+      <Row justify="center">
+        <Button className="btn-sider" href="../documentation">
+          <Row justify="center">
+            <IoLogoNodejs className="icon-sider" />
+          </Row>
+          <Row justify="center">
+            <span className="title-sider">Documentação API</span>
+          </Row>
+        </Button>
+      </Row>
+      <Row justify="center">
+        <Button className="btn-sider" href="../about">
+          <Row justify="center">
+            <IoMdBook className="icon-sider" />
+          </Row>
+          <Row justify="center">
+            <span className="title-sider">Sobre</span>
+          </Row>
+        </Button>
+      </Row>
+      <Row justify="center">
+        <Button className="btn-sider" href="../faq">
+          <Row justify="center">
+            <IoMdHelpCircleOutline className="icon-sider" />
+          </Row>
+          <Row justify="center">
+            <span className="title-sider">FAQ</span>
+          </Row>
+        </Button>
       </Row>
     </>
   );

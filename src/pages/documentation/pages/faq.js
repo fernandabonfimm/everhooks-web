@@ -1,21 +1,19 @@
 import React from "react";
-import HeaderDocumentation from "../../components/HeaderDocumentation";
-import FooterComponent from "../../components/Footer";
+import HeaderDocumentation from "../../../components/HeaderDocumentation";
+import FooterComponent from "../../../components/Footer";
 import { Layout, Row, Col, Card } from "antd";
-import '../../styles/pages/documentation.css';
-import SiderComponent from "../../components/Sider";
+import '../../../styles/pages/documentation.css';
+import SiderComponent from "../../../components/Sider";
 import 'antd/dist/antd.css';
 import { HomeOutlined, UserOutlined } from '@ant-design/icons';
 import { Breadcrumb } from 'antd';
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { BsHeadphones, BsQuestionSquare } from 'react-icons/bs';
 import { HiOutlineDocumentText } from 'react-icons/hi';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
-import aboutPng from "../../buscandoArquivosLupa.png";
-
 const {Content} = Layout;
- 
-const About = () => {
+
+const Faq = () => {
     const navigate = useNavigate();
     return (
         <>
@@ -30,13 +28,16 @@ const About = () => {
                         </Breadcrumb.Item>
                         <Breadcrumb.Item onClick={() => navigate("/documentation")}>
                             <HiOutlineDocumentText className="icon"/>
-                            <span className="textSideBread">Documentação</span>
+                            <span>Documentação</span>
                         </Breadcrumb.Item>
-                        <Breadcrumb.Item>
-                        <AiOutlineInfoCircle className="icon"/>
+                        <Breadcrumb.Item onClick={() => navigate("/about")}>
+                            <AiOutlineInfoCircle className="icon"/>
                             <span>Sobre</span>
                         </Breadcrumb.Item>
-                                
+                        <Breadcrumb.Item>
+                            <BsQuestionSquare className="icon"/>
+                            <span>Perguntas Frequentes</span>
+                        </Breadcrumb.Item>
                     </Breadcrumb>
                 </Col>
                 <Col xs={24} xl={5}>
@@ -48,8 +49,8 @@ const About = () => {
                     <Card>
                         <Row gutter={[32, 22]}>
                             <Col xs={24} xl={24}>
-                                    <h2>Sobre o EverHook</h2>
-                                    <img src={aboutPng} width={200} />
+                            <h2>Perguntas Frequentes</h2>
+                                       
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -57,6 +58,7 @@ const About = () => {
                                     remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
                                     sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
                                     like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            
                             </Col>
                         </Row>
                     </Card>
@@ -68,4 +70,4 @@ const About = () => {
         </>
     )
 }
-export default About;
+export default Faq;

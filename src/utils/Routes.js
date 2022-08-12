@@ -3,9 +3,9 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from "../pages/home";
 import Details from "../pages/details";
 import Documentation from "../pages/documentation/index";
-import About from "../pages/documentation/about";
-import Faq from "../pages/documentation/faq";
-import Help from "../pages/documentation/help";
+import About from "../pages/documentation/pages/about";
+import Faq from "../pages/documentation/pages/faq";
+import Help from "../pages/documentation/pages/help";
 
 const RoutesComponent = () => {
   return (

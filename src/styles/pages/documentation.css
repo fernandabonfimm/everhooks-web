@@ -2,26 +2,33 @@
     background-color: #fff;
     padding: 5em;
 }
-
-.button {
-    width: 12em;
-    border-radius: 0.7em;
-    color: white;
-    background: #57B1EF;
+.card-documentation{
+    padding: 1em;
+    border-radius: 15px;
+    height: 100vmin;
 }
 
-h2 {
-    color: black;
-    font-weight: bold;
+.btn-sider {
+    width: 25vmin;
+    height: 12vmin;
+    margin-top: 3vmin;
+    border: none;
+    color: gray;
 }
-text {
-    margin: 0 0 0 0;
+.btn-sider:hover{
+    background-color: #E7F5FF;
+    color: #0E164B;
+    border-radius: 10px;
+    border: none;
 }
-
-.icon {
-    height: 1em;
-    width: 1em;
-    position: relative;
-    left: -0.3em;
-    top: 0.1em;
+.icon-sider{
+    margin-top: 2vmin;
+    font-size: 22px;
+}
+.title-sider{
+font-weight: 480;
+font-size: 16px;
+}
+.illustrantion{
+    width:200px;
 }
