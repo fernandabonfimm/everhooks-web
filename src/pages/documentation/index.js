@@ -8,9 +8,7 @@ import "antd/dist/antd.css";
 import { HomeOutlined, UserOutlined } from "@ant-design/icons";
 import { Breadcrumb } from "antd";
 import { useNavigate } from "react-router-dom";
-import { BsHeadphones, BsQuestionSquare } from "react-icons/bs";
 import { HiOutlineDocumentText } from "react-icons/hi";
-import { AiOutlineInfoCircle } from "react-icons/ai";
 import faq from "../../buscandoArquivos.png";
 
 const { Content } = Layout;

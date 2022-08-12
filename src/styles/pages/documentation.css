@@ -5,7 +5,7 @@
 .card-documentation{
     padding: 1em;
     border-radius: 15px;
-    height: 100vmin;
+    height: 100vmax ;
 }
 
 .btn-sider {
@@ -31,4 +31,65 @@ font-size: 16px;
 }
 .illustrantion{
     width:200px;
+}
+
+/* breadcrumb */
+.icon-breadcrumb{
+    margin-right: 10px;
+}
+
+/*faq page */
+.title-purple-documentation{
+    color: #0E164B;
+    font-size: 22px;
+    font-weight: 500;
+}
+.card-faq{
+    background-color: #E7F5FF;
+    color: #0E164B;
+    border-radius: 15px;
+    border: none;
+    padding: 0.5em 2em;
+}
+.card-faq-white{
+    background-color: #fff;
+    color: #0E164B;
+    border-radius: 15px;
+    border: none;
+    padding: 0.5em 2em;
+}
+.icon-plus{
+    color: #0E164B;
+    border: 2px solid #0E164B;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    height: 6vmin;
+    padding: 0.2em 0.4em;
+}
+.icon-plus:hover{
+    color: #57B1EF;
+    background-color: transparent;
+    border: 2px solid #57B1EF;
+}
+.icon-plus .active{
+    color: #57B1EF; 
+    background-color: transparent;
+    border: 2px solid #57B1EF;
+}
+.margin{
+    margin-top: 2vmin;
+}
+.circle{
+    font-size: 10px;
+}
+.pass-tag-faq{
+    background-color: #0E164B;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 0.5em 1em;
+    font-weight: 600;
+    border: none;
 }

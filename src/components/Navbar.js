@@ -38,12 +38,12 @@ const NavbarComponent = () => {
           <Col xs={5} xl={7}>
             <Row gutter={[22, 8]}>
               <Col xs={2} xl={4} style={{ marginTop: 5 }}>
-                <FaHeadset className="icon-navbar" />
+                <FaHeadset className="icon-navbar"   onClick={() => navigate("/faq")}/>
               </Col>
               <Col xs={0} xl={20}>
                 <a
                   className="hyperlink"
-                  onClick={() => navigate("/help")}
+                  onClick={() => navigate("/faq")}
                   target="_blank"
                 >
                   Suporte e Ajuda

@@ -37,10 +37,10 @@ const HeaderDocumentation = () => {
           <Col xs={5} xl={7}>
             <Row gutter={[22, 8]}>
               <Col xs={2} xl={4} style={{ marginTop: 5 }}>
-                <FaHeadset className="icon-navbar" onClick={() => navigate("/help")} target="_blank" />
+                <FaHeadset className="icon-navbar" onClick={() => navigate("/faq")} target="_blank" />
               </Col>
               <Col xs={0} xl={20}>
-                <a className="hyperlink" onClick={() => navigate("/help")} target="_blank">
+                <a className="hyperlink" onClick={() => navigate("/faq")} target="_blank">
                   Suporte e Ajuda
                 </a>
               </Col>
