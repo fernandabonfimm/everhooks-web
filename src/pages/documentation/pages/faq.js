@@ -9,6 +9,8 @@ import { IoLogoNodejs } from "react-icons/io";
 import { IoHomeOutline, IoHelpCircleOutline } from "react-icons/io5";
 import { BsPlusLg, BsFillCircleFill } from "react-icons/bs";
 import { CardFaq1False } from "./components/CardFaq1False";
+import { CardFaq2False } from "./components/CardFaq2False";
+import { CardFaq3False } from "./components/CardFaq3False";
 import { GrSubtract } from "react-icons/gr";
 
 const { Content } = Layout;
@@ -16,6 +18,8 @@ const { Content } = Layout;
 const Faq = () => {
   const navigate = useNavigate();
   const [showQuestion1, setShowQuestion1] = useState(false);
+  const [showQuestion2, setShowQuestion2] = useState(false);
+  const [showQuestion3, setShowQuestion3] = useState(false);
 
   return (
     <>
@@ -106,6 +110,121 @@ const Faq = () => {
                               </Col>
 
                               <CardFaq1False />
+                            </Row>
+                          </Card>
+                        )}
+                      </Col>
+                      <Col xs={24} xl={24}>
+                        {!showQuestion2 && (
+                          <Card className="card-faq">
+                            <Row gutter={[32, 22]}>
+                              <Col xs={22} xl={22}>
+                                <Row gutter={[22, 22]} className="margin">
+                                  <Col xs={2} xl={2}>
+                                    <BsFillCircleFill className="circle" />
+                                  </Col>
+                                  <Col xs={22} xl={22}>
+                                    <h3 className="question">
+                                      Como faço para implantar na minha
+                                      aplicação web o Everhooks?
+                                    </h3>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs={2} xl={2}>
+                                <Button
+                                  className="icon-plus"
+                                  onClick={() => setShowQuestion2(true)}
+                                >
+                                  <BsPlusLg />
+                                </Button>
+                              </Col>
+                            </Row>
+                          </Card>
+                        )}
+                                 {showQuestion2 && (
+                          <Card className="card-faq">
+                            <Row gutter={[32, 22]}>
+                              <Col xs={22} xl={22}>
+                                <Row gutter={[22, 22]} className="margin">
+                                  <Col xs={2} xl={2}>
+                                    <BsFillCircleFill className="circle" />
+                                  </Col>
+                                  <Col xs={22} xl={22}>
+                                    <h3 className="question">
+                                      Meus dados são privados?
+                                    </h3>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs={2} xl={2}>
+                                <Button
+                                  className="icon-plus"
+                                  onClick={() => setShowQuestion2(false)}
+                                >
+                                  {" "}
+                                  <GrSubtract />
+                                </Button>
+                              </Col>
+
+                              <CardFaq2False />
+                            </Row>
+                          </Card>
+                        )}
+                      </Col>
+                      <Col xs={24} xl={24}>
+                        {!showQuestion3 && (
+                          <Card className="card-faq">
+                            <Row gutter={[32, 22]}>
+                              <Col xs={22} xl={22}>
+                                <Row gutter={[22, 22]} className="margin">
+                                  <Col xs={2} xl={2}>
+                                    <BsFillCircleFill className="circle" />
+                                  </Col>
+                                  <Col xs={22} xl={22}>
+                                    <h3 className="question">
+                                      Meus dados são privados?
+                                    </h3>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs={2} xl={2}>
+                                <Button
+                                  className="icon-plus"
+                                  onClick={() => setShowQuestion3(true)}
+                                >
+                                  <BsPlusLg />
+                                </Button>
+                              </Col>
+                            </Row>
+                          </Card>
+                        )}
+                        {showQuestion3 && (
+                          <Card className="card-faq">
+                            <Row gutter={[32, 22]}>
+                              <Col xs={22} xl={22}>
+                                <Row gutter={[22, 22]} className="margin">
+                                  <Col xs={2} xl={2}>
+                                    <BsFillCircleFill className="circle" />
+                                  </Col>
+                                  <Col xs={22} xl={22}>
+                                    <h3 className="question">
+                                      Meus dados são privados?
+                                    </h3>
+                                  </Col>
+                                </Row>
+                              </Col>
+                              <Col xs={2} xl={2}>
+                                <Button
+                                  className="icon-plus"
+                                  onClick={() => setShowQuestion3(false)}
+                                >
+                                  {" "}
+                                  <GrSubtract />
+                                </Button>
+                              </Col>
+
+                              <CardFaq3False />
                             </Row>
                           </Card>
                         )}
