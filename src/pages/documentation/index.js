@@ -174,6 +174,43 @@ const Documentation = () => {
                         </Tag>
                       </Col>
                     </Row>
+                    <Row gutter={[32, 22]} style={{ marginTop: 60 }}>
+                      <Col xs={24} xl={24}>
+                        <h4 className="title-purple-documentation">
+                          Criar nova URL
+                        </h4>
+                      </Col>
+                      <Col xs={24} xl={24}>
+                        <span className="explict-code">
+                          Na API do Everhooks.com, isso é chamado de token. Para
+                          criar um novo programaticamente, você pode usar a API
+                          assim:
+                        </span>
+                      </Col>
+                      <Col xs={20} xl={20}>
+                        <Input
+                          name="https"
+                          id="https"
+                          value={https}
+                          className="input-https"
+                        />
+                      </Col>
+                      <Col xs={4} xl={4}>
+                        <Tag className="tag-copy" onClick={copiarHttps}>
+                          <MdFileCopy />
+                        </Tag>
+                      </Col>
+                      <Col xs={24} xl={24}>
+                        <span className="explict-code">
+                          Isso retornará informações sobre o token no formato
+                          JSON, incluindo seu UUID. Sua URL estará disponível no
+                          endpoint 
+                          <a className="baseurl">
+                            https://everhooks.com/[token uuid]
+                          </a>
+                        </span>
+                      </Col>
+                    </Row>
                   </Card>
                 </Col>
               </Row>

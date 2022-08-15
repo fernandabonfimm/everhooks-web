@@ -5,7 +5,7 @@ import { Layout, Row, Col, Card, Breadcrumb } from "antd";
 import "../../../styles/pages/documentation.css";
 import SiderComponent from "../../../components/Sider";
 import { useNavigate } from "react-router-dom";
-import { IoLogoNodejs, IoMdBook} from "react-icons/io";
+import { IoLogoNodejs, IoMdBook } from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
 import aboutPng from "../../../buscandoArquivosLupa.png";
 
@@ -20,7 +20,7 @@ const About = () => {
         <Content className="content-home">
           <Row gutter={[32, 22]}>
             <Col xs={24} xl={5}>
-                <SiderComponent />
+              <SiderComponent />
             </Col>
             <Col xs={24} xl={19}>
               <Row gutter={[32, 22]}>
@@ -43,21 +43,22 @@ const About = () => {
                   <Card className="card-documentation">
                     <Row gutter={[32, 22]}>
                       <Col xs={24} xl={24}>
-                        <h2>Sobre o EverHook</h2>
-                        <img src={aboutPng} width={200} />
-                        <p>
-                          Lorem Ipsum is simply, dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book. It has
-                          survived not only five centuries, but also the leap
-                          into electronic typesetting, remaining essentially
-                          unchanged. It was popularised in the 1960s with the
-                          release of Letraset sheets containing Lorem Ipsum
-                          passages, and more recently with desktop publishing
-                          software like Aldus PageMaker including versions of
-                          Lorem Ipsum.
+                        <h2 className="title-purple-documentation">
+                          Sobre o Everhooks.com
+                        </h2>
+                      </Col>
+                      <Col xs={24} xl={24}>
+                        <p className="explict-code">
+                          Com o Everhooks.com, você obtém instantaneamente um
+                          URL e um endereço de e-mail únicos e aleatórios. Tudo
+                          o que é enviado para esses endereços é mostrado
+                          instantaneamente. Com isso, você pode testar e depurar
+                          Webhooks e solicitações HTTP, bem como criar seus
+                          próprios fluxos de trabalho usando o editor gráfico de
+                          Ações Personalizadas ou WebhookScript, uma linguagem
+                          de script simples, para transformar, validar e
+                          processar solicitações HTTP de várias maneiras – sem
+                          configurar e manter sua própria infra-estrutura.
                         </p>
                       </Col>
                     </Row>
