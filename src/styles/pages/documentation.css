@@ -113,15 +113,18 @@ font-size: 16px;
     display: inline-block;
     width: 40vmax;
 }
+
 .img-desginer{
     width: 250px;
     height: 180px;
 }
+
 .link-text{
     color: #0E164B;
     font-size: 16px;
     font-weight: 550;
 }
+
 .select-text{
     background-color: #57B1EF;
     color: #fff;
@@ -132,7 +135,14 @@ font-size: 16px;
     margin-right: 10px;
     padding: 0.2em 1em;
 }
+
 .explict-code{
     color: #0E164B;
     font-size: 14px; 
 }
+
+.average-font{
+    color: #0E164B;
+    font-size: 18px; 
+}
+
