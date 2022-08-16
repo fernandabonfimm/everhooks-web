@@ -7,8 +7,8 @@ import SiderComponent from "../../../components/Sider";
 import { useNavigate } from "react-router-dom";
 import { IoLogoNodejs, IoMdBook } from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
-import aboutPng from "../../../buscandoArquivosLupa.png";
-
+import designer from '../../../designer.png'
+import cameraman from '../../../cameraman.png'
 const { Content } = Layout;
 
 const About = () => {
@@ -47,19 +47,46 @@ const About = () => {
                           Sobre o Everhooks.com
                         </h2>
                       </Col>
-                      <Col xs={24} xl={24}>
+                      <Col xs={24} xl={16}>
                         <p className="explict-code">
-                          Com o Everhooks.com, você obtém instantaneamente um
-                          URL e um endereço de e-mail únicos e aleatórios. Tudo
-                          o que é enviado para esses endereços é mostrado
+                          Com o <a className="link-text" onClick={() => navigate("/")}>Everhooks.com</a>, você obtém instantaneamente um
+                          URL.
+                          Tudo o que é enviado para esses endereços é mostrado
                           instantaneamente. Com isso, você pode testar e depurar
-                          Webhooks e solicitações HTTP, bem como criar seus
+                          <span className="select-text">Webhooks e solicitações HTTP</span>, bem como criar seus
                           próprios fluxos de trabalho usando o editor gráfico de
-                          Ações Personalizadas ou WebhookScript, uma linguagem
+                          ações Personalizadas ou WebhookScript, uma linguagem
                           de script simples, para transformar, validar e
                           processar solicitações HTTP de várias maneiras – sem
-                          configurar e manter sua própria infra-estrutura.
+                          configurar e manter sua <span className="select-text">própria infra-estrutura.</span>
                         </p>
+                      </Col>
+                      <Col xs={24} xl={8}>
+                        <img src={designer} className="img-desginer"/>
+                      </Col>
+                      <Col xs={24} xl={24} style={{marginTop: 30}}>
+                        <p className="title-purple-documentation">
+                          Para que as pessoas estão usando?
+                        </p>
+                      </Col>
+                      <Col xs={24} xl={16}>
+                        <ul>
+                          <li>
+                            Receba Everhooks sem precisar de um servidor Web
+                            voltado para a Internet
+                          </li>
+                          <li>
+                            Use o Everhooks.com como intermediário, fazendo
+                            proxy de solicitações e podendo ver o que foi
+                            enviado no passado
+                          </li>
+                          <li>
+                            
+                          </li>
+                        </ul>
+                      </Col>
+                      <Col xs={24} xl={8}>
+                        <img src={cameraman} className="img-desginer"/>
                       </Col>
                     </Row>
                   </Card>
