@@ -94,3 +94,21 @@ font-size: 16px;
     font-weight: 600;
     border: none;
 }
+.icone-node{
+    margin-top: 5px;
+    color: #0E164B;
+    font-size: 22px;
+}
+
+.divider{
+    background-color:#57B1EF;
+}
+
+
+.pre-format{
+    border: 1px solid #57B1EF;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 40vmax;
+}

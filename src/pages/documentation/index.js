@@ -11,10 +11,13 @@ import {
   Button,
   Tag,
   Input,
-} from "antd";
+  Divider,
+} 
+from "antd";
 import "../../styles/pages/documentation.css";
 import SiderComponent from "../../components/Sider";
 import { useNavigate } from "react-router-dom";
+import { FaNodeJs } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
 import { BsFillCircleFill } from "react-icons/bs";
@@ -22,6 +25,7 @@ import { MdFileCopy } from "react-icons/md";
 import Alert from "sweetalert2";
 
 const { Content } = Layout;
+const { TextArea } = Input;
 
 const Documentation = () => {
   const navigate = useNavigate();
@@ -29,6 +33,9 @@ const Documentation = () => {
   const [https, setHttps] = useState(
     "curl https://everhooks.com/token/a2a6a4ae-4130-4063-953a-84fa29d81d43/requests"
   );
+  const [code, setCode] = useState(
+    
+  )
 
   function copiarHttps() {
     let httpsCopiada = document.getElementById("https");
@@ -87,37 +94,207 @@ const Documentation = () => {
                   </Breadcrumb>
                 </Col>
                 <Col xs={24} xl={24}>
-                  <Card className="card-documentation">
+                  
                     <Row gutter={[32, 22]}>
                       <Col xs={24} xl={24}>
-                        <Row gutter={[32, 22]}>
-                          <Col xs={24} xl={24}>
-                            <h3 className="purple-titlehome">Documentação</h3>
-                          </Col>
-                          <Col xs={24} xl={24}>
-                            <img src={faq} className="illustrantion" />
-                          </Col>
-                          <Col xs={24} xl={24}>
-                            <p>
-                              Lorem Ipsum, is simply dummy text of the printing
-                              and typesetting industry. Lorem Ipsum has been the
-                              industry's standard dummy text ever since the
-                              1500s, when an unknown printer took a galley of
-                              type and scrambled it to make a type specimen
-                              book. It has survived not only five centuries, but
-                              also the leap into electronic typesetting,
-                              remaining essentially unchanged. It was
-                              popularised in the 1960s with the release of
-                              Letraset sheets containing Lorem Ipsum passages,
-                              and more recently with desktop publishing software
-                              like Aldus PageMaker including versions of Lorem
-                              Ipsum.
-                            </p>
-                          </Col>
-                        </Row>
+                        <h2 className="title-purple-documentation">
+                          Documentação API
+                        </h2>
+                      </Col>
+                      <Col xs={24} xl={24}>
+                        <p className="explict-code">
+                          A API do Everhooks é pública, de uso gratuito, não
+                          requer autenticação e é relativamente fácil de usar.
+                        </p>
+                      </Col>
+                      <Col xs={24} xl={24}>
+                        <Card title="Nota importante" className="terms of use">
+                          <Row gutter={[32, 22]}>
+                            <Col xs={2} xl={2}>
+                              <BsFillCircleFill className="circle" />
+                            </Col>
+                            <Col xs={22} xl={22}>
+                              <span className="description-card">
+                                Observe que as diretrizes de uso justo e outras
+                                limitações se aplicam conforme descrito pelo{" "}
+                                <a className="terms-use" onClick={showModal}>
+                                  Termos de Uso
+                                </a>
+                              </span>
+                            </Col>
+                          </Row>
+                        </Card>
                       </Col>
                     </Row>
-                  </Card>
+                    <Row gutter={[32, 22]} style={{ marginTop: 60 }}>
+                      <Col xs={24} xl={24}>
+                        <h4 className="title-purple-documentation">
+                          Uso Geral
+                        </h4>
+                      </Col>
+                      <Col xs={24} xl={24}>
+                        <span className="explict-code">
+                          Base URL:{" "}
+                          <a className="baseurl">https://everhooks.com</a>
+                        </span>
+                      </Col>
+                      <Col xs={24} xl={24}>
+                        <span className="explict-code">
+                          Recomendamos que você defina os cabeçalhos,{" "}
+                          <a className="baseurl">Accept </a>e
+                          <a className="baseurl">Content-Type </a> como
+                          <a className="baseurl">application/json </a>
+                        </span>
+                      </Col>
+                    </Row>
+                    <Row gutter={[32, 22]} style={{ marginTop: 60 }}>
+                      <Col xs={24} xl={24}>
+                        <h4 className="title-purple-documentation">
+                          Usos comuns
+                        </h4>
+                      </Col>
+                      <Col xs={24} xl={24}>
+                        <span className="explict-code">
+                          Para recuperar os dados que são enviados para uma URL
+                          ou e-mail Webhook.site, convém usar o ponto de
+                          extremidade Get Requests.
+                        </span>
+                      </Col>
+                      <Col xs={24} xl={24}>
+                        <span className="explict-code">
+                          Por exemplo, com <a className="baseurl">cURL</a> ,
+                          isso retorna as 50 solicitações mais recentes no
+                          formato JSON.
+                        </span>
+                      </Col>
+                      <Col xs={20} xl={20}>
+                        <Input
+                          name="https"
+                          id="https"
+                          value={https}
+                          className="input-https"
+                        />
+                      </Col>
+                      <Col xs={4} xl={4}>
+                        <Tag className="tag-copy" onClick={copiarHttps}>
+                          <MdFileCopy />
+                        </Tag>
+                      </Col>
+                    </Row>
+                    <Row gutter={[32, 22]} style={{ marginTop: 60 }}>
+                      <Col xs={24} xl={24}>
+                        <h4 className="title-purple-documentation">
+                          Criar nova URL
+                        </h4>
+                      </Col>
+                      <Col xs={24} xl={24}>
+                        <span className="explict-code">
+                          Na API do Everhooks.com, isso é chamado de token. Para
+                          criar um novo programaticamente, você pode usar a API
+                          assim:
+                        </span>
+                      </Col>
+                      <Col xs={20} xl={20}>
+                        <Input
+                          name="https"
+                          id="https"
+                          value={https}
+                          className="input-https"
+                        />
+                      </Col>
+                      <Col xs={4} xl={4}>
+                        <Tag className="tag-copy" onClick={copiarHttps}>
+                          <MdFileCopy />
+                        </Tag>
+                      </Col>
+                      <Col xs={24} xl={24}>
+                        <span className="explict-code">
+                          Isso retornará informações sobre o token no formato
+                          JSON, incluindo seu UUID. Sua URL estará disponível no
+                          endpoint 
+                          <a className="baseurl">
+                            https://everhooks.com/[token uuid]
+                          </a>
+                        </span>
+                      </Col>
+                    </Row>
+                    <Divider className="divider"/>
+                    <Row gutter={[32, 22]} style={{ marginTop: 60 }}>
+                      <Col xs={1} xl={1}>
+                        <FaNodeJs className="icone-node"/>
+                      </Col>
+                      <Col xs={23} xl={23}>
+                        <h4 className="title-purple-documentation">
+                          NodeJs
+                        </h4>
+                      </Col>
+                      <Col>
+                        <h3>
+                          Criar token (URL)
+                        </h3>
+                        <span className="explict-code">
+                          Cria um token Everhook e gera sua URL da Web. Você precisará substituir a chave de API.
+                        </span>                                                            
+                      </Col>
+                    </Row>
+                    <Row gutter={[32, 22]} style={{ marginTop: 20 }}>
+                    <Col>                     
+                      <pre className="pre-format">
+                        <code>
+
+                        $apiKey = '00000000-0000-0000-0000-000000000000';<br/>
+                        // Cria um contexto de fluxo<br/>
+                        $context = stream_context_create(['http' = [<br/>
+                            'method' = 'POST',<br/>
+                            'header' = "Api-Key: $apiKey\r\n"<br/>
+                        ]]);<br/>
+                        // Envia solicitação de API<br/>
+                        $response = json_decode(file_get_contents('https://webhook.site/token', false, $context), true);<br/>
+                        echo "URL Created: https://everhook.com/{"$response[uuid]"};
+
+                        </code>
+                      </pre>
+                      
+                    </Col>
+                    </Row>
+                    <Row gutter={[32, 22]} style={{ marginTop: 60 }}>
+                      <Col>
+                        <h3>
+                          Buscar dados mais recentes 
+                        </h3>
+                        <span className="explict-code">
+                        Exemplo simples de como percorrer as últimas solicitações enviadas para um URL do Everhook e exibir de maneira amigável.
+                        <br/>
+                        Você precisará substituir a chave de API e o ID do token.           
+                        </span>                      
+                      </Col>
+                    </Row>
+                    <Row gutter={[32, 22]} style={{ marginTop: 20 }}>
+                    <Col>                     
+                      <pre className="pre-format">
+                        <code>
+
+                        $apiKey = '00000000-0000-0000-0000-000000000000';<br/>
+                        $tokenId = '00000000-0000-0000-0000-000000000000';<br/>
+                        $url = "https://everhook.com/token/$tokenId/requests?sorting=newest";<br/>
+                        $context = stream_context_create(['http' = ['header' = "Api-Key: $apiKey\r\n"]]);<br/>
+                        $response = json_decode(file_get_contents($url, false, $context), true)<br/>
+                        foreach ($response['data'] as $req) <br/>
+                        echo \n<br/>
+                        echo ID        : {"$req[uuid]"}\n<br/>
+                        echo Type      : {"$req[type]"}\n<br/>
+                        echo Date      : {"$req[created_at]"}\n<br/>
+                        echo User-Agent: {"$req[headers][user-agent][0] ?? Unknown"}\n<br/>
+                        echo --- content begin ---\n<br/>
+                        echo $req['content']<br/>
+                        echo \n--- content end ---\n
+                                           
+                        </code>
+                      </pre>
+                      
+                    </Col>
+                    </Row>
+  
                 </Col>
               </Row>
             </Col>
