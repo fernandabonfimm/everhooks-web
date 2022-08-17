@@ -91,7 +91,7 @@ const Documentation = () => {
                   </Breadcrumb>
                 </Col>
                 <Col xs={24} xl={24}>
-                  <div className="padding">
+                  <div className="padding-card">
                     <Row gutter={[32, 22]}>
                       <Col xs={24} xl={24}>
                         <h2 className="title-purple-documentation">

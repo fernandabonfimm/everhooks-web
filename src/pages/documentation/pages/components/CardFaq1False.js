@@ -37,7 +37,7 @@ const CardFaq1False = () => {
                   Escolha um software de testes de API de sua escolha e logo em seguida insira a HTTPS no Header e a URL Encodded no body para gerar a requisição desejada.
                   </span>
                 </Col>
-                <Col xs={20} xl={20}>
+                <Col xs={18} xl={20}>
                   <Input
                     name="https"
                     id="https"
@@ -45,7 +45,7 @@ const CardFaq1False = () => {
                     className="input-https"
                   />
                 </Col>
-                <Col xs={4} xl={4}>
+                <Col xs={2} xl={4}>
                   <Tag className="tag-copy" onClick={copiarHttps}>
                     <MdFileCopy />
                   </Tag>

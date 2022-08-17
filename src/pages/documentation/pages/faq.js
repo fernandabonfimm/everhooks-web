@@ -51,7 +51,7 @@ const Faq = () => {
                   </Breadcrumb>
                 </Col>
                 <Col xs={24} xl={24}>
-                  <Card className="card-documentation">
+                  <div className="padding-card">
                     <Row gutter={[32, 22]}>
                       <Col xs={24} xl={24}>
                         <h2 className="title-purple-documentation">
@@ -231,7 +231,7 @@ const Faq = () => {
                         )}
                       </Col>
                     </Row>
-                  </Card>
+                  </div>
                 </Col>
               </Row>
             </Col>

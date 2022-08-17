@@ -135,8 +135,13 @@
   padding: 1.5em;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .card-documentation-sider {
     display: none;
+  }
+  .icon-plus {
+    font-size: 20px;
+    height: 8vmin;
+    padding: 0.2em 0.4em;
   }
 }
