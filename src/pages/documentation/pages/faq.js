@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import HeaderDocumentation from "../../../components/HeaderDocumentation";
 import FooterComponent from "../../../components/Footer";
-import { Layout, Row, Col, Card, Button, Tag, BackTop, Breadcrumb } from "antd";
+import { Layout, Row, Col, Card, Button, BackTop, Breadcrumb } from "antd";
 import "../../../styles/pages/documentation.css";
 import SiderComponent from "../../../components/Sider";
 import { useNavigate } from "react-router-dom";
