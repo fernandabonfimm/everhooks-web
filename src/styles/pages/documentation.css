@@ -145,6 +145,18 @@
     padding: 0.2em 0.4em;
   }
   .code-node {
+    width: 60vmax;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .code-node {
     width: 40vmax;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .code-node {
+    width: 30vmax;
   }
 }
