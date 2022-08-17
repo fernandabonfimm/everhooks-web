@@ -1,119 +1,144 @@
-.content-home{
-    background-color: #fff;
-    padding: 5em;
+.content-home {
+  background-color: #fff;
+  padding: 5em;
 }
-.card-documentation{
-    padding: 1em;
-    border-radius: 15px;
-    height: 100vmax ;
+.padding{
+  padding: 2em;
 }
-
+.card-documentation {
+  padding: 1em;
+  border-radius: 15px;
+  height: 100vmax;
+}
+.card-documentation-sider {
+  padding: 1em;
+  border-radius: 15px;
+  height: 100vmax;
+}
 .btn-sider {
-    width: 25vmin;
-    height: 12vmin;
-    margin-top: 3vmin;
-    border: none;
-    color: gray;
+  width: 25vmin;
+  height: 12vmin;
+  margin-top: 3vmin;
+  border: none;
+  color: gray;
 }
-.btn-sider:hover{
-    background-color: #E7F5FF;
-    color: #0E164B;
-    border-radius: 10px;
-    border: none;
+.btn-sider:hover {
+  background-color: #e7f5ff;
+  color: #0e164b;
+  border-radius: 10px;
+  border: none;
 }
-.icon-sider{
-    margin-top: 2vmin;
-    font-size: 22px;
+.icon-sider {
+  margin-top: 2vmin;
+  font-size: 22px;
 }
-.title-sider{
-font-weight: 480;
-font-size: 16px;
+.title-sider {
+  font-weight: 480;
+  font-size: 16px;
 }
-.illustrantion{
-    width:200px;
+.illustrantion {
+  width: 200px;
 }
 
 /* breadcrumb */
-.icon-breadcrumb{
-    margin-right: 10px;
+.icon-breadcrumb {
+  margin-right: 10px;
 }
 
 /*faq page */
-.title-purple-documentation{
-    color: #0E164B;
-    font-size: 22px;
-    font-weight: 500;
+.title-purple-documentation {
+  color: #0e164b;
+  font-size: 22px;
+  font-weight: 500;
 }
-.card-faq{
-    background-color: #E7F5FF;
-    color: #0E164B;
-    border-radius: 15px;
-    border: none;
-    padding: 0.5em 2em;
+.card-faq {
+  background-color: #e7f5ff;
+  color: #0e164b;
+  border-radius: 15px;
+  border: none;
+  padding: 0.5em 2em;
 }
-.card-faq-white{
-    background-color: #fff;
-    color: #0E164B;
-    border-radius: 15px;
-    border: none;
-    padding: 0.5em 2em;
+.card-faq-white {
+  background-color: #fff;
+  color: #0e164b;
+  border-radius: 15px;
+  border: none;
+  padding: 0.5em 2em;
 }
-.icon-plus{
-    color: #0E164B;
-    border: 2px solid #0E164B;
-    background-color: transparent;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    height: 6vmin;
-    padding: 0.2em 0.4em;
+.icon-plus {
+  color: #0e164b;
+  border: 2px solid #0e164b;
+  background-color: transparent;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  height: 6vmin;
+  padding: 0.2em 0.4em;
 }
-.icon-plus:hover{
-    color: #57B1EF;
-    background-color: transparent;
-    border: 2px solid #57B1EF;
+.icon-plus:hover {
+  color: #57b1ef;
+  background-color: transparent;
+  border: 2px solid #57b1ef;
 }
-.icon-plus .active{
-    color: #57B1EF; 
-    background-color: transparent;
-    border: 2px solid #57B1EF;
+.icon-plus .active {
+  color: #57b1ef;
+  background-color: transparent;
+  border: 2px solid #57b1ef;
 }
-.margin{
-    margin-top: 2vmin;
+.margin {
+  margin-top: 2vmin;
 }
-.circle{
-    color: #0E164B;
-    font-size: 8px;
+.circle {
+  color: #0e164b;
+  font-size: 8px;
 }
-.pass-tag-faq{
-    background-color: #0E164B;
-    color: #fff;
-    border-radius: 20px;
-    font-size: 16px;
-    padding: 0.5em 1em;
-    font-weight: 600;
-    border: none;
+.pass-tag-faq {
+  background-color: #0e164b;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 0.5em 1em;
+  font-weight: 600;
+  border: none;
 }
-.img-desginer{
-    width: 250px;
-    height: 180px;
+.img-desginer {
+  width: 250px;
+  height: 180px;
 }
-.link-text{
-    color: #0E164B;
-    font-size: 16px;
-    font-weight: 550;
+.link-text {
+  color: #0e164b;
+  font-size: 16px;
+  font-weight: 550;
 }
-.select-text{
-    background-color: #57B1EF;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 0.2em 1em;
+.select-text {
+  background-color: #57b1ef;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0.2em 1em;
 }
-.explict-code{
-    color: #0E164B;
+.explict-code {
+  color: #0e164b;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 500px) {
+  .card-documentation-sider {
+    display: none;
+  }
+  .card-documentation {
+    height: 200vmax;
+  }
+  .question{
     font-size: 14px;
+  }
+  .icon-plus {
+    font-size: 15px;
+    cursor: pointer;
+    height: 7vmin;
+    padding: 0.2em 0.4em;
+  }
 }

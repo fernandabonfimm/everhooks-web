@@ -65,7 +65,7 @@ const HeaderDocumentation = () => {
         </Row>
       </Header>
 
-      <Header className="header-documentation">
+      <Header className="content-announcement">
         <Row gutter={[32, 22]}>
           <Col xs={24} xl={16}>
             <Row>
@@ -89,7 +89,7 @@ const HeaderDocumentation = () => {
             </Row>
           </Col>
           <Col xs={24} xl={8}>
-            <img src={supportWoman} width={380} height={340} alt="support-woman" className="support-woman" />
+            <img src={supportWoman}  alt="support-woman" className="support-woman" />
           </Col>
         </Row>
       </Header>

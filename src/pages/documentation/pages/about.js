@@ -9,6 +9,7 @@ import { IoLogoNodejs, IoMdBook } from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
 import designer from '../../../designer.png'
 import cameraman from '../../../cameraman.png'
+import SiderResponsive from "../../../components/SiderResponsive";
 const { Content } = Layout;
 
 const About = () => {
@@ -25,6 +26,7 @@ const About = () => {
             <Col xs={24} xl={19}>
               <Row gutter={[32, 22]}>
                 <Col xs={24} xl={24}>
+                  <SiderResponsive/>
                   <Breadcrumb>
                     <Breadcrumb.Item onClick={() => navigate("/")}>
                       <IoHomeOutline />
@@ -40,7 +42,7 @@ const About = () => {
                   </Breadcrumb>
                 </Col>
                 <Col xs={24} xl={24}>
-                  <Card className="card-documentation">
+                  <div className="padding">
                     <Row gutter={[32, 22]}>
                       <Col xs={24} xl={24}>
                         <h2 className="title-purple-documentation">
@@ -89,7 +91,7 @@ const About = () => {
                         <img src={cameraman} className="img-desginer"/>
                       </Col>
                     </Row>
-                  </Card>
+                  </div>
                 </Col>
               </Row>
             </Col>

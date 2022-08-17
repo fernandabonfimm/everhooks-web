@@ -12,6 +12,7 @@ import { CardFaq1False } from "./components/CardFaq1False";
 import { CardFaq2False } from "./components/CardFaq2False";
 import { CardFaq3False } from "./components/CardFaq3False";
 import { GrSubtract } from "react-icons/gr";
+import SiderResponsive from "../../../components/SiderResponsive";
 
 const { Content } = Layout;
 
@@ -33,6 +34,7 @@ const Faq = () => {
             <Col xs={24} xl={19}>
               <Row gutter={[32, 22]}>
                 <Col xs={24} xl={24}>
+                  <SiderResponsive/>
                   <Breadcrumb>
                     <Breadcrumb.Item onClick={() => navigate("/")}>
                       <IoHomeOutline />
@@ -59,12 +61,12 @@ const Faq = () => {
                         {!showQuestion1 && (
                           <Card className="card-faq">
                             <Row gutter={[32, 22]}>
-                              <Col xs={22} xl={22}>
+                              <Col xs={20} xl={22}>
                                 <Row gutter={[22, 22]} className="margin">
-                                  <Col xs={2} xl={2}>
+                                  <Col xs={1} xl={2}>
                                     <BsFillCircleFill className="circle" />
                                   </Col>
-                                  <Col xs={22} xl={22}>
+                                  <Col xs={18} xl={22}>
                                     <h3 className="question">
                                       Como faço para utilizar o Everhooks?
                                     </h3>
@@ -85,12 +87,12 @@ const Faq = () => {
                         {showQuestion1 && (
                           <Card className="card-faq">
                             <Row gutter={[32, 22]}>
-                              <Col xs={22} xl={22}>
+                              <Col xs={20} xl={22}>
                                 <Row gutter={[22, 22]} className="margin">
-                                  <Col xs={2} xl={2}>
+                                  <Col xs={1} xl={2}>
                                     <BsFillCircleFill className="circle" />
                                   </Col>
-                                  <Col xs={22} xl={22}>
+                                  <Col xs={20} xl={22}>
                                     <h3 className="question">
                                       Como faço para utilizar o Everhooks?
                                     </h3>
@@ -116,12 +118,12 @@ const Faq = () => {
                         {!showQuestion2 && (
                           <Card className="card-faq">
                             <Row gutter={[32, 22]}>
-                              <Col xs={22} xl={22}>
+                              <Col xs={20} xl={22}>
                                 <Row gutter={[22, 22]} className="margin">
-                                  <Col xs={2} xl={2}>
+                                  <Col xs={1} xl={2}>
                                     <BsFillCircleFill className="circle" />
                                   </Col>
-                                  <Col xs={22} xl={22}>
+                                  <Col xs={20} xl={22}>
                                     <h3 className="question">
                                       Como faço para implantar na minha
                                       aplicação web o Everhooks?
@@ -143,12 +145,12 @@ const Faq = () => {
                                  {showQuestion2 && (
                           <Card className="card-faq">
                             <Row gutter={[32, 22]}>
-                              <Col xs={22} xl={22}>
+                              <Col xs={20} xl={22}>
                                 <Row gutter={[22, 22]} className="margin">
-                                  <Col xs={2} xl={2}>
+                                  <Col xs={1} xl={2}>
                                     <BsFillCircleFill className="circle" />
                                   </Col>
-                                  <Col xs={22} xl={22}>
+                                  <Col xs={20} xl={22}>
                                     <h3 className="question">
                                       Meus dados são privados?
                                     </h3>
@@ -174,12 +176,12 @@ const Faq = () => {
                         {!showQuestion3 && (
                           <Card className="card-faq">
                             <Row gutter={[32, 22]}>
-                              <Col xs={22} xl={22}>
+                              <Col xs={20} xl={22}>
                                 <Row gutter={[22, 22]} className="margin">
-                                  <Col xs={2} xl={2}>
+                                  <Col xs={1} xl={2}>
                                     <BsFillCircleFill className="circle" />
                                   </Col>
-                                  <Col xs={22} xl={22}>
+                                  <Col xs={20} xl={22}>
                                     <h3 className="question">
                                       Meus dados são privados?
                                     </h3>
@@ -200,12 +202,12 @@ const Faq = () => {
                         {showQuestion3 && (
                           <Card className="card-faq">
                             <Row gutter={[32, 22]}>
-                              <Col xs={22} xl={22}>
+                              <Col xs={20} xl={22}>
                                 <Row gutter={[22, 22]} className="margin">
-                                  <Col xs={2} xl={2}>
+                                  <Col xs={1} xl={2}>
                                     <BsFillCircleFill className="circle" />
                                   </Col>
-                                  <Col xs={22} xl={22}>
+                                  <Col xs={20} xl={22}>
                                     <h3 className="question">
                                       Meus dados são privados?
                                     </h3>

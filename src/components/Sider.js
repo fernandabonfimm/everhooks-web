@@ -9,7 +9,7 @@ const SiderComponent = ({ children }) => {
   const navigate = useNavigate();
   return (
     <>
-      <Card className="card-documentation">
+      <Card className="card-documentation-sider">
         <Row justify="center">
           <Button
             className="btn-sider"

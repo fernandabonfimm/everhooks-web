@@ -1,0 +1,33 @@
+.card-sider-responsive{
+ visibility: collapse;
+}
+
+@media screen and (max-width: 500px) {
+  .card-sider-responsive {
+    visibility: visible !important;
+    padding: 0em !important;
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+  .card-hover-responsive{
+    border: none;
+    background-color: transparent;
+    color: #0e164b;
+    padding: 0.5em 2em;
+  }
+  .card-hover-responsive:hover{
+    background-color: #e7f5ff;
+    color: #0e164b;
+    padding: 0.5em 2em;
+    border-radius: 10px;
+    border: none;
+  }
+  .description-responsive{
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 550;
+  }
+  .icon-responsive{
+    font-size: 20px;
+  }
+}

@@ -1,17 +1,7 @@
 import React, { useState } from "react";
 import HeaderDocumentation from "../../components/HeaderDocumentation";
 import FooterComponent from "../../components/Footer";
-import {
-  Layout,
-  Row,
-  Col,
-  Card,
-  Breadcrumb,
-  Modal,
-  Button,
-  Tag,
-  Input,
-} from "antd";
+import { Layout, Row, Col, Card, Breadcrumb, Modal, Tag, Input } from "antd";
 import "../../styles/pages/documentation.css";
 import SiderComponent from "../../components/Sider";
 import { useNavigate } from "react-router-dom";
@@ -20,6 +10,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { BsFillCircleFill } from "react-icons/bs";
 import { MdFileCopy } from "react-icons/md";
 import Alert from "sweetalert2";
+import SiderResponsive from "../../components/SiderResponsive";
 
 const { Content } = Layout;
 
@@ -76,6 +67,7 @@ const Documentation = () => {
             <Col xs={24} xl={19}>
               <Row gutter={[32, 22]}>
                 <Col xs={24} xl={24}>
+                  <SiderResponsive />
                   <Breadcrumb>
                     <Breadcrumb.Item onClick={() => navigate("/")}>
                       <IoHomeOutline />
@@ -87,7 +79,7 @@ const Documentation = () => {
                   </Breadcrumb>
                 </Col>
                 <Col xs={24} xl={24}>
-                  <Card className="card-documentation">
+                  <div className="padding">
                     <Row gutter={[32, 22]}>
                       <Col xs={24} xl={24}>
                         <h2 className="title-purple-documentation">
@@ -103,10 +95,10 @@ const Documentation = () => {
                       <Col xs={24} xl={24}>
                         <Card title="Nota importante" className="terms of use">
                           <Row gutter={[32, 22]}>
-                            <Col xs={2} xl={2}>
+                            <Col xs={1} xl={2}>
                               <BsFillCircleFill className="circle" />
                             </Col>
-                            <Col xs={22} xl={22}>
+                            <Col xs={20} xl={22}>
                               <span className="description-card">
                                 Observe que as diretrizes de uso justo e outras
                                 limitações se aplicam conforme descrito pelo{" "}
@@ -204,14 +196,14 @@ const Documentation = () => {
                         <span className="explict-code">
                           Isso retornará informações sobre o token no formato
                           JSON, incluindo seu UUID. Sua URL estará disponível no
-                          endpoint 
+                          endpoint
                           <a className="baseurl">
                             https://everhooks.com/[token uuid]
                           </a>
                         </span>
                       </Col>
                     </Row>
-                  </Card>
+                  </div>
                 </Col>
               </Row>
             </Col>

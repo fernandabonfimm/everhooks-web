@@ -69,7 +69,7 @@
 .whiteicon-btn{
   margin-right: 15px;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
   .logo-everhooks {
     width: 80px !important;
     height: 50px !important;
@@ -112,11 +112,11 @@
   .btnfaq {
     padding: 0em 1em !important;
     font-size: 17px !important;
-    height: 5vmax !important;
+    height: 8vmax !important;
   }
   .support-woman {
-    width: 220px;
-    height: 170px;
-    margin-left: 45px;
+    width: 300px;
+    height: 250px;
+    margin-left: 20px;
   }
 }
