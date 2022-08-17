@@ -1,6 +1,8 @@
-import react from 'react';
-import axios from 'axios';
+import react from "react";
+import axios from "axios";
 
-export default axios.create({
-    baseURL: 'http://localhost:9200/'
+export const api = axios.create({
+  baseURL: "http://localhost:9200/",
 });
+
+export default api;
