@@ -101,44 +101,28 @@
   font-weight: 600;
   border: none;
 }
-.img-desginer {
-  width: 250px;
-  height: 180px;
-}
-.link-text {
-  color: #0e164b;
-  font-size: 16px;
-  font-weight: 550;
-}
-.select-text {
-  background-color: #57b1ef;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 0.2em 1em;
-}
-.explict-code {
-  color: #0e164b;
-  font-size: 14px;
+.img-desginer{
+    width: 250px;
+    height: 180px;
 }
 
-@media screen and (max-width: 500px) {
-  .card-documentation-sider {
-    display: none;
-  }
-  .card-documentation {
-    height: 200vmax;
-  }
-  .question{
+.link-text{
+    color: #0E164B;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.select-text{
+    background-color: #57B1EF;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0.2em 1em;
+}
+.explict-code{
+    color: #0E164B;
     font-size: 14px;
-  }
-  .icon-plus {
-    font-size: 15px;
-    cursor: pointer;
-    height: 7vmin;
-    padding: 0.2em 0.4em;
-  }
 }
