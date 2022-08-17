@@ -89,7 +89,7 @@ const HeaderDocumentation = () => {
             </Row>
           </Col>
           <Col xs={24} xl={8}>
-            <img src={supportWoman}  alt="support-woman" className="support-woman" />
+            <img src={supportWoman}  alt="support-woman" className="person-woman" />
           </Col>
         </Row>
       </Header>

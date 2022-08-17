@@ -87,7 +87,7 @@ const CodeDocumentation = () => {
           </span>
         </Col>
         <Col xs={24} xl={24}>
-        <pre className="code-node">
+          <pre className="code-node">
             <code>
               <span style={{ color: "#0000CD" }}>
                 router.<a style={{ color: "#FFD700" }}>post</a>(

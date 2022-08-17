@@ -3,10 +3,7 @@
   background-color: #0e164b;
 }
 .white-titlenavbar {
-  color: #fff;
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 2mm;
+  font-size: 20px;
 }
 .white-subtitlenavbar {
   color: #fff;
@@ -95,7 +92,7 @@
     height: 50px !important;
   }
   .navbarlayout {
-    height: 10vmax !important;
+    height: 15vmax !important;
     padding: 0em 1em;
   }
   .hyperlink {
@@ -153,32 +150,46 @@
   /* css da segunda parte da navbar */
   .content-announcement {
     padding: 3em 4em;
-    height: 80vmax !important;
+    height: 90vmax !important;
+  }
+  .btnfaq {
+    padding: 0em 2em !important;
+    font-size: 17px !important;
+    height: 8vmax !important;
   }
 }
 
-@media screen and (max-width: 800px) {
-  .btnaccess {
-  display: none;
-  }
-  .btnaccess-responsive {
-    visibility: visible;
-    color: #fff;
-    background-color: #57b1ef;
-    border: none;
-    border-radius: 10px;
-    font-size: 30px;
-    padding: 1em 0.3em;
-    margin-top: 15px;
-  }
-  /* css da segunda parte da navbar */
+@media screen and (max-width: 500px) {
   .content-announcement {
     padding: 3em 4em;
-    height: 80vmax !important;
+    height: 90vmax !important;
+  }
+  .white-titlenavbar {
+    font-size: 20px;
+  }
+  .logo-evermart {
+    width: 200px;
+  }
+  .white-subtitlenavbar {
+    font-size: 14px !important;
+    line-height: 5mm !important;
+  }
+  .btnfaq {
+    padding: 0em 2em !important;
+    font-size: 17px !important;
+    height: 8vmax !important;
+  }
+  .person-woman {
+    width: 320px;
+    height: 250px;
+    margin-left: 10px;
+  }
+  .btnfaq {
+    padding: 0em 2em !important;
+    font-size: 17px !important;
+    height: 8vmax !important;
   }
 }
-
-
 
 
 @media screen and (max-width: 400px) {
@@ -209,7 +220,7 @@
   /* css da segunda parte da navbar */
   .content-announcement {
     padding: 3em 2em;
-    height: 120vmax !important;
+    height: 90vmax !important;
   }
   .white-titlenavbar {
     font-size: 20px;
@@ -227,8 +238,8 @@
     height: 8vmax !important;
   }
   .person-woman {
-    width: 220px;
-    height: 170px;
-    margin-left: 45px;
+    width: 250px;
+    height: 190px;
+    margin-left: 25px;
   }
 }
