@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import HeaderDocumentation from "../../../components/HeaderDocumentation";
 import FooterComponent from "../../../components/Footer";
-import { Layout, Row, Col, Card, Button, Tag, Input, Breadcrumb } from "antd";
+import { Layout, Row, Col, Card, Button, Tag, BackTop, Breadcrumb } from "antd";
 import "../../../styles/pages/documentation.css";
 import SiderComponent from "../../../components/Sider";
 import { useNavigate } from "react-router-dom";
@@ -12,6 +12,7 @@ import { CardFaq1False } from "./components/CardFaq1False";
 import { CardFaq2False } from "./components/CardFaq2False";
 import { CardFaq3False } from "./components/CardFaq3False";
 import { GrSubtract } from "react-icons/gr";
+import { IoIosArrowUp } from "react-icons/io";
 import SiderResponsive from "../../../components/SiderResponsive";
 
 const { Content } = Layout;
@@ -29,12 +30,12 @@ const Faq = () => {
         <Content className="content-home">
           <Row gutter={[32, 22]}>
             <Col xs={24} xl={5}>
-                <SiderComponent />
+              <SiderComponent />
             </Col>
             <Col xs={24} xl={19}>
               <Row gutter={[32, 22]}>
                 <Col xs={24} xl={24}>
-                  <SiderResponsive/>
+                  <SiderResponsive />
                   <Breadcrumb>
                     <Breadcrumb.Item onClick={() => navigate("/")}>
                       <IoHomeOutline />
@@ -142,7 +143,7 @@ const Faq = () => {
                             </Row>
                           </Card>
                         )}
-                                 {showQuestion2 && (
+                        {showQuestion2 && (
                           <Card className="card-faq">
                             <Row gutter={[32, 22]}>
                               <Col xs={20} xl={22}>
@@ -234,6 +235,11 @@ const Faq = () => {
                 </Col>
               </Row>
             </Col>
+            <BackTop>
+              <div className="backtop">
+                <IoIosArrowUp />
+              </div>
+            </BackTop>
           </Row>
         </Content>
         <FooterComponent />

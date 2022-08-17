@@ -11,3 +11,66 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.backtop{
+  background-color: #0e164b;
+  color: #57b1ef;
+  border-radius: 50%;
+  height: 3vmax;
+  padding: 0.25em 0.4em;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 1200px) {
+  .backtop{
+    padding: 0.1em 0.4em;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 880px){
+  .backtop{
+    height: 4vmax;
+    padding: 0.1em 0.4em;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .backtop{
+    height: 5vmax;
+    padding: 0.2em 0.4em;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .backtop{
+    height: 6vmax;
+    padding: 0.1em 0.4em;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .backtop{
+    height: 8vmax;
+    padding: 0.1em 0.4em;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .backtop{
+    height: 10vmax;
+    padding: 0.1em 0.4em;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .backtop{
+    height: 12vmax;
+    padding: 0.4em 0.6em;
+    font-size: 18px;
+  }
+}

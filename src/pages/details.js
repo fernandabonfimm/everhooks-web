@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { Layout, Row, Col, Card, Button, Divider, Input } from "antd";
+import { Layout, Row, Col, Card, Button, Divider, Input, BackTop } from "antd";
 import NavbarComponent from "../components/Navbar";
 import FooterComponent from "../components/Footer";
 import CardRequests from "../components/cards/CardRequests";
 import { useNavigate } from "react-router-dom";
 import { MdOutlineContentCopy } from "react-icons/md";
-import TableRequest from "../components/tables/TableRequest";
+import { IoIosArrowUp } from "react-icons/io";
 import "../styles/pages/details.css";
 import TableHeaders from "../components/tables/TableHeaders";
 
@@ -113,6 +113,11 @@ const Details = () => {
                 </Row>
               </Card>
             </Col>
+            <BackTop>
+              <div className="backtop">
+                <IoIosArrowUp />
+              </div>
+            </BackTop>
           </Row>
         </Content>
         <FooterComponent />

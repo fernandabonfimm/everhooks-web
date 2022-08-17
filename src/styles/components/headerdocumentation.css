@@ -69,6 +69,10 @@
 .whiteicon-btn{
   margin-right: 15px;
 }
+.support-woman {
+  width: 370px;
+  height: 320px;
+}
 @media screen and (max-width: 400px) {
   .logo-everhooks {
     width: 80px !important;

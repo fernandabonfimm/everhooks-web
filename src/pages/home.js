@@ -2,12 +2,22 @@ import React, { useEffect, useState } from "react";
 import api from "../services/Api.js";
 import NavbarComponent from "../components/Navbar";
 import FooterComponent from "../components/Footer";
-import { Layout, Row, Col, Card, Input, Tag, Button, Divider } from "antd";
+import {
+  Layout,
+  Row,
+  Col,
+  Card,
+  Input,
+  Tag,
+  Button,
+  Divider,
+  BackTop,
+} from "antd";
 import "../styles/pages/home.css";
 import { MdFileCopy, MdHelpOutline } from "react-icons/md";
 import platformeverhooks from "../platform-everhooks.png";
 import platformevermart from "../platform-evermart.png";
-import platformapi from "../platform-api.png";
+import { IoIosArrowUp } from "react-icons/io";
 import faq from "../faq.png";
 import { useNavigate } from "react-router-dom";
 import CardRequests from "../components/cards/CardRequests";
@@ -153,7 +163,7 @@ const Home = () => {
                       <Col xs={24} xl={24}>
                         <Button
                           className="btn-help"
-                          onClick={() => navigate("/documentation")}
+                          onClick={() => navigate("/faq")}
                         >
                           <MdHelpOutline style={{ marginRight: 10 }} />
                           Preciso de ajuda!
@@ -167,6 +177,11 @@ const Home = () => {
                 </Row>
               </Card>
             </Col>
+            <BackTop>
+              <div className="backtop">
+                <IoIosArrowUp />
+              </div>
+            </BackTop>
           </Row>
         </Content>
         <FooterComponent />

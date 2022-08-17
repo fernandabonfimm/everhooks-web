@@ -8,15 +8,14 @@ import {
   Card,
   Breadcrumb,
   Modal,
-  Button,
+  BackTop,
   Tag,
   Input,
 } from "antd";
 import "../../styles/pages/documentation.css";
 import SiderComponent from "../../components/Sider";
 import { useNavigate } from "react-router-dom";
-import { FaNodeJs } from "react-icons/fa";
-import { IoLogoNodejs } from "react-icons/io";
+import { IoLogoNodejs, IoIosArrowUp } from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
 import { BsFillCircleFill } from "react-icons/bs";
 import { MdFileCopy } from "react-icons/md";
@@ -24,7 +23,6 @@ import Alert from "sweetalert2";
 import SiderResponsive from "../../components/SiderResponsive";
 
 const { Content } = Layout;
-const { TextArea } = Input;
 
 const Documentation = () => {
   const navigate = useNavigate();
@@ -209,7 +207,7 @@ const Documentation = () => {
                         <span className="explict-code">
                           Isso retornará informações sobre o token no formato
                           JSON, incluindo seu UUID. Sua URL estará disponível no
-                          endpoint 
+                          endpoint
                           <a className="baseurl">
                             https://everhooks.com/[token uuid]
                           </a>
@@ -220,6 +218,11 @@ const Documentation = () => {
                 </Col>
               </Row>
             </Col>
+            <BackTop>
+              <div className="backtop">
+                <IoIosArrowUp />
+              </div>
+            </BackTop>
           </Row>
         </Content>
         <FooterComponent />
