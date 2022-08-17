@@ -21,6 +21,7 @@ import { BsFillCircleFill } from "react-icons/bs";
 import { MdFileCopy } from "react-icons/md";
 import Alert from "sweetalert2";
 import SiderResponsive from "../../components/SiderResponsive";
+import CodeDocumentation from "./pages/components/CodeDocumentation";
 
 const { Content } = Layout;
 
@@ -214,6 +215,7 @@ const Documentation = () => {
                         </span>
                       </Col>
                     </Row>
+                    <CodeDocumentation />
                   </div>
                 </Col>
               </Row>
