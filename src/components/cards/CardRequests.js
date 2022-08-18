@@ -5,11 +5,10 @@ import moment from "moment";
 import { MdOutlineSearch } from "react-icons/md";
 import { Row, Col, Card, Input, Tag, Button } from "antd";
 import "react-perfect-scrollbar/dist/css/styles.css";
-import PerfectScrollbar from "react-perfect-scrollbar";
 
 const CardRequests = () => {
   const [search, setSearch] = useState("");
-  const [post, setPost] = useState({});
+  const [post] = useState({});
   const navigate = useNavigate();
   const goToDetails = (e) => {
     navigate("/details");

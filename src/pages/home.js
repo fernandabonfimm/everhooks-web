@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import api from "../services/Api.js";
 import NavbarComponent from "../components/Navbar";
 import FooterComponent from "../components/Footer";
 import {
@@ -25,18 +24,9 @@ import CardRequests from "../components/cards/CardRequests";
 const { Content } = Layout;
 
 const Home = () => {
-  const [data, setData] = useState(null);
-  const [https, setHttps] = useState("https://everhooks.site/uuidgenerate");
+  const [https] = useState("https://everhooks.site/uuidgenerate");
 
   const navigate = useNavigate();
-
-  useEffect(() => {
-    api.get("api").then((res) => {
-      console.log(res.data);
-      const dado = res.data.message;
-      setData(String(dado));
-    });
-  }, []);
 
   function copiarHttps() {
     let httpsCopiada = document.getElementById("https");

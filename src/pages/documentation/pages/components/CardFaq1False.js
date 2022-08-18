@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import {  Row, Col, Card, Button, Tag, Input } from "antd";
+import {  Row, Col, Card, Tag, Input } from "antd";
 import { MdFileCopy } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 const CardFaq1False = () => {
     const navigate = useNavigate();
-    const [https, setHttps] = useState("https://everhooks.site/uuidgenerate");
+    const [https] = useState("https://everhooks.site/uuidgenerate");
     function copiarHttps() {
       let httpsCopiada = document.getElementById("https");
       httpsCopiada.select();

@@ -1,4 +1,5 @@
 import {api} from '../Api';
+import { message } from 'antd';
 
 export async function getUuid(id) {
     try {

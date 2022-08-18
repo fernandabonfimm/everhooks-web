@@ -28,10 +28,9 @@ const { Content } = Layout;
 const Documentation = () => {
   const navigate = useNavigate();
   const [visible, setVisible] = useState(false);
-  const [https, setHttps] = useState(
+  const [https] = useState(
     "curl https://everhooks.com/token/a2a6a4ae-4130-4063-953a-84fa29d81d43/requests"
   );
-  const [code, setCode] = useState();
 
   function copiarHttps() {
     let httpsCopiada = document.getElementById("https");

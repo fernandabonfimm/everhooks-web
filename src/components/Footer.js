@@ -7,18 +7,16 @@ import {
   RiWhatsappFill,
 } from "react-icons/ri";
 import logo from "../logofooter.png";
-import { useNavigate } from "react-router-dom";
 
 const { Footer } = Layout;
 
 const FooterComponent = () => {
-  const navigate = useNavigate();
   return (
     <>
       <Footer className="footer-layout">
         <Row gutter={[32, 22]} className="padding-row">
           <Col xs={24} xl={8}>
-            <img src={logo} alt="logo-footer" className="logo-footer" />
+            <img src={logo} alt="logo footer" className="logo footer" />
           </Col>
           <Col xs={24} xl={9}>
             <Row gutter={[32, 22]} justify="center">
@@ -64,6 +62,7 @@ const FooterComponent = () => {
                 className="hyperlink-footer-evermart"
                 href="https://www.evermart.com.br/"
                 target="_blank"
+                rel="noreferrer"
               >
                 Evermart
               </a>

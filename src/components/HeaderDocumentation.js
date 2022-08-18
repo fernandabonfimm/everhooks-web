@@ -18,7 +18,7 @@ const HeaderDocumentation = () => {
           <Col xs={8} xl={7}>
             <img
               src={logo}
-              className="logo-everhooks"
+              className="logo everhooks"
               onClick={() => navigate("/")}
             />
           </Col>
