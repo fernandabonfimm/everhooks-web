@@ -64,7 +64,7 @@ const Details = () => {
                           maxLength={2000}
                           className="raw-content"
                           value={rawContent}
-                          readonly
+                          readOnly
                         />
                       </Col>
                     </Row>
@@ -93,7 +93,7 @@ const Details = () => {
                           maxLength={2000}
                           className="raw-content"
                           value={rawContent}
-                          readonly
+                          readOnly
                         />
                       </Col>
                     </Row>

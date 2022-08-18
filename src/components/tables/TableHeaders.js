@@ -1,19 +1,30 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/components/tables.css";
-import {
-  launchErrorMessage,
-} from "../../services/message/launchMessages";
+import { launchErrorMessage } from "../../services/message/launchMessages";
 import moment from "moment";
-import {getUuid} from '../../services/routes/apiUuid'
+import { getFirstId, getUuid } from "../../services/routes/apiUuid";
+import Alert from 'sweetalert2';
 
 const TableHeaders = () => {
   const [uuidList, setUuidList] = useState([]);
-  const loadData = async () => {
+  const [uuidGet, setUuidGet] = useState({});
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      loadData();
+    }, 3000); // 300000
+    return () => clearInterval(interval);
+  }, []);
+
+  const _json = {
+    id: uuidGet.uurluuid,
+  };
+
+  const loadData = async (data) => {
     try {
-      const _result = await getUuid();
+      const _result = await getFirstId(_json.id);
+      console.log(_result)
       if (_result?.response) {
-        await launchErrorMessage(_result?.response?.data);
-      } else {
         setUuidList(
           _result?.data?.sort((a, b) => {
             if (a && b) {
@@ -29,13 +40,9 @@ const TableHeaders = () => {
         );
       }
     } catch (error) {
-      await launchErrorMessage(JSON.stringify(error));
+      console.log(error)
     }
   };
-
-  useEffect(() => {
-    loadData();
-  }, []);
 
   return (
     <>
@@ -67,27 +74,20 @@ const TableHeaders = () => {
               return (
                 <tr key={index} role="row" className="odd">
                   <td className="td">
-                    <span className="description-table">{_index}</span>
+                    {" "}
+                    <span className="description-table"></span>
                   </td>
                   <td className="td">
                     {" "}
-                    <span className="description-table">
-                      92a8b6ad-2f91-4c7c-84f6-8f05d0d1cec1
-                    </span>
-                  </td>
-                  <td className="td">
-                    {" "}
-                    <span className="description-table">
-                      PostmanRuntime/7.29.2
-                    </span>
+                    <span className="description-table">{dados?.token}</span>
                   </td>
                   <td>
                     {" "}
-                    <span className="description-table">application/json</span>
+                    <span className="description-table">{dados?._id} </span>
                   </td>
                   <td className="td">
                     {" "}
-                    <span className="description-table">close</span>
+                    <span className="description-table"></span>
                   </td>
                 </tr>
               );
