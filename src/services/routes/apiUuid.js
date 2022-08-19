@@ -10,9 +10,9 @@ export async function getUuid() {
     }
 }
 
-export async function getFirstId(id) {
+export async function getFirstId(uuid) {
     try {
-      const { data } = await api.get(`/ever/${id}`);
+      const { data } = await api.get(`/ever/${uuid}`);
       return data;
     } catch (error) {
       return message.error('Erro ao solicitar id');

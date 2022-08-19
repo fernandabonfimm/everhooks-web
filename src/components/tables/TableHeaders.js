@@ -1,29 +1,33 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/components/tables.css";
-import { launchErrorMessage } from "../../services/message/launchMessages";
 import moment from "moment";
-import { getFirstId, getUuid } from "../../services/routes/apiUuid";
-import Alert from 'sweetalert2';
+import { getUuid, getFirstId } from "../../services/routes/apiUuid";
+import { useParams } from 'react-router';
 
 const TableHeaders = () => {
+  const [uuidGet, setUuidGet] = useState([]);
   const [uuidList, setUuidList] = useState([]);
-  const [uuidGet, setUuidGet] = useState({});
+  const { id } = useParams()
+  // useEffect(() => {
+  // const interval = setInterval(() => {
+  // loadData();
+  // }, 3000); // 300000
+  //  return () => clearInterval(interval);
+  // }, []); //
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      loadData();
-    }, 3000); // 300000
-    return () => clearInterval(interval);
+    loadData();
   }, []);
 
-  const _json = {
-    id: uuidGet.uurluuid,
-  };
-
-  const loadData = async (data) => {
+ const loadData = async () => {
     try {
-      const _result = await getFirstId(_json.id);
-      console.log(_result)
+      const _data = await getUuid();
+      var _json = {
+        uuid: _data.uuidGet.urluuid
+      }
+      console.log(_json.uuid);
+      const _result = await getFirstId();
+      console.log(_result);
       if (_result?.response) {
         setUuidList(
           _result?.data?.sort((a, b) => {
@@ -40,7 +44,7 @@ const TableHeaders = () => {
         );
       }
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   };
 
