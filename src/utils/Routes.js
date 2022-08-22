@@ -5,8 +5,6 @@ import Details from "../pages/details";
 import Documentation from "../pages/documentation/index";
 import About from "../pages/documentation/pages/about";
 import Faq from "../pages/documentation/pages/faq";
-import { getUuid } from "../services/routes/apiUuid";
-import moment from "moment";
 
 const RoutesComponent = () => {
   return (

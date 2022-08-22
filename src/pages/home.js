@@ -21,51 +21,22 @@ import faq from "../faq.png";
 import { useNavigate } from "react-router-dom";
 import CardRequests from "../components/cards/CardRequests";
 import moment from "moment";
-import { getUuid } from "../services/routes/apiUuid";
+import { getFirstId, getUuid } from "../services/routes/apiUuid";
 
 const { Content } = Layout;
 
 const Home = () => {
   const [https] = useState("https://everhooks.site/uuidgenerate");
-  const [uuidGet, setUuidGet] = useState([]);
   const navigate = useNavigate();
 
-  {
-    /*  function copiarHttps() {
-    let httpsCopiada = document.getElementById("https");
-    httpsCopiada.select();
-    httpsCopiada.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-  }*/
-  }
-
-  const loadData = async () => {
-    try {
-      const _result = await getUuid();
-      if (_result?.response) {
-        setUuidGet(
-          _result?.data?.sort((a, b) => {
-            if (a && b) {
-              if (moment(a.created_at).unix() < moment(b.created_at).unix()) {
-                return 1;
-              }
-              if (moment(a.created_at).unix() > moment(b.created_at).unix()) {
-                return -1;
-              }
-            }
-            return 0;
-          })
-        );
-            }else{
-        setUuidGet([]);
-      }
-    } catch (error) {
-      console.log("erro na requisação");
-    }
-  };
+  const [sendUUID, setSendUUID] = useState([]);
 
   useEffect(() => {
-    loadData();
+    (async () => {
+      const _data = await getUuid();
+      setSendUUID(_data);
+      console.log("", _data);
+    })();
   }, []);
 
   return (
@@ -105,11 +76,9 @@ const Home = () => {
                             </span>
                           </Col>
                           <Col xs={20} xl={20}>
-                            {uuidGet.map((dados) => {
-                                <div className="input-https">
-                                  {dados}
-                                </div>;
-                              })}
+                            {sendUUID.map((dados) => {
+                              return <Tag className="input-https">{dados}</Tag>;
+                            })}
                           </Col>
                           ;
                           <Col xs={4} xl={4}>

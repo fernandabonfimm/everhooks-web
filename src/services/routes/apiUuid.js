@@ -12,8 +12,8 @@ export async function getUuid() {
 
 export async function getFirstId(uuid) {
     try {
-      const { data } = await api.get(`/ever/${uuid}`);
-      return data;
+      const response  = await api.get(`/ever/${uuid}`);
+      return response;
     } catch (error) {
       return message.error('Erro ao dados id');
     }

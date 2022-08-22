@@ -1,45 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/components/tables.css";
-import moment from "moment";
 import { getUuid, getFirstId } from "../../services/routes/apiUuid";
-import { useParams } from "react-router";
 
 const TableHeaders = () => {
   const [uuidList, setUuidList] = useState([]);
-  // useEffect(() => {
-  // const interval = setInterval(() => {
-  // loadData();
-  // }, 3000); // 300000
-  //  return () => clearInterval(interval);
-  // }, []); //
-
-  const loadUuidData = async () => {
-    try {
-      const _result = await getFirstId("360b3eb7-4ab6-4aae-a72c-ebfefbf1bcef");
-      if (_result?.response) {
-        setUuidList(
-          _result?.data?.sort((a, b) => {
-            if (a && b) {
-              if (moment(a.created_at).unix() < moment(b.created_at).unix()) {
-                return 1;
-              }
-              if (moment(a.created_at).unix() > moment(b.created_at).unix()) {
-                return -1;
-              }
-            }
-            return 0;
-          })
-        );
-      } else {
-        setUuidList([]);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
 
   useEffect(() => {
-    loadUuidData();
+    (async () => {
+      const _data = await getUuid();
+      const { data } = await getFirstId(_data);
+      setUuidList(data);
+      console.log("", data);
+    })();
   }, []);
 
   return (
@@ -71,22 +43,13 @@ const TableHeaders = () => {
               var _index = index + 1;
               return (
                 <tr key={index} role="row" className="odd">
-                  <td className="td">
-                    {" "}
-                    <span className="description-table"></span>
-                  </td>
-                  <td className="td">
-                    {" "}
-                    <span className="description-table">{dados._id}</span>
-                  </td>
-                  <td>
-                    {" "}
-                    <span className="description-table">{dados?._id} </span>
-                  </td>
-                  <td className="td">
-                    {" "}
-                    <span className="description-table"></span>
-                  </td>
+                  <td className="td description-table">{dados._id}</td>
+                  <td className="td description-table">{dados.token}</td>
+                  {uuidList?.header?.map((dados) => {
+                    return (
+                      <td className="td description-table">{dados.Host}</td>
+                    );
+                  })}
                 </tr>
               );
             })}
