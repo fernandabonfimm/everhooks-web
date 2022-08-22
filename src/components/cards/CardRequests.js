@@ -9,10 +9,12 @@ import "react-perfect-scrollbar/dist/css/styles.css";
 const CardRequests = () => {
   const [search, setSearch] = useState("");
   const [post] = useState({});
+  const [cards, setCards] = useState([]);
   const navigate = useNavigate();
   const goToDetails = (e) => {
     navigate("/details");
   };
+
   return (
     <>
       <Card className="card-home">

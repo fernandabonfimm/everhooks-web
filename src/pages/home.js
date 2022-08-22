@@ -20,20 +20,51 @@ import { IoIosArrowUp } from "react-icons/io";
 import faq from "../faq.png";
 import { useNavigate } from "react-router-dom";
 import CardRequests from "../components/cards/CardRequests";
+import moment from "moment";
+import { getUuid } from "../services/routes/apiUuid";
 
 const { Content } = Layout;
 
 const Home = () => {
   const [https] = useState("https://everhooks.site/uuidgenerate");
-
+  const [uuidGet, setUuidGet] = useState([]);
   const navigate = useNavigate();
 
-  function copiarHttps() {
+  {
+    /*  function copiarHttps() {
     let httpsCopiada = document.getElementById("https");
     httpsCopiada.select();
     httpsCopiada.setSelectionRange(0, 99999);
     document.execCommand("copy");
+  }*/
   }
+  useEffect(() => {
+    loadData();
+  }, []);
+
+  const loadData = async () => {
+    try {
+      const _result = await getUuid();
+      console.log(_result);
+      if (_result?.response) {
+        setUuidGet(
+          _result?.data?.sort((a, b) => {
+            if (a && b) {
+              if (moment(a.createdAt).unix() < moment(b.createdAt).unix()) {
+                return 1;
+              }
+              if (moment(a.createdAt).unix() > moment(b.createdAt).unix()) {
+                return -1;
+              }
+            }
+            return 0;
+          })
+        );
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <>
       <Layout style={{ minHeight: "100vh" }}>
@@ -71,15 +102,18 @@ const Home = () => {
                             </span>
                           </Col>
                           <Col xs={20} xl={20}>
-                            <Input
-                              name="https"
-                              id="https"
-                              value={https}
-                              className="input-https"
-                            />
+                            {uuidGet.map((dados) => {
+                              {
+                                dados?.urluuid?.map((_dados, index) => {
+                                  <Tag key={index} className="input-https">
+                                    {_dados.urluuid}
+                                  </Tag>;
+                                });
+                              }
+                            })}
                           </Col>
                           <Col xs={4} xl={4}>
-                            <Tag className="tag-copy" onClick={copiarHttps}>
+                            <Tag className="tag-copy">
                               <MdFileCopy />
                             </Tag>
                           </Col>

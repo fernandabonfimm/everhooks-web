@@ -7,7 +7,6 @@ import { useParams } from 'react-router';
 const TableHeaders = () => {
   const [uuidGet, setUuidGet] = useState([]);
   const [uuidList, setUuidList] = useState([]);
-  const { id } = useParams()
   // useEffect(() => {
   // const interval = setInterval(() => {
   // loadData();
@@ -16,17 +15,36 @@ const TableHeaders = () => {
   // }, []); //
 
   useEffect(() => {
-    loadData();
-  }, []);
+    loadUuidData(uuidGet);
+  }, [uuidGet]);
 
  const loadData = async () => {
     try {
-      const _data = await getUuid();
-      var _json = {
-        uuid: _data.uuidGet.urluuid
+      const _result = await getUuid();
+      console.log(_result);
+      if (_result?.response) {
+        setUuidGet(
+          _result?.data?.sort((a, b) => {
+            if (a && b) {
+              if (moment(a.createdAt).unix() < moment(b.createdAt).unix()) {
+                return 1;
+              }
+              if (moment(a.createdAt).unix() > moment(b.createdAt).unix()) {
+                return -1;
+              }
+            }
+            return 0;
+          })
+        );
       }
-      console.log(_json.uuid);
-      const _result = await getFirstId();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const loadUuidData = async (id) => {
+    try {
+      const _result = await getFirstId(id);
       console.log(_result);
       if (_result?.response) {
         setUuidList(
@@ -42,6 +60,8 @@ const TableHeaders = () => {
             return 0;
           })
         );
+      }else {
+        setUuidList([]);
       }
     } catch (error) {
       console.log(error);
