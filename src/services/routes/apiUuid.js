@@ -15,7 +15,7 @@ export async function getFirstId(uuid) {
       const { data } = await api.get(`/ever/${uuid}`);
       return data;
     } catch (error) {
-      return message.error('Erro ao solicitar id');
+      return message.error('Erro ao dados id');
     }
 }
 

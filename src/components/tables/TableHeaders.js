@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import "../../styles/components/tables.css";
 import moment from "moment";
 import { getUuid, getFirstId } from "../../services/routes/apiUuid";
-import { useParams } from 'react-router';
+import { useParams } from "react-router";
 
 const TableHeaders = () => {
-  const [uuidGet, setUuidGet] = useState([]);
   const [uuidList, setUuidList] = useState([]);
   // useEffect(() => {
   // const interval = setInterval(() => {
@@ -14,59 +13,34 @@ const TableHeaders = () => {
   //  return () => clearInterval(interval);
   // }, []); //
 
-  useEffect(() => {
-    loadUuidData(uuidGet);
-  }, [uuidGet]);
-
- const loadData = async () => {
+  const loadUuidData = async () => {
     try {
-      const _result = await getUuid();
-      console.log(_result);
-      if (_result?.response) {
-        setUuidGet(
-          _result?.data?.sort((a, b) => {
-            if (a && b) {
-              if (moment(a.createdAt).unix() < moment(b.createdAt).unix()) {
-                return 1;
-              }
-              if (moment(a.createdAt).unix() > moment(b.createdAt).unix()) {
-                return -1;
-              }
-            }
-            return 0;
-          })
-        );
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  const loadUuidData = async (id) => {
-    try {
-      const _result = await getFirstId(id);
-      console.log(_result);
+      const _result = await getFirstId("360b3eb7-4ab6-4aae-a72c-ebfefbf1bcef");
       if (_result?.response) {
         setUuidList(
           _result?.data?.sort((a, b) => {
             if (a && b) {
-              if (moment(a.createdAt).unix() < moment(b.createdAt).unix()) {
+              if (moment(a.created_at).unix() < moment(b.created_at).unix()) {
                 return 1;
               }
-              if (moment(a.createdAt).unix() > moment(b.createdAt).unix()) {
+              if (moment(a.created_at).unix() > moment(b.created_at).unix()) {
                 return -1;
               }
             }
             return 0;
           })
         );
-      }else {
+      } else {
         setUuidList([]);
       }
     } catch (error) {
       console.log(error);
     }
   };
+
+  useEffect(() => {
+    loadUuidData();
+  }, []);
 
   return (
     <>
@@ -103,7 +77,7 @@ const TableHeaders = () => {
                   </td>
                   <td className="td">
                     {" "}
-                    <span className="description-table">{dados?.token}</span>
+                    <span className="description-table">{dados._id}</span>
                   </td>
                   <td>
                     {" "}

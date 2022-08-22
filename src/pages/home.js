@@ -38,33 +38,36 @@ const Home = () => {
     document.execCommand("copy");
   }*/
   }
-  useEffect(() => {
-    loadData();
-  }, []);
 
   const loadData = async () => {
     try {
       const _result = await getUuid();
-      console.log(_result);
       if (_result?.response) {
         setUuidGet(
           _result?.data?.sort((a, b) => {
             if (a && b) {
-              if (moment(a.createdAt).unix() < moment(b.createdAt).unix()) {
+              if (moment(a.created_at).unix() < moment(b.created_at).unix()) {
                 return 1;
               }
-              if (moment(a.createdAt).unix() > moment(b.createdAt).unix()) {
+              if (moment(a.created_at).unix() > moment(b.created_at).unix()) {
                 return -1;
               }
             }
             return 0;
           })
         );
+            }else{
+        setUuidGet([]);
       }
     } catch (error) {
-      console.log(error);
+      console.log("erro na requisação");
     }
   };
+
+  useEffect(() => {
+    loadData();
+  }, []);
+
   return (
     <>
       <Layout style={{ minHeight: "100vh" }}>
@@ -103,15 +106,12 @@ const Home = () => {
                           </Col>
                           <Col xs={20} xl={20}>
                             {uuidGet.map((dados) => {
-                              {
-                                dados?.urluuid?.map((_dados, index) => {
-                                  <Tag key={index} className="input-https">
-                                    {_dados.urluuid}
-                                  </Tag>;
-                                });
-                              }
-                            })}
+                                <div className="input-https">
+                                  {dados}
+                                </div>;
+                              })}
                           </Col>
+                          ;
                           <Col xs={4} xl={4}>
                             <Tag className="tag-copy">
                               <MdFileCopy />
