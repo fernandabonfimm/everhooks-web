@@ -5,7 +5,7 @@ import moment from "moment";
 import { MdOutlineSearch } from "react-icons/md";
 import { Row, Col, Card, Input, Tag, Button } from "antd";
 import "react-perfect-scrollbar/dist/css/styles.css";
-import { getUuid, getFirstId, deleteUuid } from "../../services/routes/apiUuid";
+import { getUuid, getFirstId, deleteUuid } from "../../services/apiUuid";
 import Alert from "sweetalert2";
 
 const CardRequests = () => {

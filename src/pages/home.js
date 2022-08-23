@@ -21,7 +21,7 @@ import faq from "../faq.png";
 import { useNavigate } from "react-router-dom";
 import CardRequests from "../components/cards/CardRequests";
 import moment from "moment";
-import { getFirstId, getHttps, getUuid } from "../services/routes/apiUuid";
+import { getFirstId, getHttps, getUuid } from "../services/apiUuid";
 
 const { Content } = Layout;
 

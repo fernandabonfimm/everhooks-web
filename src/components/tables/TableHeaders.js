@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../styles/components/tables.css";
-import { getUuid, getFirstId } from "../../services/routes/apiUuid";
+import { getUuid, getFirstId } from "../../services/apiUuid";
 
 const TableHeaders = () => {
   const [uuidList, setUuidList] = useState([]);
