@@ -39,7 +39,7 @@ const SiderComponent = ({ children }) => {
               <IoMdHelpCircleOutline className="icon-sider" />
             </Row>
             <Row justify="center">
-              <span className="title-sider">FAQ</span>
+              <span className="title-sider">FAQ </span>
             </Row>
           </Button>
         </Row>
