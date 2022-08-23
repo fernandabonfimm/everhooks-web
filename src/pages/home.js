@@ -26,10 +26,16 @@ import { getFirstId, getUuid } from "../services/routes/apiUuid";
 const { Content } = Layout;
 
 const Home = () => {
-  const [https] = useState("https://everhooks.site/uuidgenerate");
   const navigate = useNavigate();
 
   const [sendUUID, setSendUUID] = useState([]);
+
+  function copiarHttps() {
+    let textoCopiado = document.getElementById("https");
+    textoCopiado.select();
+    textoCopiado.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+  }
 
   useEffect(() => {
     (async () => {
@@ -75,21 +81,24 @@ const Home = () => {
                               .
                             </span>
                           </Col>
-                          <Col xs={20} xl={20}>
-                            {sendUUID.map((dados) => {
-                              return <Tag className="input-https">{dados}</Tag>;
-                            })}
-                          </Col>
-                          ;
-                          <Col xs={4} xl={4}>
-                            <Tag className="tag-copy">
-                              <MdFileCopy />
-                            </Tag>
-                          </Col>
                         </Row>
                       </Col>
                       <Col xs={24} xl={10}>
                         <img src={platformeverhooks} className="imgs-home" />
+                      </Col>
+                      <Col xs={20} xl={20}>
+                        <Input
+                          className="input-https"
+                          name="https"
+                          id="https"
+                          value={sendUUID.urluuid}
+                          readOnly
+                        ></Input>
+                      </Col>
+                      <Col xs={4} xl={4}>
+                        <Button className="tag-copy" onClick={copiarHttps}>
+                          <MdFileCopy />
+                        </Button>
                       </Col>
                       <Divider className="white-divider" />
                     </Row>

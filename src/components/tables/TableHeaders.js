@@ -10,7 +10,7 @@ const TableHeaders = () => {
       const _data = await getUuid();
       const { data } = await getFirstId(_data);
       setUuidList(data);
-      console.log("", data);
+      console.log("", _data);
     })();
   }, []);
 
@@ -40,16 +40,20 @@ const TableHeaders = () => {
           </thead>
           <tbody>
             {uuidList.map((dados, index) => {
-              var _index = index + 1;
               return (
-                <tr key={index} role="row" className="odd">
-                  <td className="td description-table">{dados._id}</td>
-                  <td className="td description-table">{dados.token}</td>
-                  {uuidList?.header?.map((dados) => {
-                    return (
-                      <td className="td description-table">{dados.Host}</td>
-                    );
-                  })}
+                <tr role="row" className="odd">
+                  <td className="td">
+                    <span className="description-table">{dados._id}</span>
+                  </td>
+                  <td className="td">
+                    <span className="description-table">{dados.token}</span>
+                  </td>
+                  <td className="td">
+                    <span className="description-table">{dados._id}</span>
+                  </td>
+                  <td className="td">
+                    <span className="description-table">{dados._id}</span>
+                  </td>
                 </tr>
               );
             })}
