@@ -27,3 +27,7 @@ export async function postUuid(id, body) {
       return message.error('Erro ao solicitar dados do id');
     }
 }
+
+export async function deleteUuid(id) {
+  return await api.delete(`/ever/${id}`);
+}

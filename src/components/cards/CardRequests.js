@@ -5,7 +5,8 @@ import moment from "moment";
 import { MdOutlineSearch } from "react-icons/md";
 import { Row, Col, Card, Input, Tag, Button } from "antd";
 import "react-perfect-scrollbar/dist/css/styles.css";
-import { getUuid, getFirstId } from "../../services/routes/apiUuid";
+import { getUuid, getFirstId, deleteUuid } from "../../services/routes/apiUuid";
+import Alert from 'sweetalert2'
 
 const CardRequests = () => {
   const [search, setSearch] = useState("");
@@ -26,6 +27,25 @@ const CardRequests = () => {
     }, 3000); // 300000
     return () => clearInterval(interval);
   }, []);
+
+  const onDelete = async (uuidList) => {
+    try {
+      const _resultConfirm = await Alert.fire({
+        title: "Atenção",
+        text: "Você realmente deseja excluir essa requisão?",
+        confirmButtonText: "Excluir",
+        confirmButtonColor: "red",
+        showCancelButton: true,
+        cancelButtonText: "Cancelar",
+        reverseButtons: true,
+      });
+      if (_resultConfirm.isConfirmed) {
+        await deleteUuid(uuidList);
+      }
+    } catch (error) {
+      await Alert.fire(error?.response?.message);
+    }
+  };
 
   return (
     <>
@@ -71,7 +91,12 @@ const CardRequests = () => {
                         </Row>
                       </Col>
                       <Col xs={6} xl={6}>
-                        <Button className="delete" type="primary" danger>
+                        <Button
+                          className="delete"
+                          type="primary"
+                          danger
+                          onClick={onDelete}
+                        >
                           X
                         </Button>
                       </Col>

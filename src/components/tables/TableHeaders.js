@@ -40,19 +40,25 @@ const TableHeaders = () => {
           </thead>
           <tbody>
             {uuidList.map((dados, index) => {
+              var _index = index + 1;
               return (
-                <tr role="row" className="odd">
+                <tr id={index} role="row" className="odd">
                   <td className="td">
-                    <span className="description-table">{dados._id}</span>
+                    <span className="description-table">
+                      {dados.header.Host}
+                    </span>
                   </td>
                   <td className="td">
-                    <span className="description-table">{dados.token}</span>
+                    <span className="description-table">{""}</span>
                   </td>
                   <td className="td">
-                    <span className="description-table">{dados._id}</span>
+                    <span className="description-table">{""}</span>
                   </td>
                   <td className="td">
-                    <span className="description-table">{dados._id}</span>
+                    <span className="description-table">{""}</span>
+                  </td>
+                  <td className="td">
+                    <span className="description-table">{dados.header.Connection}</span>
                   </td>
                 </tr>
               );
