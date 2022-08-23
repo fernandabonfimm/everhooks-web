@@ -21,7 +21,7 @@ import faq from "../faq.png";
 import { useNavigate } from "react-router-dom";
 import CardRequests from "../components/cards/CardRequests";
 import moment from "moment";
-import { getFirstId, getUuid } from "../services/routes/apiUuid";
+import { getFirstId, getHttps, getUuid } from "../services/routes/apiUuid";
 
 const { Content } = Layout;
 
@@ -39,7 +39,7 @@ const Home = () => {
 
   useEffect(() => {
     (async () => {
-      const _data = await getUuid();
+      const _data = await getHttps();
       setSendUUID(_data);
       console.log("", _data);
     })();
@@ -91,7 +91,7 @@ const Home = () => {
                           className="input-https"
                           name="https"
                           id="https"
-                          value={sendUUID.urluuid}
+                          value={sendUUID}
                           readOnly
                         ></Input>
                       </Col>

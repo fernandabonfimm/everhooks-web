@@ -6,26 +6,24 @@ import { MdOutlineSearch } from "react-icons/md";
 import { Row, Col, Card, Input, Tag, Button } from "antd";
 import "react-perfect-scrollbar/dist/css/styles.css";
 import { getUuid, getFirstId, deleteUuid } from "../../services/routes/apiUuid";
-import Alert from 'sweetalert2'
+import Alert from "sweetalert2";
 
 const CardRequests = () => {
   const [search, setSearch] = useState("");
   const [uuidList, setUuidList] = useState([]);
   const navigate = useNavigate();
-  const goToDetails = (e) => {
+
+  const goToDetails = () => {
     navigate("/details");
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
       (async () => {
         const _data = await getUuid();
         const { data } = await getFirstId(_data);
         setUuidList(data);
         console.log("Objeto: ", _data);
       })();
-    }, 3000); // 300000
-    return () => clearInterval(interval);
   }, []);
 
   const onDelete = async (uuidList) => {
@@ -64,11 +62,11 @@ const CardRequests = () => {
           </Col>
           <Row gutter={[32, 22]}>
             {" "}
-            <Col xs={24} xl={24}>
-              {uuidList.map((dados, index) => {
-                var _index = index + 1;
-                return (
-                  <Card className="card-request" onClick={goToDetails}>
+            {uuidList.map((dados, index) => {
+              var _index = index + 1;
+              return (
+                <Col xs={24} xl={24}>
+                  <Card className="card-request" onClick={goToDetails} id={index}>
                     <Row gutter={[32, 22]}>
                       <Col xs={18} xl={18}>
                         <Row gutter={[32, 22]}>
@@ -102,9 +100,9 @@ const CardRequests = () => {
                       </Col>
                     </Row>
                   </Card>
-                );
-              })}
-            </Col>
+                </Col>
+              );
+            })}
           </Row>
         </Row>
       </Card>
