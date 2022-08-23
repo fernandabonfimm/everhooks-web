@@ -10,7 +10,7 @@ import TableHeaders from "../components/tables/TableHeaders";
 import {
   getFirstId,
   getUuid,
-} from "../../../../Documents/everhooks-web/src/services/routes/apiUuid";
+} from "../../../../Documents/everhooks-web/src/services/apiUuid";
 import moment from "moment";
 
 const { Content } = Layout;
