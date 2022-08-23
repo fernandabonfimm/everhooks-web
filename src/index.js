@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/index.css";
-import "antd/dist/antd.css";
+import 'antd/dist/antd.min.css'
 import { ConfigProvider } from "antd";
 import RoutesComponent from './utils/Routes'
 import ptBR from "antd/lib/locale/pt_BR";

@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Row, Card, Layout, Button } from "antd";
+import { Row, Card, Button } from "antd";
 import { IoLogoNodejs, IoMdHelpCircleOutline, IoMdBook } from "react-icons/io";
-
-const { Sider } = Layout;
 
 const SiderComponent = ({ children }) => {
   const navigate = useNavigate();

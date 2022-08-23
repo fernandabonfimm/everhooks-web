@@ -20,8 +20,7 @@ import { IoIosArrowUp } from "react-icons/io";
 import faq from "../faq.png";
 import { useNavigate } from "react-router-dom";
 import CardRequests from "../components/cards/CardRequests";
-import moment from "moment";
-import { getFirstId, getHttps, getUuid } from "../services/apiUuid";
+import {  getHttps } from "../services/apiUuid";
 
 const { Content } = Layout;
 

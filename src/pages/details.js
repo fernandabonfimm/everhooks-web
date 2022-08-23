@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Layout, Row, Col, Card, Button, Divider, Input, BackTop } from "antd";
 import NavbarComponent from "../components/Navbar";
 import FooterComponent from "../components/Footer";
@@ -7,11 +7,6 @@ import { MdOutlineContentCopy } from "react-icons/md";
 import { IoIosArrowUp } from "react-icons/io";
 import "../styles/pages/details.css";
 import TableHeaders from "../components/tables/TableHeaders";
-import {
-  getFirstId,
-  getUuid,
-} from "../../../../Documents/everhooks-web/src/services/apiUuid";
-import moment from "moment";
 
 const { Content } = Layout;
 

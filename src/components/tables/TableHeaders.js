@@ -40,7 +40,6 @@ const TableHeaders = () => {
           </thead>
           <tbody>
             {uuidList.map((dados, index) => {
-              var _index = index + 1;
               return (
                 <tr id={index} role="row" className="odd">
                   <td className="td">
