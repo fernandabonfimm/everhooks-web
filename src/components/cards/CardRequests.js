@@ -66,7 +66,11 @@ const CardRequests = () => {
               var _index = index + 1;
               return (
                 <Col xs={24} xl={24}>
-                  <Card className="card-request" onClick={goToDetails} id={index}>
+                  <Card
+                    className="card-request"
+                    onClick={goToDetails}
+                    id={index}
+                  >
                     <Row gutter={[32, 22]}>
                       <Col xs={18} xl={18}>
                         <Row gutter={[32, 22]}>

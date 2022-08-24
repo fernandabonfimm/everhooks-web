@@ -16,7 +16,7 @@ const FooterComponent = () => {
       <Footer className="footer-layout">
         <Row gutter={[32, 22]} className="padding-row">
           <Col xs={24} xl={8}>
-            <img src={logo} alt="logo footer" className="logo footer" />
+            <img src={logo} alt="logo footer" className="logo-footer" />
           </Col>
           <Col xs={24} xl={9}>
             <Row gutter={[32, 22]} justify="center">

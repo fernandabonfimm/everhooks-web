@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "http://localhost:9200",
+  baseURL: "https://everhook.herokuapp.com",
 });
 
 export default api;

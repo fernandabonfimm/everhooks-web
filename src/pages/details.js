@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Layout, Row, Col, Card, Button, Divider, Input, BackTop } from "antd";
 import NavbarComponent from "../components/Navbar";
 import FooterComponent from "../components/Footer";
@@ -7,6 +7,7 @@ import { MdOutlineContentCopy } from "react-icons/md";
 import { IoIosArrowUp } from "react-icons/io";
 import "../styles/pages/details.css";
 import TableHeaders from "../components/tables/TableHeaders";
+import { getFirstId, getUuid } from "../services/apiUuid";
 
 const { Content } = Layout;
 
@@ -27,6 +28,16 @@ const Details = () => {
     textoCopiado.setSelectionRange(0, 99999);
     document.execCommand("copy");
   }
+  const [uuidList, setUuidList] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      const _data = await getUuid();
+      const { data } = await getFirstId("8d33f20d-c2cf-4a45-bb35-e21e3144f81e");
+      setUuidList(data);
+      console.log("", _data);
+    })();
+  }, []);
   return (
     <>
       <Layout style={{ minHeight: "100vh" }}>
@@ -63,7 +74,7 @@ const Details = () => {
                           showCount
                           maxLength={2000}
                           className="raw-content"
-                          value={rawContent}
+                          value={uuidList.body}
                           readOnly
                         />
                       </Col>
@@ -92,7 +103,7 @@ const Details = () => {
                           showCount
                           maxLength={2000}
                           className="raw-content"
-                          value={rawContent}
+                          value={uuidList.body}
                           readOnly
                         />
                       </Col>
