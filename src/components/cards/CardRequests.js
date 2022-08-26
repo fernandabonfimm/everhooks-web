@@ -40,6 +40,7 @@ const CardRequests = () => {
       if (_resultConfirm.isConfirmed) {
         const _data = await getUuid();
         await deleteUuid(_data);
+        navigate("/");
       }
     } catch (error) {
       await Alert.fire(error?.response?.message);
