@@ -16,7 +16,9 @@ export async function getUuid() {
 export async function getFirstId(uuid) {
   try {
     const response = await api.get(`/ever/${uuid}`);
-    return response;
+    localStorage.setItem("data", response);
+    const _result = localStorage.getItem("data");
+    return _result;
   } catch (error) {
     return message.error("Erro ao solicitar dados id");
   }
