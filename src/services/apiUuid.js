@@ -4,9 +4,18 @@ import { message } from "antd";
 export async function getUuid() {
   try {
     const { data } = await api.get(`/ever/`);
-    localStorage.setItem("uuid", data);
-    const _result = localStorage.getItem("uuid");
-    return _result;
+    if (!localStorage.getItem("uuid")) {
+      console.log("Não existe uuid no localStorage");
+      localStorage.setItem("uuid", data);
+    } else {
+      console.log("Já existe um uuid gravado no localStorage");
+    }
+    if (!localStorage.getItem("uuid")) {
+      console.log("Não existe uuid no localStorage");
+    } else {
+      const _result = localStorage.getItem("uuid");
+      return _result;
+    }
   } catch (err) {
     console.log(err);
   }

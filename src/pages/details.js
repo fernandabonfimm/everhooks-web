@@ -27,6 +27,7 @@ const Details = () => {
       const _data = await getUuid();
       const { data } = await getFirstId(_data);
       setUuidList(data);
+      console.log(data)
     })();
   }, []);
   return (

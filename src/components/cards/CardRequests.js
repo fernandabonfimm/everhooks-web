@@ -22,6 +22,7 @@ const CardRequests = () => {
       const _data = await getUuid();
       const { data } = await getFirstId(_data);
       setUuidList(data);
+      console.log(data)
     })();
   }, []);
 
