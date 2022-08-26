@@ -11,11 +11,8 @@ import Alert from "sweetalert2";
 const CardRequests = () => {
   const [search, setSearch] = useState("");
   const [uuidList, setUuidList] = useState([]);
+  const [deleteID, setDeleteID] = useState([]);
   const navigate = useNavigate();
-
-  const goToDetails = () => {
-    navigate("/details");
-  };
 
   useEffect(() => {
     (async () => {
@@ -25,6 +22,8 @@ const CardRequests = () => {
       console.log(data);
     })();
   }, []);
+
+  const goToDetails = () => {};
 
   const onDelete = async () => {
     try {
@@ -38,9 +37,7 @@ const CardRequests = () => {
         reverseButtons: true,
       });
       if (_resultConfirm.isConfirmed) {
-        const _data = await getUuid();
-        await deleteUuid(_data);
-        navigate("/");
+          await deleteUuid(uuidList._id);
       }
     } catch (error) {
       await Alert.fire(error?.response?.message);
