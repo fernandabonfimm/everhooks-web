@@ -19,10 +19,9 @@ const CardRequests = () => {
 
   useEffect(() => {
     (async () => {
-      const _result = await getUuid();
-      const { data } = await getFirstId(_result);
+      const _data = await getUuid();
+      const { data } = await getFirstId(_data);
       setUuidList(data);
-      console.log(_result);
     })();
   }, []);
 

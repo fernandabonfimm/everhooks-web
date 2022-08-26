@@ -1,6 +1,5 @@
 import { api } from "./Api";
 import { message } from "antd";
-import { useEffect, useState } from "react";
 
 export async function getUuid() {
   try {

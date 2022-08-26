@@ -6,7 +6,6 @@ import CardRequests from "../components/cards/CardRequests";
 import { MdOutlineContentCopy } from "react-icons/md";
 import { IoIosArrowUp } from "react-icons/io";
 import "../styles/pages/details.css";
-import TableHeaders from "../components/tables/TableHeaders";
 import { getFirstId, getUuid } from "../services/apiUuid";
 
 const { Content } = Layout;
@@ -22,19 +21,12 @@ const Details = () => {
     textoCopiado.setSelectionRange(0, 99999);
     document.execCommand("copy");
   }
-  function copiarJson() {
-    let textoCopiado = document.getElementById("json");
-    textoCopiado.select();
-    textoCopiado.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-  }
   const [uuidList, setUuidList] = useState([]);
   useEffect(() => {
     (async () => {
-      const _result = await getUuid();
-      const { data } = await getFirstId(_result);
+      const _data = await getUuid();
+      const { data } = await getFirstId(_data);
       setUuidList(data);
-      console.log(_result);
     })();
   }, []);
   return (
@@ -55,40 +47,71 @@ const Details = () => {
                         <h3 className="purple-title">Headers</h3>
                       </Col>
                       <Col xs={24} xl={24}>
-                        <TableHeaders />
+                        <div style={{ overflowX: "auto" }}>
+                          {" "}
+                          <table className="table">
+                            <thead>
+                              <tr>
+                                <th className="th">
+                                  <span className="title-table">Host</span>
+                                </th>
+                                <th className="th">
+                                  <span className="title-table">Uuid</span>
+                                </th>
+                                <th className="th">
+                                  <span className="title-table">
+                                    User-Agent
+                                  </span>
+                                </th>
+                                <th className="th">
+                                  <span className="title-table">Hora</span>
+                                </th>
+                                <th className="th">
+                                  <span className="title-table">
+                                    Connection
+                                  </span>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {uuidList.map((dados, index) => {
+                                return (
+                                  <tr id={index} role="row" className="odd">
+                                    <td className="td">
+                                      <span className="description-table">
+                                        {dados.header.Host}
+                                      </span>
+                                    </td>
+                                    <td className="td">
+                                      <span className="description-table">
+                                        {dados.header.uuid}
+                                      </span>
+                                    </td>
+                                    <td className="td">
+                                      <span className="description-table">
+                                        {navigator.userAgent}
+                                      </span>
+                                    </td>
+                                    <td className="td">
+                                      <span className="description-table">
+                                        {dados.header.date}
+                                      </span>
+                                    </td>
+                                    <td className="td">
+                                      <span className="description-table">
+                                        {dados.header.Connection}
+                                      </span>
+                                    </td>
+                                  </tr>
+                                );
+                              })}
+                            </tbody>
+                          </table>
+                        </div>
                       </Col>
                     </Row>
                   </Col>
                   <Divider />
-                  <Col xs={24} xl={24}>
-                    <Row gutter={[32, 22]}>
-                      <Col xs={24} xl={24}>
-                        <h3 className="purple-title">Conteúdo em JSON</h3>
-                      </Col>
-                      <Col xs={24} xl={24}>
-                        <TextArea
-                          type="json"
-                          name="json"
-                          id="json"
-                          showCount
-                          maxLength={2000}
-                          className="raw-content"
-                          value={uuidList.body}
-                          readOnly
-                        />
-                      </Col>
-                    </Row>
-                    <Row justify="end">
-                      <Button
-                        className="btn-copy"
-                        style={{ marginTop: 15 }}
-                        onClick={copiarJson}
-                      >
-                        <MdOutlineContentCopy style={{ marginRight: 10 }} />
-                        Copiar JSON
-                      </Button>
-                    </Row>
-                  </Col>
                   <Col xs={24} xl={24}>
                     <Row gutter={[32, 22]}>
                       <Col xs={24} xl={24}>
