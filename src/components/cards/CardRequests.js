@@ -22,11 +22,11 @@ const CardRequests = () => {
       const _data = await getUuid();
       const { data } = await getFirstId(_data);
       setUuidList(data);
-      console.log(data)
+      console.log(data);
     })();
   }, []);
 
-  const onDelete = async (uuidList) => {
+  const onDelete = async () => {
     try {
       const _resultConfirm = await Alert.fire({
         title: "Atenção",
@@ -38,7 +38,8 @@ const CardRequests = () => {
         reverseButtons: true,
       });
       if (_resultConfirm.isConfirmed) {
-        await deleteUuid(uuidList);
+        const _data = await getUuid();
+        await deleteUuid(_data);
       }
     } catch (error) {
       await Alert.fire(error?.response?.message);
