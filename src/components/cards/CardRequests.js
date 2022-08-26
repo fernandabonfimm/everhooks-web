@@ -18,12 +18,12 @@ const CardRequests = () => {
   };
 
   useEffect(() => {
-      (async () => {
-        const _data = await getUuid();
-        const { data } = await getFirstId(_data);
-        setUuidList(data);
-        console.log("Objeto: ", _data);
-      })();
+    (async () => {
+      const _result = await getUuid();
+      const { data } = await getFirstId(_result);
+      setUuidList(data);
+      console.log(_result);
+    })();
   }, []);
 
   const onDelete = async (uuidList) => {

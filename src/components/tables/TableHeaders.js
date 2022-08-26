@@ -5,13 +5,12 @@ import moment from "moment";
 
 const TableHeaders = () => {
   const [uuidList, setUuidList] = useState([]);
-
   useEffect(() => {
     (async () => {
-      const _data = await getUuid();
-      const { data } = await getFirstId(_data);
+      const _result = await getUuid();
+      const { data } = await getFirstId(_result);
       setUuidList(data);
-      console.log("", _data);
+      console.log(_result);
     })();
   }, []);
 

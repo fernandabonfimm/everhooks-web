@@ -29,13 +29,12 @@ const Details = () => {
     document.execCommand("copy");
   }
   const [uuidList, setUuidList] = useState([]);
-
   useEffect(() => {
     (async () => {
-      const _data = await getUuid();
-      const { data } = await getFirstId("8d33f20d-c2cf-4a45-bb35-e21e3144f81e");
+      const _result = await getUuid();
+      const { data } = await getFirstId(_result);
       setUuidList(data);
-      console.log("", _data);
+      console.log(_result);
     })();
   }, []);
   return (

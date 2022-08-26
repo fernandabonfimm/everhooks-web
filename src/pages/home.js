@@ -20,7 +20,7 @@ import { IoIosArrowUp } from "react-icons/io";
 import faq from "../faq.png";
 import { useNavigate } from "react-router-dom";
 import CardRequests from "../components/cards/CardRequests";
-import {  getHttps } from "../services/apiUuid";
+import { getHttps, getUuid } from "../services/apiUuid";
 
 const { Content } = Layout;
 
@@ -38,7 +38,7 @@ const Home = () => {
 
   useEffect(() => {
     (async () => {
-      const _data = await getHttps();
+      const _data = await getUuid();
       setSendUUID(_data);
       console.log("", _data);
     })();
@@ -86,13 +86,12 @@ const Home = () => {
                         <img src={platformeverhooks} className="imgs-home" />
                       </Col>
                       <Col xs={20} xl={20}>
-                        <Input
+                        <Tag
                           className="input-https"
                           name="https"
                           id="https"
-                          value={sendUUID}
                           readOnly
-                        ></Input>
+                        >https://everhooks-web.vercel.app/{sendUUID}</Tag>
                       </Col>
                       <Col xs={4} xl={4}>
                         <Button className="tag-copy" onClick={copiarHttps}>
