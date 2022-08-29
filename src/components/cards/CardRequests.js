@@ -8,10 +8,11 @@ import "react-perfect-scrollbar/dist/css/styles.css";
 import { getUuid, getFirstId, deleteUuid } from "../../services/apiUuid";
 import Alert from "sweetalert2";
 
+import PerfectScrollbar from "react-perfect-scrollbar";
+
 const CardRequests = () => {
   const [search, setSearch] = useState("");
   const [uuidList, setUuidList] = useState([]);
-  const [deleteID, setDeleteID] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -24,13 +25,13 @@ const CardRequests = () => {
   }, []);
 
   const goToDetails = () => {
-    navigate("/details")
+    navigate("/details");
   };
 
   const onDelete = async function (ind) {
     console.log(uuidList[ind - 1].id);
     try {
-        const _resultConfirm = await Alert.fire({
+      const _resultConfirm = await Alert.fire({
         title: "Atenção",
         text: "Você realmente deseja excluir essa requisão?",
         confirmButtonText: "Excluir",
@@ -38,11 +39,11 @@ const CardRequests = () => {
         showCancelButton: true,
         cancelButtonText: "Cancelar",
         reverseButtons: true,
-        });
-      
+      });
+
       if (_resultConfirm.isConfirmed) {
-          await deleteUuid(uuidList[ind-1].id);
-          window.location.reload();
+        await deleteUuid(uuidList[ind - 1].id);
+        window.location.reload();
       }
     } catch (error) {
       await Alert.fire(error?.response?.message);
@@ -66,51 +67,58 @@ const CardRequests = () => {
           </Col>
           <Row gutter={[32, 22]}>
             {" "}
-            {uuidList.map((dados, index) => {
-              var _index = index + 1;
-              return (
-                <Col xs={24} xl={24}>
-                  <Card
-                    className="card-request"
-                    onClick={goToDetails}
-                    id={index}
-                  >
-                    <Row gutter={[32, 22]}>
-                      <Col xs={18} xl={18}>
-                        <Row gutter={[32, 22]}>
-                          <Col xs={24} xl={24}>
-                            <Tag className="tag-post">{dados.header.Host}</Tag>
-                          </Col>
-                          <Col xs={24} xl={5}>
-                            <span className="white-description">#{_index}</span>
-                          </Col>
-                          <Col xs={24} xl={12}>
-                            <span className="white-description">
-                              {moment(dados.created_at).format("DD/MM/YYYY")}
-                            </span>
-                          </Col>
-                          <Col xs={24} xl={4}>
-                            <span className="white-description">
-                              {moment(dados.created_at).format("hh:MM")}
-                            </span>
-                          </Col>
-                        </Row>
-                      </Col>
-                      <Col xs={6} xl={6}>
-                        <Button
-                          className="delete"
-                          type="primary"
-                          danger
-                          onClick={() => onDelete(_index)}
-                        >
-                          X
-                        </Button>
-                      </Col>
-                    </Row>
-                  </Card>
-                </Col>
-              );
-            })}
+            <PerfectScrollbar  style={{ height: "100vmax" }}>
+              {" "}
+              {uuidList.map((dados, index) => {
+                var _index = index + 1;
+                return (
+                  <Col xs={24} xl={24} style={{marginTop: 10}}>
+                    <Card
+                      className="card-request"
+                      onClick={goToDetails}
+                      id={index}
+                    >
+                      <Row gutter={[32, 22]}>
+                        <Col xs={18} xl={18}>
+                          <Row gutter={[32, 22]}>
+                            <Col xs={24} xl={24}>
+                              <Tag className="tag-post">
+                                {dados.header.Type_Request}
+                              </Tag>
+                            </Col>
+                            <Col xs={24} xl={5}>
+                              <span className="white-description">
+                                #{_index}
+                              </span>
+                            </Col>
+                            <Col xs={24} xl={12}>
+                              <span className="white-description">
+                                {moment(dados.created_at).format("DD/MM/YYYY")}
+                              </span>
+                            </Col>
+                            <Col xs={24} xl={4}>
+                              <span className="white-description">
+                                {moment(dados.created_at).format("hh:MM")}
+                              </span>
+                            </Col>
+                          </Row>
+                        </Col>
+                        <Col xs={6} xl={6}>
+                          <Button
+                            className="delete"
+                            type="primary"
+                            danger
+                            onClick={() => onDelete(_index)}
+                          >
+                            X
+                          </Button>
+                        </Col>
+                      </Row>
+                    </Card>
+                  </Col>
+                );
+              })}
+            </PerfectScrollbar>
           </Row>
         </Row>
       </Card>
