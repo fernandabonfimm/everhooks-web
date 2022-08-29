@@ -8,7 +8,7 @@ export async function getUuid() {
       console.log("Não existe uuid no localStorage");
       localStorage.setItem("uuid", data);
     } else {
-      console.log("Já existe um uuid gravado no localStorage");
+      console.log("");
     }
     if (!localStorage.getItem("uuid")) {
       console.log("Não existe uuid no localStorage");
