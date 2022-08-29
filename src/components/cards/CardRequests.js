@@ -67,7 +67,7 @@ const CardRequests = () => {
           </Col>
           <Row gutter={[32, 22]}>
             {" "}
-            <PerfectScrollbar  style={{ height: "100vmax" }}>
+            <PerfectScrollbar style={{ minHeight: "50vmin", maxHeight: "65vmax"}}>
               {" "}
               {uuidList.map((dados, index) => {
                 var _index = index + 1;
