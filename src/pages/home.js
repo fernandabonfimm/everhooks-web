@@ -86,13 +86,11 @@ const Home = () => {
                         <img src={platformeverhooks} className="imgs-home" />
                       </Col>
                       <Col xs={20} xl={20}>
-                        <Input
+                        <Tag
                           className="input-https"
                           name="https"
                           id="https"
-                          readOnly
-                          value={sendUUID}
-                        />
+                        >https://neweverhook.herokuapp.com/ever/{sendUUID}</Tag>
                       </Col>
                       <Col xs={4} xl={4}>
                         <Button className="tag-copy" onClick={copiarHttps}>
