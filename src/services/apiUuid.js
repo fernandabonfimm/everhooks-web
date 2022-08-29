@@ -30,12 +30,12 @@ export async function getFirstId(uuid) {
   }
 }
 
-export async function getHttps() {
+export async function getById(id) {
   try {
-    const { data } = await api.get(`/ever/geturluuid`);
-    return data;
+    const  response  = await api.get(`/ever/id/${id}`);
+    return response;
   } catch (error) {
-    return message.error("Erro ao solicitar https");
+    return message.error("Erro ao solicitar dados do id");
   }
 }
 
