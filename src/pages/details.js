@@ -32,7 +32,7 @@ const Details = () => {
     console.log(uuidList[ind - 1].id);
     const { _result} = await getById(uuidList[ind-1].id);
     setGetID(_result);
-    console.log("dados dentro do id em _result: ", _result);
+    console.log("dados em _result: ", _result);
   }
 
   useEffect(() => {
