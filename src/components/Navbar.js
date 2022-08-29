@@ -1,7 +1,7 @@
 import { Row, Col, Layout, Button } from "antd";
 import logo from "../logoeverhooks.png";
 import "../styles/components/navbar.css";
-import { FaNodeJs, FaHeadset } from "react-icons/fa";
+import {AiOutlineWhatsApp, AiOutlineInstagram} from 'react-icons/ai'
 import evermart from "../evermart.png";
 import woman from "../woman.png";
 import { MdOutlineHelpOutline } from "react-icons/md";
@@ -26,11 +26,19 @@ const NavbarComponent = () => {
           <Col xs={5} xl={5}>
             <Row gutter={[22, 8]}>
               <Col xs={4} xl={4} style={{ marginTop: 5 }}>
-                <FaNodeJs className="icon-navbar" onClick={() => navigate("/documentation")}/>
+                <AiOutlineInstagram
+                  className="icon-navbar"
+                  href="https://www.instagram.com/evermart.br/"
+                  target="_blank"
+                />
               </Col>
               <Col xs={0} xl={20}>
-                <a className="hyperlink" onClick={() => navigate("/documentation")}>
-                  Documentação
+                <a
+                  className="hyperlink"
+                  href="https://www.instagram.com/evermart.br/"
+                  target="_blank"
+                >
+                  @evermart.br
                 </a>
               </Col>
             </Row>
@@ -38,12 +46,16 @@ const NavbarComponent = () => {
           <Col xs={5} xl={7}>
             <Row gutter={[22, 8]}>
               <Col xs={2} xl={4} style={{ marginTop: 5 }}>
-                <FaHeadset className="icon-navbar"   onClick={() => navigate("/faq")}/>
+                <AiOutlineWhatsApp
+                  className="icon-navbar"
+                  href="https://api.whatsapp.com/send?phone=+5511994979707&text=Ol%C3%A1!%20Preciso%20de%20suporte,%20pode%20me%20ajudar?"
+                  target="_blank"
+                />
               </Col>
               <Col xs={0} xl={20}>
                 <a
                   className="hyperlink"
-                  onClick={() => navigate("/faq")}
+                  href="https://api.whatsapp.com/send?phone=+5511994979707&text=Ol%C3%A1!%20Preciso%20de%20suporte,%20pode%20me%20ajudar?"
                   target="_blank"
                 >
                   Suporte e Ajuda
@@ -88,9 +100,12 @@ const NavbarComponent = () => {
                 </p>
               </Col>
               <Col xs={24} xl={24}>
-                <Button className="btnfaq" onClick={() => navigate("/documentation")}>
-                  <MdOutlineHelpOutline className="whiteicon-btn" />
-                  O que é o Everhooks
+                <Button
+                  className="btnfaq"
+                  onClick={() => navigate("/documentation")}
+                >
+                  <MdOutlineHelpOutline className="whiteicon-btn" />O que é o
+                  Everhooks
                 </Button>
               </Col>
             </Row>

@@ -6,7 +6,7 @@ Digite no terminal: yarn start
 
 # Create React App
 
-This directory is a brief example of a [Create React App](create-react-app-xi-three-32.vercel.app
+This directory is a brief example of a [Create React App](https://everhooks-web-beta.vercel.app/
 ) site that can be deployed to Vercel with zero configuration.
 
 ## Deploy Your Own
