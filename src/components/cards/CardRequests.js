@@ -25,9 +25,10 @@ const CardRequests = () => {
 
   const goToDetails = () => {};
 
-  const onDelete = async () => {
+  const onDelete = async function (ind) {
+    console.log(uuidList[ind - 1].id);
     try {
-      const _resultConfirm = await Alert.fire({
+        const _resultConfirm = await Alert.fire({
         title: "Atenção",
         text: "Você realmente deseja excluir essa requisão?",
         confirmButtonText: "Excluir",
@@ -35,9 +36,11 @@ const CardRequests = () => {
         showCancelButton: true,
         cancelButtonText: "Cancelar",
         reverseButtons: true,
-      });
+        });
+      
       if (_resultConfirm.isConfirmed) {
-          await deleteUuid(uuidList._id);
+        
+          await deleteUuid(uuidList[ind-1].id);
       }
     } catch (error) {
       await Alert.fire(error?.response?.message);
@@ -96,7 +99,7 @@ const CardRequests = () => {
                           className="delete"
                           type="primary"
                           danger
-                          onClick={onDelete}
+                          onClick={() => onDelete(_index)}
                         >
                           X
                         </Button>

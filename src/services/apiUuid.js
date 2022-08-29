@@ -41,7 +41,7 @@ export async function getHttps() {
 
 export async function postUuid(id, body) {
   try {
-    const { data } = await api.post(`/ever/${id}`, body);
+    const { data } = await api.post(`/ever/id/${id}`, body);
     return data;
   } catch (error) {
     return message.error("Erro ao solicitar dados do id");
@@ -49,5 +49,6 @@ export async function postUuid(id, body) {
 }
 
 export async function deleteUuid(id) {
-  return await api.delete(`/ever/${id}`);
+  console.log("DELETE");
+  return await api.delete(`/ever/id/${id}`);
 }
