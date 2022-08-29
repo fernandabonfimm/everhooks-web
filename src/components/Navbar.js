@@ -102,7 +102,7 @@ const NavbarComponent = () => {
                   solicitação HTTPS.
                 </p>
               </Col>
-              <Col xs={24} xl={24}>
+             {/*<Col xs={24} xl={24}>
                 <Button
                   className="btnfaq"
                   onClick={() => navigate("/documentation")}
@@ -110,7 +110,7 @@ const NavbarComponent = () => {
                   <MdOutlineHelpOutline className="whiteicon-btn" />O que é o
                   Everhooks
                 </Button>
-              </Col>
+              </Col> */} 
             </Row>
           </Col>
           <Col xs={24} xl={8}>
