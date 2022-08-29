@@ -23,7 +23,9 @@ const CardRequests = () => {
     })();
   }, []);
 
-  const goToDetails = () => {};
+  const goToDetails = () => {
+    navigate("/details")
+  };
 
   const onDelete = async function (ind) {
     console.log(uuidList[ind - 1].id);
