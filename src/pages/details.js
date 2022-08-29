@@ -7,10 +7,16 @@ import { MdOutlineContentCopy } from "react-icons/md";
 import { IoIosArrowUp } from "react-icons/io";
 import "../styles/pages/details.css";
 import { getFirstId, getUuid, getById } from "../services/apiUuid";
+import { useLocation } from 'react-router-dom';
 
 const { Content } = Layout;
 
 const Details = () => {
+
+  const location = useLocation();
+  const dados = location.state.list;
+  console.log(dados);
+
   const [uuidList, setUuidList] = useState([]);
   const [getId, setGetID] = useState([]);
   const { TextArea } = Input;

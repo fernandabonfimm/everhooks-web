@@ -26,8 +26,9 @@ const CardRequests = () => {
   return () => clearInterval(interval);
   }, []);
 
-  const goToDetails = () => {
-    navigate("/details");
+  const goToDetails = async function (ind) {
+    const list = uuidList[ind - 1];
+    navigate('/details', { state: { list } });
   };
 
   const onDelete = async function (ind) {
@@ -77,7 +78,7 @@ const CardRequests = () => {
                   <Col xs={24} xl={24} style={{marginTop: 10}} key={index}>
                     <Card
                       className="card-request"
-                      onClick={goToDetails}
+                      onClick={() => goToDetails(_index)}
                     >
                       <Row gutter={[32, 22]}>
                         <Col xs={18} xl={18}>

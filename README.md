@@ -1,13 +1,12 @@
-/* Como instalar o projeto */
+/_ Como instalar o projeto _/
 Digite no terminal: yarn
 
-/* Como rodar o projeto */
+/_ Como rodar o projeto _/
 Digite no terminal: yarn start
 
 # Create React App
 
-This directory is a brief example of a [Create React App](create-react-app-xi-three-32.vercel.app
-) site that can be deployed to Vercel with zero configuration.
+This directory is a brief example of a [Create React App](https://everhooks-web-beta.vercel.app/) site that can be deployed to Vercel with zero configuration.
 
 ## Deploy Your Own
 
