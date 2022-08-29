@@ -20,7 +20,8 @@ import { IoIosArrowUp } from "react-icons/io";
 import faq from "../faq.png";
 import { useNavigate } from "react-router-dom";
 import CardRequests from "../components/cards/CardRequests";
-import { getHttps, getUuid } from "../services/apiUuid";
+import { getUuid } from "../services/apiUuid";
+import copy from "copy-to-clipboard";
 
 const { Content } = Layout;
 
@@ -29,13 +30,6 @@ const Home = () => {
 
   const [sendUUID, setSendUUID] = useState([]);
 
-  function copiarHttps() {
-    let textoCopiado = document.getElementById("https");
-    textoCopiado.select();
-    textoCopiado.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-  }
-
   useEffect(() => {
     (async () => {
       const _data = await getUuid();
@@ -43,6 +37,10 @@ const Home = () => {
       console.log("", _data);
     })();
   }, []);
+
+  const copyToClipboard = () => {
+    copy(`https://neweverhook.herokuapp.com/ever/${sendUUID}`);
+  };
 
   return (
     <>
@@ -86,14 +84,12 @@ const Home = () => {
                         <img src={platformeverhooks} className="imgs-home" />
                       </Col>
                       <Col xs={20} xl={20}>
-                        <Tag
-                          className="input-https"
-                          name="https"
-                          id="https"
-                        >https://neweverhook.herokuapp.com/ever/{sendUUID}</Tag>
+                        <Tag className="input-https" name="https">
+                          https://neweverhook.herokuapp.com/ever/{sendUUID}
+                        </Tag>
                       </Col>
                       <Col xs={4} xl={4}>
-                        <Button className="tag-copy" onClick={copiarHttps}>
+                        <Button className="tag-copy" onClick={copyToClipboard}>
                           <MdFileCopy />
                         </Button>
                       </Col>
