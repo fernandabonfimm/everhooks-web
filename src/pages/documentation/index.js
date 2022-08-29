@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import HeaderDocumentation from "../../components/HeaderDocumentation";
 import FooterComponent from "../../components/Footer";
 import {
@@ -10,7 +10,7 @@ import {
   Modal,
   BackTop,
   Tag,
-  Input,
+  Button,
 } from "antd";
 import "../../styles/pages/documentation.css";
 import SiderComponent from "../../components/Sider";
@@ -20,24 +20,29 @@ import { IoHomeOutline } from "react-icons/io5";
 import { BsFillCircleFill } from "react-icons/bs";
 import { MdFileCopy } from "react-icons/md";
 import Alert from "sweetalert2";
+import copy from "copy-to-clipboard";
 import SiderResponsive from "../../components/SiderResponsive";
 import CodeDocumentation from "./pages/components/CodeDocumentation";
-
+import { getUuid } from "../../services/apiUuid";
 const { Content } = Layout;
 
 const Documentation = () => {
   const navigate = useNavigate();
   const [visible, setVisible] = useState(false);
-  const [https] = useState(
-    "curl https://everhooks.com/token/a2a6a4ae-4130-4063-953a-84fa29d81d43/requests"
-  );
+  const [sendUUID, setSendUUID] = useState([]);
 
-  function copiarHttps() {
-    let httpsCopiada = document.getElementById("https");
-    httpsCopiada.select();
-    httpsCopiada.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-  }
+  useEffect(() => {
+    (async () => {
+      const _data = await getUuid();
+      setSendUUID(_data);
+      console.log("", _data);
+    })();
+  }, []);
+
+  const copyToClipboard = () => {
+    copy(`https://neweverhook.herokuapp.com/ever/${sendUUID}`);
+  };
+
   const showModal = () => {
     setVisible(true);
   };
@@ -164,15 +169,12 @@ const Documentation = () => {
                         </span>
                       </Col>
                       <Col xs={20} xl={20}>
-                        <Input
-                          name="https"
-                          id="https"
-                          value={https}
-                          className="input-https"
-                        />
+                        <Tag className="input-https" name="https">
+                          https://neweverhook.herokuapp.com/ever/{sendUUID}
+                        </Tag>
                       </Col>
                       <Col xs={4} xl={4}>
-                        <Tag className="tag-copy" onClick={copiarHttps}>
+                        <Tag className="tag-copy" onClick={copyToClipboard}>
                           <MdFileCopy />
                         </Tag>
                       </Col>
@@ -191,17 +193,14 @@ const Documentation = () => {
                         </span>
                       </Col>
                       <Col xs={20} xl={20}>
-                        <Input
-                          name="https"
-                          id="https"
-                          value={https}
-                          className="input-https"
-                        />
+                        <Tag className="input-https" name="https">
+                          https://neweverhook.herokuapp.com/ever/{sendUUID}
+                        </Tag>
                       </Col>
                       <Col xs={4} xl={4}>
-                        <Tag className="tag-copy" onClick={copiarHttps}>
+                        <Button className="tag-copy" onClick={copyToClipboard}>
                           <MdFileCopy />
-                        </Tag>
+                        </Button>
                       </Col>
                       <Col xs={24} xl={24}>
                         <span className="explict-code">
