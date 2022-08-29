@@ -158,7 +158,8 @@ const Home = () => {
                       <Col xs={24} xl={24}>
                         <Button
                           className="btn-help"
-                          onClick={() => navigate("/faq")}
+                          href="https://api.whatsapp.com/send?phone=+5511994979707&text=Ol%C3%A1!%20Preciso%20de%20suporte,%20pode%20me%20ajudar?"
+                          target="_blank"
                         >
                           <MdHelpOutline style={{ marginRight: 10 }} />
                           Preciso de ajuda!
