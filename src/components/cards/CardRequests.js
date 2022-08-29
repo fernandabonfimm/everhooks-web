@@ -39,8 +39,8 @@ const CardRequests = () => {
         });
       
       if (_resultConfirm.isConfirmed) {
-        
           await deleteUuid(uuidList[ind-1].id);
+          window.location.reload();
       }
     } catch (error) {
       await Alert.fire(error?.response?.message);
