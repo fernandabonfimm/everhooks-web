@@ -16,12 +16,14 @@ const CardRequests = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    const interval = setInterval(() => {
     (async () => {
       const _data = await getUuid();
       const { data } = await getFirstId(_data);
       setUuidList(data);
-      console.log(data);
     })();
+  }, 3000); // 300000
+  return () => clearInterval(interval);
   }, []);
 
   const goToDetails = () => {
@@ -72,11 +74,10 @@ const CardRequests = () => {
               {uuidList.map((dados, index) => {
                 var _index = index + 1;
                 return (
-                  <Col xs={24} xl={24} style={{marginTop: 10}}>
+                  <Col xs={24} xl={24} style={{marginTop: 10}} key={index}>
                     <Card
                       className="card-request"
                       onClick={goToDetails}
-                      id={index}
                     >
                       <Row gutter={[32, 22]}>
                         <Col xs={18} xl={18}>
