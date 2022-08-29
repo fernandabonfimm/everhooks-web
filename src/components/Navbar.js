@@ -1,7 +1,7 @@
 import { Row, Col, Layout, Button } from "antd";
 import logo from "../logoeverhooks.png";
 import "../styles/components/navbar.css";
-import {AiOutlineWhatsApp, AiOutlineInstagram} from 'react-icons/ai'
+import { AiOutlineWhatsApp, AiOutlineInstagram } from "react-icons/ai";
 import evermart from "../evermart.png";
 import woman from "../woman.png";
 import { MdOutlineHelpOutline } from "react-icons/md";
@@ -26,11 +26,13 @@ const NavbarComponent = () => {
           <Col xs={5} xl={5}>
             <Row gutter={[22, 8]}>
               <Col xs={4} xl={4} style={{ marginTop: 5 }}>
-                <AiOutlineInstagram
-                  className="icon-navbar"
+                <a
                   href="https://www.instagram.com/evermart.br/"
                   target="_blank"
-                />
+                >
+                  {" "}
+                  <AiOutlineInstagram className="icon-navbar" />
+                </a>
               </Col>
               <Col xs={0} xl={20}>
                 <a
@@ -46,11 +48,12 @@ const NavbarComponent = () => {
           <Col xs={5} xl={7}>
             <Row gutter={[22, 8]}>
               <Col xs={2} xl={4} style={{ marginTop: 5 }}>
-                <AiOutlineWhatsApp
-                  className="icon-navbar"
+                <a
                   href="https://api.whatsapp.com/send?phone=+5511994979707&text=Ol%C3%A1!%20Preciso%20de%20suporte,%20pode%20me%20ajudar?"
                   target="_blank"
-                />
+                >
+                  <AiOutlineWhatsApp className="icon-navbar" />
+                </a>
               </Col>
               <Col xs={0} xl={20}>
                 <a
