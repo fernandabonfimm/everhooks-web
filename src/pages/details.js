@@ -7,12 +7,11 @@ import { MdOutlineContentCopy } from "react-icons/md";
 import { IoIosArrowUp } from "react-icons/io";
 import "../styles/pages/details.css";
 import { getFirstId, getUuid, getById } from "../services/apiUuid";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 
 const { Content } = Layout;
 
 const Details = () => {
-
   const location = useLocation();
   const dados = location.state.list;
   console.log(dados);
@@ -28,18 +27,18 @@ const Details = () => {
     document.execCommand("copy");
   }
 
-  const loadData = async () => { 
+  const loadData = async () => {
     const _data = await getUuid();
     const { data } = await getFirstId(_data);
     setUuidList(data);
-  }
+  };
 
   const loadDataID = async (ind) => {
     console.log(uuidList[ind - 1].id);
-    const { _result} = await getById(uuidList[ind-1].id);
+    const { _result } = await getById(uuidList[ind - 1].id);
     setGetID(_result);
     console.log("dados em _result: ", _result);
-  }
+  };
 
   useEffect(() => {
     loadData();
