@@ -178,11 +178,6 @@ const CardRequests = () => {
                                 {moment(dados.created_at).format("DD/MM/YYYY")}
                               </span>
                             </Col>
-                            <Col xs={24} xl={4}>
-                              <span className="white-description">
-                                {moment(dados.created_at).format("hh:MM")}
-                              </span>
-                            </Col>
                           </Row>
                         </Col>
                         <Col xs={6} xl={6}>
