@@ -23,7 +23,7 @@ export async function getUuid() {
 
 export async function getFirstId(uuid) {
   try {
-    const response = await api.get(`/ever/${uuid}`);
+    const response = await api.get(`/ever/uuid/${uuid}`);
     return response;
   } catch (error) {
     return message.error("Erro ao solicitar dados id");
