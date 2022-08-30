@@ -118,7 +118,7 @@ const Details = () => {
                           showCount
                           maxLength={2000}
                           className="raw-content"
-                          value={dados.body}
+                          value={JSON.stringify(dados.body)}
                           readOnly
                         />
                       </Col>

@@ -4,7 +4,6 @@ import "../styles/components/navbar.css";
 import { AiOutlineWhatsApp, AiOutlineInstagram } from "react-icons/ai";
 import evermart from "../evermart.png";
 import woman from "../woman.png";
-import { MdOutlineHelpOutline } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { IoInfiniteOutline } from "react-icons/io5";
 
@@ -102,15 +101,6 @@ const NavbarComponent = () => {
                   solicitação HTTPS.
                 </p>
               </Col>
-             {/*<Col xs={24} xl={24}>
-                <Button
-                  className="btnfaq"
-                  onClick={() => navigate("/documentation")}
-                >
-                  <MdOutlineHelpOutline className="whiteicon-btn" />O que é o
-                  Everhooks
-                </Button>
-              </Col> */} 
             </Row>
           </Col>
           <Col xs={24} xl={8}>

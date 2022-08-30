@@ -85,6 +85,153 @@
   width: 360px;
   height: 320px;
 }
+.white-titlenavbar{
+  color: #fff;
+  font-size: 22px;
+}
+@media screen and (max-width: 3800px){
+  .navbarlayout {
+    height: 2vmax;
+  }
+  .btnaccess {
+    height: 1vmax;
+  }
+  .content-announcement {
+    padding: 5em 10em;
+    height: 15vmax;
+  }
+  .white-titlenavbar{
+    font-size: 25px;
+  }
+  .logo-evermart {
+    width: 450px;
+  }
+  .white-subtitlenavbar {
+    font-size: 25px;
+    line-height: 8mm;
+  }
+  .person-woman {
+    width: 500px;
+    height: 420px;
+  }
+}
+@media screen and (max-width: 3200px){
+  .person-woman {
+    width: 450px;
+    height: 380px;
+  }
+}
+
+@media screen and (max-width: 2900px){
+  .navbarlayout {
+    height: 3vmax;
+  }
+  .person-woman {
+    width: 480px;
+    height: 380px;
+  }
+  .content-announcement {
+    padding: 5em 10em;
+    height: 20vmax;
+  }
+  .btnaccess {
+    height: 1.5vmax;
+  }
+}
+
+
+@media screen and (max-width: 2600px){
+  .navbarlayout {
+    height: 3vmax;
+  }
+}
+
+@media screen and (max-width: 2300px){
+  .content-announcement {
+    padding: 5em 10em;
+    height: 25vmax;
+  }
+  .white-titlenavbar{
+    font-size: 25px;
+  }
+  .logo-evermart {
+    width: 450px;
+  }
+  .white-subtitlenavbar {
+    font-size: 25px;
+    line-height: 8mm;
+  }
+  .person-woman {
+    width: 500px;
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 2000px){
+  .navbarlayout {
+    height: 4vmax;
+  }
+  .btnaccess {
+    height: 1.8vmax;
+  }
+  .person-woman {
+    width: 450px;
+    height: 380px;
+  }
+
+}
+
+@media screen and (max-width: 1750px){
+  .content-announcement {
+    padding: 5em 10em;
+    height: 30vmax;
+  }
+}
+
+@media screen and (max-width: 1550px){
+  .content-announcement {
+    padding: 5em 10em;
+    height: 32vmax;
+  }
+  .logo-evermart {
+    width: 380px;
+  }
+  .white-subtitlenavbar {
+    font-size: 22px;
+    line-height: 8mm;
+  }
+  .person-woman {
+    width: 400px;
+    height: 340px;
+  }
+  .btnaccess {
+    height: 2vmax;
+  }
+}
+
+@media screen and (max-width: 1300px){
+  .content-announcement {
+    padding: 5em 10em;
+    height: 35vmax;
+  }
+  .logo-evermart {
+    width: 350px;
+  }
+  .white-subtitlenavbar {
+    font-size: 20px;
+    line-height: 8mm;
+  }
+  .person-woman {
+    width: 370px;
+    height: 320px;
+  }
+  .navbarlayout {
+    height: 5vmax;
+  }
+  .btnaccess {
+    height: 2.5vmax;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .logo-everhooks {
