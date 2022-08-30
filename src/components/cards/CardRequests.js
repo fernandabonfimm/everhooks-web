@@ -16,11 +16,14 @@ const CardRequests = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    const interval = setInterval(() => {
     (async () => {
       const _data = await getUuid();
       const { data } = await getFirstId(_data);
       setUuidList(data);
     })();
+  }, 3000); // 300000
+  return () => clearInterval(interval);
   }, []);
 
 
