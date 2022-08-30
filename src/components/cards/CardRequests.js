@@ -26,10 +26,6 @@ const CardRequests = () => {
   return () => clearInterval(interval);
   }, []);
 
-  const goToDetails = async function (ind) {
-    const list = uuidList[ind - 1];
-    navigate('/details', { state: { list } });
-  };
 
   const onDelete = async function (ind) {
     console.log(uuidList[ind - 1].id);
@@ -53,20 +49,17 @@ const CardRequests = () => {
     }
   };
 
+  const goToDetails = async function (ind) {
+    const list = uuidList[ind - 1];
+    navigate('/details', { state: { list } });
+  };
+  
   return (
     <>
       <Card className="card-home">
         <Row gutter={[32, 22]}>
           <Col xs={24} xl={24}>
             <span className="titlegray">Requests</span>
-          </Col>
-          <Col xs={24} xl={24}>
-            <Input
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              className="search-input"
-              prefix={<MdOutlineSearch />}
-            />
           </Col>
           <Row gutter={[32, 22]}>
             {" "}

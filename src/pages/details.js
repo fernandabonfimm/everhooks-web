@@ -16,8 +16,6 @@ const Details = () => {
   const dados = location.state.list;
   console.log(dados);
 
-  const [uuidList, setUuidList] = useState([]);
-  const [getId, setGetID] = useState([]);
   const { TextArea } = Input;
 
   function copiarTexto() {
@@ -27,23 +25,7 @@ const Details = () => {
     document.execCommand("copy");
   }
 
-  const loadData = async () => {
-    const _data = await getUuid();
-    const { data } = await getFirstId(_data);
-    setUuidList(data);
-  };
 
-  const loadDataID = async (ind) => {
-    console.log(uuidList[ind - 1].id);
-    const { _result } = await getById(uuidList[ind - 1].id);
-    setGetID(_result);
-    console.log("dados em _result: ", _result);
-  };
-
-  useEffect(() => {
-    loadData();
-    loadDataID();
-  }, []);
   return (
     <>
       <Layout style={{ minHeight: "100vh" }}>
@@ -89,9 +71,7 @@ const Details = () => {
                               </tr>
                             </thead>
                             <tbody>
-                              {getId.map((dados, index) => {
-                                return (
-                                  <tr id={index} role="row" className="odd">
+                                  <tr  role="row" className="odd">
                                     <td className="td">
                                       <span className="description-table">
                                         {dados.header.Host}
@@ -117,9 +97,7 @@ const Details = () => {
                                         {dados.header.Connection}
                                       </span>
                                     </td>
-                                  </tr>
-                                );
-                              })}
+                                  </tr>   
                             </tbody>
                           </table>
                         </div>
@@ -140,7 +118,7 @@ const Details = () => {
                           showCount
                           maxLength={2000}
                           className="raw-content"
-                          value={uuidList.body}
+                          value={dados.body}
                           readOnly
                         />
                       </Col>
