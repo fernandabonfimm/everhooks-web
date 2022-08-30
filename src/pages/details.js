@@ -53,7 +53,7 @@ const Details = () => {
                                   <span className="title-table">Host</span>
                                 </th>
                                 <th className="th">
-                                  <span className="title-table">Uuid</span>
+                                  <span className="title-table">Postman-Token</span>
                                 </th>
                                 <th className="th">
                                   <span className="title-table">
@@ -61,11 +61,31 @@ const Details = () => {
                                   </span>
                                 </th>
                                 <th className="th">
-                                  <span className="title-table">Hora</span>
+                                  <span className="title-table">Content-Type</span>
                                 </th>
                                 <th className="th">
                                   <span className="title-table">
                                     Connection
+                                  </span>
+                                </th>
+                                <th className="th">
+                                  <span className="title-table">
+                                  Content-Length
+                                  </span>
+                                </th>
+                                <th className="th">
+                                  <span className="title-table">
+                                 Data
+                                  </span>
+                                </th>
+                                <th className="th">
+                                  <span className="title-table">
+                                  Accept-Encoding
+                                  </span>
+                                </th>
+                                <th className="th">
+                                  <span className="title-table">
+                                  Accept
                                   </span>
                                 </th>
                               </tr>
@@ -79,12 +99,27 @@ const Details = () => {
                                     </td>
                                     <td className="td">
                                       <span className="description-table">
-                                        {dados.header.uuid}
+                                      {dados.header["Postman-Token"]}
                                       </span>
                                     </td>
                                     <td className="td">
                                       <span className="description-table">
-                                        {navigator.userAgent}
+                                      {dados.header["User-Agent"]}
+                                      </span>
+                                    </td>
+                                    <td className="td">
+                                      <span className="description-table">
+                                      {dados.header["Content-Type"]}
+                                      </span>
+                                    </td>
+                                    <td className="td">
+                                      <span className="description-table">
+                                        {dados.header.Connection}
+                                      </span>
+                                    </td>
+                                    <td className="td">
+                                      <span className="description-table">
+                                        {dados.header["Content-Length"]}
                                       </span>
                                     </td>
                                     <td className="td">
@@ -94,7 +129,12 @@ const Details = () => {
                                     </td>
                                     <td className="td">
                                       <span className="description-table">
-                                        {dados.header.Connection}
+                                        {dados.header["Accept-Encoding"]}
+                                      </span>
+                                    </td>
+                                    <td className="td">
+                                      <span className="description-table">
+                                        {dados.header.Accept}
                                       </span>
                                     </td>
                                   </tr>   
