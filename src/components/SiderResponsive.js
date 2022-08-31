@@ -36,7 +36,7 @@ const SiderResponsive = () => {
                 <IoMdHelpCircleOutline className="icon-responsive" />
               </Row>
               <Row justify="center">
-                <span className="description-responsive">FAQ</span>
+                <span className="description-responsive">FAQq</span>
               </Row>
             </Tag>
           </Col>
