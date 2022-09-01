@@ -137,59 +137,115 @@
   width: 230px;
 }
 
-.perfect-scroll{
+.perfect-scroll {
   min-height: 50vmin;
   max-height: 65vmax;
 }
-@media screen and (max-width: 4000px){
+@media screen and (max-width: 4000px) {
+  /*card principal azul claro */
+  .card-home {
+    min-height: 40vmax;
+    max-height: 40vmax !important;
+    padding: 4em;
+  }
+  .perfect-scroll {
+    min-height: 34vmin;
+    max-height: 34vmax;
+  }
+  /* cardrequest css responsive*/
   .card-request {
     width: 28vmax !important;
     padding: 2em;
   }
-  .card-home {
-    min-height: 30vmax;
-    max-height: 30vmax !important;
-    padding: 4em;
+  .titlegray {
+    font-size: 30px;
   }
-  .perfect-scroll{
-    min-height: 25vmin;
-    max-height: 25vmax;
+  .tag-post {
+    font-size: 25px;
+    padding: 0.5em 2em;
   }
+  .white-description {
+    font-size: 28px;
+  }
+  .delete {
+    font-size: 28px;
+    height: 1.5vmax;
+    width: 2vmax;
+  }
+  .margintop-col {
+    margin-top: 0.5vmax;
+    margin-bottom: 0.5vmax;
+  }
+
+  /*home responsive*/
   .purple-titlehome {
     font-size: 40px;
   }
-.titlegray {
-  font-size: 30px;
-}
-.tag-post {
-  font-size: 25px;
-  padding: 0.5em 2em;
-}
-.white-description {
-  font-size: 28px;
-}
-.delete {
-  font-size: 28px;
-  height: 1.5vmax;
-  width: 2vmax;
-}
-.margintop-col{
-  margin-top: 0.5vmax;
-  margin-bottom: 0.5vmax;
-}
+  .pass-tag {
+    font-size: 30px;
+    padding: 0.8em;
+    border-radius: 10px;
+  }
+  .description-pass {
+    font-size: 38px;
+  }
+  .explication-pass {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .explication-pass-gray {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .link-pass {
+    font-weight: 650;
+    font-size: 35px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .purple-description {
+    font-weight: 450;
+    font-size: 32px;
+  }
+  .btn-help {
+    border-radius: 25px;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 0.5em 10em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .imgs-home {
+    width: 450px;
+  }
+  .input-https {
+    font-size: 30px;
+    border-radius: 10px;
+    border: none;
+    padding: 0.4em 1em;
+  }
+  .tag-copy {
+    padding: 0em 1em;
+    height: 1.8vmax;
+    border: none;
+    border-radius: 10px;
+    font-size: 30px;
+  }
 }
 
-@media screen and (max-width: 3500px){
+@media screen and (max-width: 3600px) {
+  /*card principal azul claro */
+  .card-home {
+    min-height: 50vmax;
+    max-height: 50vmax !important;
+    padding: 4em;
+  }
+  .perfect-scroll {
+    min-height: 42vmin;
+    max-height: 42vmax;
+  }
   .card-request {
     width: 27vmax !important;
-  }
-  .card-home {
-    min-height: 40vmax;
-    max-height: 40vmax !important;
-  }
-  .perfect-scroll{
-    min-height: 35vmin;
-    max-height: 35vmax;
   }
   .delete {
     font-size: 28px;
@@ -198,19 +254,43 @@
   }
 }
 
-@media screen and (max-width: 3000px){
+@media screen and (max-width: 3000px) {
   .card-request {
     width: 26vmax !important;
   }
+  /*card principal azul claro */
+  .card-home {
+    min-height: 65vmax;
+    max-height: 65vmax !important;
+    padding: 4em;
+  }
+  .perfect-scroll {
+    min-height: 56vmin;
+    max-height: 56vmax;
+  }
+  .btn-help {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 0.5em 6em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
 }
 
-@media screen and (max-width: 2500px){
+@media screen and (max-width: 2600px) {
+  /*card principal azul claro */
+  .card-home {
+    min-height: 70vmax;
+    max-height: 70vmax !important;
+    padding: 4em;
+  }
+  .perfect-scroll {
+    min-height: 60vmin;
+    max-height: 60vmax;
+  }
   .card-request {
     padding: 1em;
     width: 27vmax !important;
-  }
-  .card-home{
-    padding: 2em;
   }
   .delete {
     font-size: 28px;
@@ -219,7 +299,87 @@
   }
 }
 
-@media screen and (max-width: 1900px){
+@media screen and (max-width: 2260px) {
+  /*home responsive*/
+  .purple-titlehome {
+    font-size: 40px;
+  }
+  .pass-tag {
+    font-size: 28px;
+    padding: 0.8em;
+    border-radius: 10px;
+  }
+  .description-pass {
+    font-size: 28px;
+  }
+  .explication-pass {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .explication-pass-gray {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .link-pass {
+    font-weight: 650;
+    font-size: 28px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .purple-description {
+    font-weight: 450;
+    font-size: 28px;
+  }
+  .btn-help {
+    border-radius: 25px;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 0.5em 4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .imgs-home {
+    width: 380px;
+  }
+  .input-https {
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    padding: 0.4em 1em;
+  }
+  .tag-copy {
+    padding: 0em 1em;
+    height: 1.8vmax;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  /*card principal azul claro */
+  .card-home {
+    min-height: 88vmax;
+    max-height: 88vmax !important;
+    padding: 3em;
+  }
+  .perfect-scroll {
+    min-height: 78vmin;
+    max-height: 78vmax;
+  }
+  .imgs-home {
+    width: 320px;
+  }
+  .tag-copy {
+    padding: 0em 1em;
+    height: 3vmax;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1900px) {
   .card-request {
     width: 26vmax !important;
   }
@@ -230,7 +390,17 @@
   }
 }
 
-@media screen and (max-width: 1650px){
+@media screen and (max-width: 1650px) {
+  /*card principal azul claro */
+  .card-home {
+    min-height: 100vmax;
+    max-height: 100vmax !important;
+    padding: 2em;
+  }
+  .perfect-scroll {
+    min-height: 78vmin;
+    max-height: 78vmax;
+  }
   .card-request {
     width: 25vmax !important;
   }
@@ -249,9 +419,63 @@
     height: 3vmax;
     width: 3.5vmax;
   }
+  /*home responsive*/
+  .purple-titlehome {
+    font-size: 35px;
+  }
+  .pass-tag {
+    font-size: 24px;
+    padding: 0.8em;
+    border-radius: 10px;
+  }
+  .description-pass {
+    font-size: 24px;
+  }
+  .explication-pass {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .explication-pass-gray {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .link-pass {
+    font-weight: 650;
+    font-size: 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .purple-description {
+    font-weight: 450;
+    font-size: 24px;
+  }
+  .btn-help {
+    border-radius: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0.5em 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .imgs-home {
+    width: 350px;
+  }
+  .input-https {
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 0.4em 1em;
+  }
+  .tag-copy {
+    padding: 0em 1em;
+    height: 4vmax;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+  }
 }
 
-@media screen and (max-width: 1330px){
+@media screen and (max-width: 1330px) {
   .card-request {
     width: 23vmax !important;
   }
@@ -269,9 +493,64 @@
   }
 }
 
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1250px) {
   .card-request {
     width: 22vmax !important;
+    padding: 0em 1em 0em 0em;
+  }
+  /*home responsive*/
+  .purple-titlehome {
+    font-size: 30px;
+  }
+  .pass-tag {
+    font-size: 20px;
+    padding: 0.4em;
+    border-radius: 10px;
+  }
+  .description-pass {
+    font-size: 24px;
+  }
+  .explication-pass {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .explication-pass-gray {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .link-pass {
+    font-weight: 650;
+    font-size: 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .purple-description {
+    font-weight: 450;
+    font-size: 24px;
+  }
+  .btn-help {
+    border-radius: 25px;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 0.5em 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .imgs-home {
+    width: 250px;
+  }
+  .input-https {
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    padding: 0.4em 1em;
+  }
+  .tag-copy {
+    padding: 0em 1em;
+    height: 4vmax;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
   }
 }
 

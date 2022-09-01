@@ -17,7 +17,6 @@ import { MdFileCopy, MdHelpOutline } from "react-icons/md";
 import platformeverhooks from "../platform-everhooks.png";
 import platformevermart from "../platform-evermart.png";
 import { IoIosArrowUp } from "react-icons/io";
-import faq from "../faq.png";
 import { useNavigate } from "react-router-dom";
 import CardRequests from "../components/cards/CardRequests";
 import { getUuid } from "../services/apiUuid";
@@ -156,19 +155,19 @@ const Home = () => {
                         </span>
                       </Col>
                       <Col xs={24} xl={24}>
-                        <Button
+                        <button
                           className="btn-help"
                           href="https://api.whatsapp.com/send?phone=+5511994979707&text=Ol%C3%A1!%20Preciso%20de%20suporte,%20pode%20me%20ajudar?"
                           target="_blank"
                         >
                           <MdHelpOutline style={{ marginRight: 10 }} />
                           Preciso de ajuda!
-                        </Button>
+                        </button>
                       </Col>
                     </Row>
                   </Col>
                   <Col xs={24} xl={10}>
-                    <img src={faq}  className="img-home" />
+  
                   </Col>
                 </Row>
               </Card>
