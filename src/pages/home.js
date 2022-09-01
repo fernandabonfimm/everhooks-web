@@ -84,11 +84,11 @@ const Home = () => {
                         <img src={platformeverhooks} className="imgs-home" />
                       </Col>
                       <Col xs={20} xl={20}>
-                        <Tag className="input-https" name="https">
+                        <h3 className="input-https" name="https">
                           https://neweverhook.herokuapp.com/ever/{sendUUID}
-                        </Tag>
+                        </h3>
                       </Col>
-                      <Col xs={4} xl={4}>
+                      <Col xs={24} xl={4}>
                         <Button className="tag-copy" onClick={copyToClipboard}>
                           <MdFileCopy />
                         </Button>
@@ -167,8 +167,8 @@ const Home = () => {
                       </Col>
                     </Row>
                   </Col>
-                  <Col xs={10} xl={10}>
-                    <img src={faq} width={230} />
+                  <Col xs={24} xl={10}>
+                    <img src={faq}  className="img-home" />
                   </Col>
                 </Row>
               </Card>
