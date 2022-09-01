@@ -62,9 +62,7 @@ const CardRequests = () => {
           </Col>
           <Row gutter={[32, 22]}>
             {" "}
-            <PerfectScrollbar
-              style={{ minHeight: "50vmin", maxHeight: "65vmax" }}
-            >
+            <PerfectScrollbar className="perfect-scroll">
               {" "}
               {uuidList.map((dados, index) => {
                 var _index = index + 1;
@@ -166,14 +164,14 @@ const CardRequests = () => {
                                 >
                                   {dados.header.Type_Request}
                                 </Tag>
-                              ) :null}
+                              ) : null}
                             </Col>
-                            <Col xs={24} xl={5}>
+                            <Col xs={24} xl={5} className="margintop-col">
                               <span className="white-description">
                                 #{_index}
                               </span>
                             </Col>
-                            <Col xs={24} xl={12}>
+                            <Col xs={24} xl={12} className="margintop-col">
                               <span className="white-description">
                                 {moment(dados.created_at).format("DD/MM/YYYY")}
                               </span>

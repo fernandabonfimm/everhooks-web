@@ -136,6 +136,145 @@
 .img-home {
   width: 230px;
 }
+
+.perfect-scroll{
+  min-height: 50vmin;
+  max-height: 65vmax;
+}
+@media screen and (max-width: 4000px){
+  .card-request {
+    width: 28vmax !important;
+    padding: 2em;
+  }
+  .card-home {
+    min-height: 30vmax;
+    max-height: 30vmax !important;
+    padding: 4em;
+  }
+  .perfect-scroll{
+    min-height: 25vmin;
+    max-height: 25vmax;
+  }
+  .purple-titlehome {
+    font-size: 40px;
+  }
+.titlegray {
+  font-size: 30px;
+}
+.tag-post {
+  font-size: 25px;
+  padding: 0.5em 2em;
+}
+.white-description {
+  font-size: 28px;
+}
+.delete {
+  font-size: 28px;
+  height: 1.5vmax;
+  width: 2vmax;
+}
+.margintop-col{
+  margin-top: 0.5vmax;
+  margin-bottom: 0.5vmax;
+}
+}
+
+@media screen and (max-width: 3500px){
+  .card-request {
+    width: 27vmax !important;
+  }
+  .card-home {
+    min-height: 40vmax;
+    max-height: 40vmax !important;
+  }
+  .perfect-scroll{
+    min-height: 35vmin;
+    max-height: 35vmax;
+  }
+  .delete {
+    font-size: 28px;
+    height: 2vmax;
+    width: 2.5vmax;
+  }
+}
+
+@media screen and (max-width: 3000px){
+  .card-request {
+    width: 26vmax !important;
+  }
+}
+
+@media screen and (max-width: 2500px){
+  .card-request {
+    padding: 1em;
+    width: 27vmax !important;
+  }
+  .card-home{
+    padding: 2em;
+  }
+  .delete {
+    font-size: 28px;
+    height: 2.5vmax;
+    width: 3vmax;
+  }
+}
+
+@media screen and (max-width: 1900px){
+  .card-request {
+    width: 26vmax !important;
+  }
+  .delete {
+    font-size: 28px;
+    height: 3vmax;
+    width: 3.5vmax;
+  }
+}
+
+@media screen and (max-width: 1650px){
+  .card-request {
+    width: 25vmax !important;
+  }
+  .titlegray {
+    font-size: 25px;
+  }
+  .tag-post {
+    font-size: 20px;
+    padding: 0.3em 2em;
+  }
+  .white-description {
+    font-size: 25px;
+  }
+  .delete {
+    font-size: 22px;
+    height: 3vmax;
+    width: 3.5vmax;
+  }
+}
+
+@media screen and (max-width: 1330px){
+  .card-request {
+    width: 23vmax !important;
+  }
+  .tag-post {
+    font-size: 18px;
+    padding: 0.3em 2em;
+  }
+  .white-description {
+    font-size: 20px !important;
+  }
+  .delete {
+    font-size: 18px;
+    height: 3vmax;
+    width: 3.5vmax;
+  }
+}
+
+@media screen and (max-width: 1250px){
+  .card-request {
+    width: 22vmax !important;
+  }
+}
+
 @media screen and (max-width: 1178px) {
   .card-request {
     width: 80vmax !important;
