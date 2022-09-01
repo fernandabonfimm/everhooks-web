@@ -380,102 +380,190 @@
 }
 
 @media screen and (max-width: 1900px) {
-  .card-request {
-    width: 26vmax !important;
-  }
-  .delete {
-    font-size: 28px;
-    height: 3vmax;
-    width: 3.5vmax;
-  }
-}
-
-@media screen and (max-width: 1650px) {
-  /*card principal azul claro */
-  .card-home {
-    min-height: 100vmax;
-    max-height: 100vmax !important;
-    padding: 2em;
-  }
-  .perfect-scroll {
-    min-height: 78vmin;
-    max-height: 78vmax;
-  }
-  .card-request {
-    width: 25vmax !important;
+    /*card principal azul claro */
+    .card-home {
+      min-height: 70vmax;
+      max-height: 70vmax !important;
+      padding: 3em;
+    }
+    .perfect-scroll {
+      min-height: 60vmin;
+      max-height: 60vmax;
+    }
+   /* css cardrequest responsive*/
+   .card-request {
+    width: 24vmax !important;
+    padding: 0.2em;
   }
   .titlegray {
-    font-size: 25px;
+    font-size: 22px;
   }
   .tag-post {
-    font-size: 20px;
+    font-size: 16px;
     padding: 0.3em 2em;
   }
   .white-description {
-    font-size: 25px;
+    font-size: 20px;
   }
   .delete {
-    font-size: 22px;
+    font-size: 20px;
     height: 3vmax;
     width: 3.5vmax;
   }
   /*home responsive*/
   .purple-titlehome {
-    font-size: 35px;
+    font-size: 30px;
   }
   .pass-tag {
-    font-size: 24px;
-    padding: 0.8em;
+    font-size: 22px;
+    padding: 0.4em;
     border-radius: 10px;
   }
   .description-pass {
-    font-size: 24px;
+    font-size: 26px;
   }
   .explication-pass {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
   }
   .explication-pass-gray {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
   }
   .link-pass {
     font-weight: 650;
-    font-size: 24px;
+    font-size: 20px;
     margin-left: 8px;
     margin-right: 8px;
   }
   .purple-description {
     font-weight: 450;
-    font-size: 24px;
+    font-size: 20px;
   }
   .btn-help {
     border-radius: 25px;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     padding: 0.5em 2em;
     margin-top: 1em;
     margin-bottom: 1em;
   }
   .imgs-home {
-    width: 350px;
+    width: 280px;
   }
   .input-https {
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 10px;
     border: none;
     padding: 0.4em 1em;
   }
   .tag-copy {
     padding: 0em 1em;
-    height: 4vmax;
+    height: 2vmax;
     border: none;
     border-radius: 10px;
     font-size: 20px;
   }
 }
 
+@media screen and (max-width: 1650px) {
+  /*card principal azul claro */
+  .card-home {
+    min-height: 65vmax;
+    max-height: 65vmax !important;
+    padding: 2em;
+  }
+  .perfect-scroll {
+    min-height: 55vmin;
+    max-height: 55vmax;
+  }
+  /* css cardrequest responsive*/
+  .card-request {
+    width: 23vmax !important;
+    padding: 0.2em;
+  }
+  .titlegray {
+    font-size: 20px;
+  }
+  .tag-post {
+    font-size: 14px;
+    padding: 0.3em 2em;
+  }
+  .white-description {
+    font-size: 18px;
+  }
+  .delete {
+    font-size: 18px;
+    height: 3vmax;
+    width: 3.5vmax;
+  }
+  /*home responsive*/
+  .purple-titlehome {
+    font-size: 28px;
+  }
+  .pass-tag {
+    font-size: 20px;
+    padding: 0.4em;
+    border-radius: 10px;
+  }
+  .description-pass {
+    font-size: 24px;
+  }
+  .explication-pass {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .explication-pass-gray {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .link-pass {
+    font-weight: 650;
+    font-size: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .purple-description {
+    font-weight: 450;
+    font-size: 16px;
+  }
+  .btn-help {
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0.5em 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .imgs-home {
+    width: 200px;
+  }
+  .input-https {
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+    padding: 0.4em 1em;
+  }
+  .tag-copy {
+    padding: 0em 1em;
+    height: 2vmax;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 1330px) {
+   /*card principal azul claro */
+   .card-home {
+    min-height: 80vmax;
+    max-height: 80vmax !important;
+    padding: 2em;
+  }
+  .perfect-scroll {
+    min-height: 70vmin;
+    max-height: 70vmax;
+  }
   .card-request {
     width: 23vmax !important;
   }
@@ -498,60 +586,18 @@
     width: 22vmax !important;
     padding: 0em 1em 0em 0em;
   }
-  /*home responsive*/
-  .purple-titlehome {
-    font-size: 30px;
+
+   /*card principal azul claro */
+   .card-home {
+    min-height: 90vmax;
+    max-height: 90vmax !important;
+    padding: 2em;
   }
-  .pass-tag {
-    font-size: 20px;
-    padding: 0.4em;
-    border-radius: 10px;
+  .perfect-scroll {
+    min-height: 80vmin;
+    max-height: 80vmax;
   }
-  .description-pass {
-    font-size: 24px;
-  }
-  .explication-pass {
-    font-size: 24px;
-    font-weight: 500;
-  }
-  .explication-pass-gray {
-    font-size: 24px;
-    font-weight: 500;
-  }
-  .link-pass {
-    font-weight: 650;
-    font-size: 24px;
-    margin-left: 8px;
-    margin-right: 8px;
-  }
-  .purple-description {
-    font-weight: 450;
-    font-size: 24px;
-  }
-  .btn-help {
-    border-radius: 25px;
-    font-size: 22px;
-    font-weight: 500;
-    padding: 0.5em 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  .imgs-home {
-    width: 250px;
-  }
-  .input-https {
-    font-size: 16px;
-    border-radius: 10px;
-    border: none;
-    padding: 0.4em 1em;
-  }
-  .tag-copy {
-    padding: 0em 1em;
-    height: 4vmax;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-  }
+
 }
 
 @media screen and (max-width: 1178px) {
