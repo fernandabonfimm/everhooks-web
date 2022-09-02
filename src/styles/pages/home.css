@@ -598,9 +598,9 @@
   }
 }
 
-@media screen and (max-width: 1178px) {
+@media screen and (max-width: 1188px) {
   .card-request {
-    width: 80vmax !important;
+    width: 65vmax !important;
   }
   .card-home {
     min-height: 100vmax;
@@ -609,7 +609,7 @@
 }
 @media screen and (max-width: 1050px) {
   .card-request {
-    width: 80vmax;
+    width: 58vmax !important;
   }
   .card-home {
     min-height: 100vmax;
@@ -618,6 +618,9 @@
 }
 
 @media screen and (max-width: 920px) {
+   .card-request {
+    width: 58vmax !important;
+  }
   .card-home {
     min-height: 100vmax;
     max-height: 800vmax !important;
@@ -642,26 +645,27 @@
     width: 40vmax;
   }
   .card-request {
-    width: 75vmax;
+    width: 40vmax !important;
   }
 }
 
 @media screen and (max-width: 700px) {
   .card-request {
-    width: 65vmax;
+    width: 35vmax;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .card-request {
     min-width: 10vmax;
-    max-width: 50vmax;
+    max-width: 28vmax;
   }
 }
 @media screen and (max-width: 500px) {
   .card-home {
     min-height: 100vmax;
     max-height: 800vmax !important;
+    padding: 0.5em;
   }
   .input-https {
     font-size: 17px;
@@ -671,14 +675,14 @@
   }
   .card-request {
     min-width: 10vmax;
-    max-width: 40vmax;
+    max-width: 26vmax;
   }
 }
 
 @media screen and (max-width: 450px) {
   .card-request {
     min-width: 10vmax;
-    max-width: 35vmax;
+    max-width: 22vmax;
     padding: 0em 2em 0em 0em;
   }
 }
@@ -688,7 +692,7 @@
   }
   .card-request {
     min-width: 10vmax;
-    max-width: 40vmax;
+    max-width: 20vmax;
     padding: 0em 2em 0em 0em;
   }
   .imgs-home {
@@ -720,7 +724,7 @@
 @media screen and (max-width: 350px) {
   .card-request {
     min-width: 10vmax;
-    max-width: 35vmax;
+    max-width: 17vmax;
     padding: 0em 2em 0em 0em;
   }
 }
@@ -752,7 +756,7 @@
   }
   .card-request {
     min-width: 10vmax;
-    max-width: 30vmax;
+    max-width: 12vmax;
     padding: 0em 2em 0em 0em;
     padding: 0em 2em 0em 0em;
   }
