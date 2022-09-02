@@ -10,7 +10,6 @@ import {
   Tag,
   Button,
   Divider,
-  BackTop,
 } from "antd";
 import "../styles/pages/home.css";
 import { MdFileCopy, MdHelpOutline } from "react-icons/md";
@@ -172,11 +171,6 @@ const Home = () => {
                 </Row>
               </Card>
             </Col>
-            <BackTop>
-              <div className="backtop">
-                <IoIosArrowUp />
-              </div>
-            </BackTop>
           </Row>
         </Content>
         <FooterComponent />

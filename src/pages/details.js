@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Layout, Row, Col, Card, Button, Divider, Input, BackTop } from "antd";
+import { Layout, Row, Col, Card, Button, Divider, Input } from "antd";
 import NavbarComponent from "../components/Navbar";
 import FooterComponent from "../components/Footer";
 import CardRequests from "../components/cards/CardRequests";
@@ -177,11 +177,6 @@ const Details = () => {
                 </Row>
               </Card>
             </Col>
-            <BackTop>
-              <div className="backtop">
-                <IoIosArrowUp />
-              </div>
-            </BackTop>
           </Row>
         </Content>
         <FooterComponent />
