@@ -67,7 +67,7 @@ const NavbarComponent = () => {
           </Col>
           <Col xs={5} xl={5}>
             <Button
-              className="btnaccess"
+              className="btnaccess a.ant-btn"
               href="https://qa-dashboard.mycheckout.com.br/login"
               target="_blank"
             >

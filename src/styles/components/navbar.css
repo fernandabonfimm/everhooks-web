@@ -36,8 +36,8 @@
   border-radius: 15px;
   background-color: #57b1ef;
   color: #fff;
-  font-size: 16px;
-  height: 2.5vmax;
+  font-size: 12px;
+  height: 2.5vmax !important;
   padding: 0em 2em;
   font-weight: 600;
 }
@@ -45,6 +45,11 @@
   background-color: #57b1ef;
   color: #fff;
 }
+/* .a.ant-btn {
+ padding-top: .01px !important;
+ line-height: 30px;
+}
+ */
 
 /* css da segunda parte da navbar */
 .content-announcement {
@@ -115,6 +120,10 @@
     padding: 0em 4em;
     font-weight: 650;
   }
+  a.ant-btn {
+    padding-top: .01px !important;
+    line-height: 90px !important;
+   }
 
   /*Header responsive css */
   .content-announcement {
@@ -146,8 +155,14 @@
   .btnaccess {
     font-size: 38px;
     padding: 0em 2em;
+    height: 3vmax !important;
     font-weight: 650;
   }
+  a.ant-btn {
+    padding-top: .01px !important;
+    line-height: 90px;
+  }
+   
   /*Header responsive css */
   .content-announcement {
     padding: 5em 10em;
@@ -198,6 +213,10 @@
     padding: 0em 2em;
     font-weight: 650;
   }
+  a.ant-btn {
+    padding-top: .01px !important;
+    line-height: 70px !important;
+  }
   /*Header responsive css */
   .content-announcement {
     padding: 5em 10em;
@@ -244,6 +263,10 @@
     padding: 0em 2em;
     font-weight: 650;
   }
+  a.ant-btn {
+    padding-top: .01px !important;
+    line-height: 60px !important;
+  }
   /*Header responsive css */
   .content-announcement {
     padding: 5em 10em;
@@ -273,12 +296,16 @@
   }
   .hyperlink {
     margin-top: 15px !important;
-    font-size: 30px;
+    font-size: 30px ;
   }
   .btnaccess {
     font-size: 25px;
     padding: 0em 2em;
     font-weight: 600;
+  }
+  a.ant-btn {
+    padding-top: .01px !important;
+    line-height: 50px !important;
   }
   /*Header responsive css */
   .content-announcement {
@@ -323,6 +350,10 @@
   .btnaccess {
     font-size: 22px;
     padding: 0em 2em !important;
+  }
+  a.ant-btn {
+    padding-top: .01px !important;
+    line-height: 45px !important;
   }
   /*Header responsive css */
   .content-announcement {
@@ -369,6 +400,10 @@
     height: 2.5vmax;
     padding: 0em 1em !important;
   }
+  a.ant-btn {
+    padding-top: .01px !important;
+    line-height: 45px !important;
+  }
   /*Header responsive css */
   .content-announcement {
     padding: 5em 10em;
@@ -414,6 +449,10 @@
     height: 2.5vmax;
     padding: 0em 1em !important;
   }
+  a.ant-btn {
+    padding-top: .01px !important;
+    line-height: 35px !important;
+  }
   /*Header responsive css */
   .content-announcement {
     padding: 5em 10em;
@@ -439,6 +478,10 @@
   /*Header responsive css */
   .person-woman {
     display: none;
+  }
+  .content-announcement {
+    padding: 5em 10em;
+    height: 33vmax;
   }
 }
 
@@ -473,10 +516,14 @@
     font-size: 25px;
     padding: 1em 0.5em;
   }
+  a.ant-btn {
+    padding-top: .01px !important;
+    line-height: 45px !important;
+  }
   /*Header responsive css */
   .content-announcement {
     padding: 2em 8em;
-    height: 35vmax;
+    height: 30vmax;
   }
   .white-titlenavbar {
     font-size: 22px;
@@ -493,13 +540,13 @@
 @media screen and (max-width: 800px) {
   /*navbar css responsive */
   .navbarlayout {
-    height: 4vmax !important;
+    height: 9vmax;
     padding: 0em;
   }
   /*Header responsive css */
   .content-announcement {
     padding: 1.5em 7em;
-    height: 37vmax;
+    height: 39vmax;
   }
 }
 
@@ -508,6 +555,14 @@
   .navbarlayout {
     height: 12vmax;
     padding: 0em;
+  }
+  .btnaccess-responsive {
+    font-size: 24px;
+    padding: 0em 0.5em;
+  }
+  a.ant-btn {
+    padding-top: .01px !important;
+    line-height: 35px !important;
   }
   /*Header responsive css */
   .content-announcement {
@@ -519,7 +574,7 @@
 @media screen and (max-width: 500px) {
   /*navbar css responsive */
   .navbarlayout {
-    height: 15vmax;
+    height: 13vmax;
     padding: 0em;
   }
   .logo-everhooks {
@@ -536,10 +591,14 @@
     font-size: 24px;
     padding: 0em 0.5em;
   }
+  a.ant-btn {
+    padding-top: .01px !important;
+    line-height: 35px !important;
+  }
   /*Header responsive css */
   .content-announcement {
     padding: 0.5em 4em;
-    height: 60vmax;
+    height: 65vmax;
   }
   .white-titlenavbar {
     font-size: 19px;
@@ -557,12 +616,12 @@
 @media screen and (max-width: 360px) {
     /*navbar css responsive */
     .navbarlayout {
-      height: 12vmax;
+      height: 18vmax;
       padding: 0em;
     }
     .logo-everhooks {
-      width: 65px !important;
-      height: 40px !important;
+      width: 60px !important;
+      height: 35px !important;
       cursor: pointer;
       margin-left: 5vmax !important;
     }
@@ -575,11 +634,14 @@
       height: 5.5vmax;
       padding: 0em 0.5em;
     }
-
+    a.ant-btn {
+      padding-top: .01px !important;
+      line-height: 8px !important;
+    }
   /*Header responsive css */
   .content-announcement {
     padding: 0.5em 3em;
-    height: 60vmax;
+    height: 70vmax;
   }
   .white-titlenavbar {
     font-size: 17px;
