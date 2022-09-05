@@ -493,13 +493,13 @@
 @media screen and (max-width: 800px) {
   /*navbar css responsive */
   .navbarlayout {
-    height: 9vmax;
+    height: 4vmax !important;
     padding: 0em;
   }
   /*Header responsive css */
   .content-announcement {
     padding: 1.5em 7em;
-    height: 42vmax;
+    height: 37vmax;
   }
 }
 

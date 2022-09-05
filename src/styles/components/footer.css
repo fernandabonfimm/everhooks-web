@@ -46,9 +46,8 @@
   color: #57b1ef;
 }
 
-
 @media screen and (max-width: 4400px) {
-  .logo-footer{
+  .logo-footer {
     width: 700px;
     height: 440px;
     margin-left: 0px !important;
@@ -65,20 +64,19 @@
   .white-title {
     font-size: 65px;
   }
-  .rounded-icon{
+  .rounded-icon {
     width: 70px;
     height: 70px;
   }
-  .css{
+  .css {
     margin-top: 6px;
     width: 50px;
     height: 50px;
   }
 }
 
-
 @media screen and (max-width: 4000px) {
-  .logo-footer{
+  .logo-footer {
     width: 670px;
     height: 420px;
     margin-left: 0px !important;
@@ -95,18 +93,18 @@
   .white-title {
     font-size: 60px;
   }
-  .rounded-icon{
+  .rounded-icon {
     width: 60px;
     height: 60px;
   }
-  .css{
+  .css {
     width: 40px;
     height: 40px;
   }
 }
 
 @media screen and (max-width: 3800px) {
-  .logo-footer{
+  .logo-footer {
     width: 650px;
     height: 400px;
     margin-left: 0px !important;
@@ -123,18 +121,18 @@
   .white-title {
     font-size: 60px;
   }
-  .rounded-icon{
+  .rounded-icon {
     width: 60px;
     height: 60px;
   }
-  .css{
+  .css {
     width: 40px;
     height: 40px;
   }
 }
 
 @media screen and (max-width: 3200px) {
-  .logo-footer{
+  .logo-footer {
     width: 630px;
     height: 370px;
     margin-left: 0px !important;
@@ -151,18 +149,18 @@
   .white-title {
     font-size: 55px;
   }
-  .rounded-icon{
+  .rounded-icon {
     width: 60px;
     height: 60px;
   }
-  .css{
+  .css {
     width: 40px;
     height: 40px;
   }
 }
 
 @media screen and (max-width: 2900px) {
-  .logo-footer{
+  .logo-footer {
     width: 620px;
     height: 350px;
     margin-left: 0px !important;
@@ -179,18 +177,18 @@
   .white-title {
     font-size: 50px;
   }
-  .rounded-icon{
+  .rounded-icon {
     width: 60px;
     height: 60px;
   }
-  .css{
+  .css {
     width: 40px;
     height: 40px;
   }
 }
 
 @media screen and (max-width: 2600px) {
-  .logo-footer{
+  .logo-footer {
     width: 600px;
     height: 330px;
     margin-left: 0px !important;
@@ -207,18 +205,18 @@
   .white-title {
     font-size: 45px;
   }
-  .rounded-icon{
+  .rounded-icon {
     width: 50px;
     height: 50px;
   }
-  .css{
+  .css {
     width: 33px;
     height: 33px;
   }
 }
 
 @media screen and (max-width: 2300px) {
-  .logo-footer{
+  .logo-footer {
     width: 460px;
     height: 310px;
     margin-left: 0px !important;
@@ -235,18 +233,18 @@
   .white-title {
     font-size: 40px;
   }
-  .rounded-icon{
+  .rounded-icon {
     width: 45px;
     height: 45px;
   }
-  .css{
+  .css {
     width: 27px;
     height: 27px;
   }
 }
 
 @media screen and (max-width: 2000px) {
-  .logo-footer{
+  .logo-footer {
     width: 390px;
     height: 270px;
     margin-left: 0px !important;
@@ -263,18 +261,18 @@
   .white-title {
     font-size: 35px;
   }
-  .rounded-icon{
+  .rounded-icon {
     width: 40px;
     height: 40px;
   }
-  .css{
+  .css {
     width: 24px;
     height: 24px;
   }
 }
 
 @media screen and (max-width: 1750px) {
-  .logo-footer{
+  .logo-footer {
     width: 370px;
     height: 240px;
     margin-left: 0px !important;
@@ -291,11 +289,11 @@
   .white-title {
     font-size: 33px;
   }
-  .rounded-icon{
+  .rounded-icon {
     width: 35px;
     height: 35px;
   }
-  .css{
+  .css {
     margin-top: 4px;
     width: 21px;
     height: 21px;
@@ -303,7 +301,7 @@
 }
 
 @media screen and (max-width: 1550px) {
-  .logo-footer{
+  .logo-footer {
     width: 360px;
     height: 220px;
     margin-left: 0px !important;
@@ -320,20 +318,19 @@
   .white-title {
     font-size: 30px;
   }
-  .rounded-icon{
+  .rounded-icon {
     width: 33px;
     height: 33px;
   }
-  .css{
+  .css {
     margin-top: 4px;
     width: 20px;
     height: 20px;
   }
-  
 }
 
 @media screen and (max-width: 1300px) {
-  .logo-footer{
+  .logo-footer {
     width: 340px;
     height: 200px;
     margin-left: 0px !important;
@@ -350,11 +347,11 @@
   .white-title {
     font-size: 25px;
   }
-  .rounded-icon{
+  .rounded-icon {
     width: 28px;
     height: 30px;
   }
-  .css{
+  .css {
     margin-top: -6px;
     width: 18px;
     height: 18px;
@@ -362,7 +359,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .logo-footer{
+  .logo-footer {
     width: 300px;
     height: 180px;
     margin-left: 0px !important;
@@ -379,20 +376,19 @@
   .white-title {
     font-size: 28px;
   }
-  .rounded-icon{
+  .rounded-icon {
     width: 40px;
     height: 40px;
   }
-  .css{
+  .css {
     margin-top: 5px;
     width: 24px;
     height: 24px;
   }
 }
 
-
 @media screen and (max-width: 900px) {
-  .logo-footer{
+  .logo-footer {
     width: 220px;
     height: 130px;
     margin-left: 0px !important;
@@ -411,24 +407,392 @@
   }
 }
 
-
-@media screen and (max-width: 800px){
-  .logo-footer{
-    margin-left: 20vmax;
-  } 
+@media screen and (max-width: 4400px) {
+  .logo-footer {
+    width: 700px;
+    height: 440px;
+    margin-left: 0px !important;
+  }
+  .white-subtitle {
+    font-size: 45px;
+  }
+  .hyperlink-footer {
+    font-size: 35px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 35px;
+  }
+  .white-title {
+    font-size: 65px;
+  }
+  .rounded-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .css {
+    margin-top: 6px;
+    width: 50px;
+    height: 50px;
+  }
 }
-@media screen and (max-width: 700px){
-  .logo-footer{
+
+@media screen and (max-width: 4000px) {
+  .logo-footer {
+    width: 650px;
+    height: 410px;
+    margin-left: 0px !important;
+  }
+  .white-subtitle {
+    font-size: 37px;
+  }
+  .hyperlink-footer {
+    font-size: 35px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 35px;
+  }
+  .white-title {
+    font-size: 56px;
+  }
+  .rounded-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .css {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 3800px) {
+  .logo-footer {
+    width: 630px;
+    height: 400px;
+    margin-left: 0px !important;
+  }
+  .white-subtitle {
+    font-size: 35px;
+  }
+  .hyperlink-footer {
+    font-size: 35px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 35px;
+  }
+  .white-title {
+    font-size: 55px;
+  }
+  .rounded-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .css {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 3200px) {
+  .logo-footer {
+    width: 610px;
+    height: 370px;
+    margin-left: 0px !important;
+  }
+  .white-subtitle {
+    font-size: 33px;
+  }
+  .hyperlink-footer {
+    font-size: 30px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 30px;
+  }
+  .white-title {
+    font-size: 50px;
+  }
+  .rounded-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .css {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 2900px) {
+  .logo-footer {
+    width: 600px;
+    height: 350px;
+    margin-left: 0px !important;
+  }
+  .white-subtitle {
+    font-size: 30px;
+  }
+  .hyperlink-footer {
+    font-size: 27px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 27px;
+  }
+  .white-title {
+    font-size: 48px;
+  }
+  .rounded-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .css {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 2600px) {
+  .logo-footer {
+    width: 600px;
+    height: 330px;
+    margin-left: 0px !important;
+  }
+  .white-subtitle {
+    font-size: 26px;
+  }
+  .hyperlink-footer {
+    font-size: 25px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 25px;
+  }
+  .white-title {
+    font-size: 45px;
+  }
+  .rounded-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .css {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+@media screen and (max-width: 2300px) {
+  .logo-footer {
+    width: 460px;
+    height: 310px;
+    margin-left: 0px !important;
+  }
+  .white-subtitle {
+    font-size: 24px;
+  }
+  .hyperlink-footer {
+    font-size: 22px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 22px;
+  }
+  .white-title {
+    font-size: 40px;
+  }
+  .rounded-icon {
+    width: 45px;
+    height: 45px;
+  }
+  .css {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .logo-footer {
+    width: 390px;
+    height: 240px;
+    margin-left: 0px !important;
+  }
+  .white-subtitle {
+    font-size: 23px;
+  }
+  .hyperlink-footer {
+    font-size: 20px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 20px;
+  }
+  .white-title {
+    font-size: 35px;
+  }
+  .rounded-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .css {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 1750px) {
+  .logo-footer {
+    width: 310px;
+    height: 210px;
+    margin-left: 0px !important;
+  }
+  .white-subtitle {
+    font-size: 19px;
+  }
+  .hyperlink-footer {
+    font-size: 17px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 17px;
+  }
+  .white-title {
+    font-size: 30px;
+  }
+  .rounded-icon {
+    width: 35px;
+    height: 35px;
+  }
+  .css {
+    margin-top: 4px;
+    width: 21px;
+    height: 21px;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .logo-footer {
+    width: 300px;
+    height: 190px;
+    margin-left: 0px !important;
+  }
+  .white-subtitle {
+    font-size: 18px;
+  }
+  .hyperlink-footer {
+    font-size: 16px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 16px;
+  }
+  .white-title {
+    font-size: 30px;
+  }
+  .rounded-icon {
+    width: 33px;
+    height: 33px;
+  }
+  .css {
+    margin-top: 4px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .logo-footer {
+    width: 300px;
+    height: 190px;
+    margin-left: 0px !important;
+  }
+  .white-subtitle {
+    font-size: 18px;
+  }
+  .hyperlink-footer {
+    font-size: 16px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 16px;
+  }
+  .white-title {
+    font-size: 24px;
+  }
+  .rounded-icon {
+    width: 28px;
+    height: 30px;
+  }
+  .css {
+    margin-top: -6px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logo-footer {
+    width: 300px;
+    height: 180px;
+    margin-left: 0px !important;
+  }
+  .white-subtitle {
+    font-size: 21px;
+  }
+  .hyperlink-footer {
+    font-size: 16px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 16px;
+  }
+  .white-title {
+    font-size: 28px;
+  }
+  .rounded-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .css {
+    margin-top: 5px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .logo-footer {
+    width: 280px;
+    height: 160px;
+    margin-left: 0px !important;
+  }
+  .white-subtitle {
+    font-size: 19px;
+  }
+  .hyperlink-footer {
+    font-size: 14px;
+  }
+  .hyperlink-footer-evermart {
+    font-size: 14px;
+  }
+  .white-title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .logo-footer {
+    width: 260px;
+    height: 140px;
+    margin-left: 20vmax;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .logo-footer {
+    margin-left: 20vmax;
+  }
+}
+@media screen and (max-width: 700px) {
+  .logo-footer {
     width: 300px;
     height: 180px;
     margin-left: 15vmax;
-  } 
+  }
 }
-@media screen and (max-width: 600px){
-.padding-row {
+@media screen and (max-width: 600px) {
+  .padding-row {
     padding: 0em !important;
   }
-  .logo-footer{
+  .logo-footer {
     width: 290px;
     height: 170px;
     margin-left: 2vmax;
@@ -445,7 +809,7 @@
   .padding-row {
     padding: 0em !important;
   }
-  .logo-footer{
+  .logo-footer {
     width: 240px;
     height: 150px;
     margin-left: 25px;
@@ -459,7 +823,7 @@
 }
 
 @media screen and (max-width: 350px) {
-  .logo-footer{
+  .logo-footer {
     margin-left: 10px;
   }
   .white-subtitle {
@@ -477,7 +841,7 @@
 }
 
 @media screen and (max-width: 300px) {
-  .logo-footer{
+  .logo-footer {
     width: 200px;
     height: 120px;
     margin-left: 0px !important;

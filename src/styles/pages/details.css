@@ -1,349 +1,352 @@
 .content-home {
-  background-color: #fff;
-  padding: 5em;
-}
-.purple-title {
-  color: #0e164b;
-  font-size: 20px;
-  font-weight: 700;
-}
-.raw-content {
-  background-color: #fff;
-  font-size: 15px;
-  height: 15vmax;
-  border-radius: 15px !important;
-}
-.btn-copy {
-  border-radius: 15px;
-  border: none;
-  background-color: #57b1ef;
-  color: #fff;
-  font-size: 15px;
-  height: 3vmax;
-  padding: 0em 2em;
-  font-weight: 550;
-}
-.btn-copy:hover {
-  background-color: #57b1ef;
-  color: #fff;
-}
-
-.tag-table {
-  background-color: #0e164b;
-  color: #fff !important;
-  font-weight: 600;
-  font-size: 16px;
-  border: none;
-  border-radius: 15px;
-  padding: 0.2em 0.8em;
-}
-.tag-table {
-  color: #0e164b;
-  font-size: 16px;
-}
-.table {
-  border: 1px solid #f5f5f5;
-  background-color: #fff;
-  padding: 1em;
-  border-radius: 10px;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.th,
-td {
-  border: 1px solid #f5f5f5;
-  text-align: left;
-  padding: 8px;
-}
-
-
-@media screen and (max-width: 5000px){
-  .content-home{
-      padding: 2em !important;
-  } 
-  .btn-copy{
-      height: 4vmax;
-      font-size: 3.5em;
-      padding: 0em 2em;
-  }
-  .title-table {
-      font-size: 4em;
-  }
-  .description-table {
-      font-size: 4em;
+    background-color: #fff;
+    padding: 5em;
   }
   .purple-title {
-      font-size: 5em;
+    color: #0e164b;
+    font-size: 20px;
+    font-weight: 700;
   }
   .raw-content {
-      font-size: 5em;
+    background-color: #fff;
+    font-size: 15px;
+    height: 15vmax;
+    border-radius: 15px !important;
   }
-  #text {
-      font-size: 1.2em;
+  .btn-copy {
+    border-radius: 15px;
+    border: none;
+    background-color: #57b1ef;
+    color: #fff;
+    font-size: 15px;
+    height: 3vmax;
+    padding: 0em 2em;
+    font-weight: 550;
   }
-}  
-
-@media screen and (max-width: 4500px){
-  .content-home{
-      padding: 2em !important;
-  } 
-  .btn-copy{
-      height: 4vmax;
-      font-size: 3em;
-      padding: 0em 2em;
+  .btn-copy:hover {
+    background-color: #57b1ef;
+    color: #fff;
   }
-  .title-table {
-      font-size: 4em;
+  
+  .tag-table {
+    background-color: #0e164b;
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    padding: 0.2em 0.8em;
   }
-  .description-table {
-      font-size: 4em;
+  .tag-table {
+    color: #0e164b;
+    font-size: 16px;
   }
-  .purple-title {
-      font-size: 5em;
+  .table {
+    border: 1px solid #f5f5f5;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    border-collapse: collapse;
+    width: 100%;
   }
-  .raw-content {
-      font-size: 5em;
+  
+  .th,
+  td {
+    border: 1px solid #f5f5f5;
+    text-align: left;
+    padding: 8px;
   }
-  #text {
-      font-size: 1.2em;
-  }
-}  
-
-@media screen and (max-width: 4200px){
-  .content-home{
-      padding: 2em !important;
-  } 
-  .btn-copy{
-      height: 4vmax;
-      font-size: 2.2em;
-      padding: 0em 2em;
-  }
-  .title-table {
-      font-size: 2em;
-  }
-  .description-table {
-      font-size: 2em;
-  }
-  .purple-title {
-      font-size: 3em;
-  }
-  .raw-content {
-      font-size: 3em;
-  }
-  #text {
-      font-size: 1.1em;
-  }
-}
-
-@media screen and (max-width: 3600px){
-  .content-home{
-      padding: 2em !important;
-  } 
-  .btn-copy{
-      height: 5vmax;
-      font-size: 2em;
-      padding: 0em 2em;
-  }
-  .title-table {
-      font-size: 2em;
-  }
-  .description-table {
-      font-size: 2em;
-  }
-  .purple-title {
-      font-size: 3em;
-  }
-  .raw-content {
-      font-size: 3em;
-  }
-  #text {
-      font-size: 1.1em;
-  }
-}
-
-@media screen and (max-width: 3000px){
-  .content-home{
-      padding: 2em !important;
-  } 
-  .btn-copy{
-      height: 5vmax;
-      font-size: 2em;
-      padding: 0em 2em;
-  }
-  .title-table {
-      font-size: 2em;
-  }
-  .description-table {
-      font-size: 2em;
-  }
-  .purple-title {
-      font-size: 3em;
-  }
-  .raw-content {
-      font-size: 3em;
-  }
-  #text {
-      font-size: 1.1em;
-  }
-}
-
-@media screen and (max-width: 2000px){
-  .content-home{
-      padding: 2em !important;
-  } 
-  .btn-copy{
-      height: 5vmax;
-      font-size: 1.75em;
-      padding: 0em 2em;
-  }
-  .title-table {
-      font-size: 1.75em;
-  }
-  .description-table {
-      font-size: 1.75em;
-  }
-  .purple-title {
-      font-size: 1.75em;
-  }
-  .raw-content {
-      font-size: 2em;
-  }
-  #text {
-      font-size: 1em;
-  }
-}
-
-@media screen and (max-width: 1500px){
-  .content-home{
-      padding: 2em !important;
-  } 
-  .btn-copy{
-      height: 5vmax;
-      font-size: 1em;
-      padding: 0em 2em;
-  }
-  .title-table {
-      font-size: 1em;
-  }
-  .description-table {
-      font-size: 1em;
-  }
-  .purple-title {
-      font-size: 1.3em;
-  }
-  .raw-content {
-      font-size: 1,2em;
-  }
-  #text {
-      font-size: 0.9em;
-  }
-}
-
-@media screen and (max-width: 1000px){
-  .content-home{
-      padding: 2em !important;
-  } 
-  .btn-copy{
-      height: 5vmax;
-      font-size: 1em;
-      padding: 0em 2em;
-  }
-}
-
-@media screen and (max-width: 550px){
-  .content-home{
-      padding: 2em !important;
-  } 
-  .btn-copy{
-      height: 5vmax;
-      padding: 0em 2em;
-  }
-}
-
-@media screen and (max-width: 450px){
-  .content-home{
-      padding: 2em !important;
-  } 
-  .btn-copy{
-      height: 5vmax;
-      width: 27vmax;
-      font-size: 0.7em;
-      padding: 0 0.5em 0 0;
-  }
-}
-
-
-@media screen and (max-width: 380px){
-  .content-home{
-      padding: 2em !important;
-  } 
-  .btn-copy{
-      height: 5vmax;
-      width: 25vmax;
-      font-size: 0.6em;
-      padding: 0em 0em;
-  }
-}
-
-
-@media screen and (max-width: 300px){
-  .content-home{
-      padding: 2em !important;
-  } 
-  .btn-copy{
-      height: 5vmax;
-      width: 22vmax;
-      font-size: 0.6em;
-      padding: 0em 0em;
-  }
-}
-
-
-@media screen and (max-width: 280px){
-  .content-home{
-      padding: 2em !important;
-  } 
-  .btn-copy{
-      height: 5.6vmax;
-      width: 28vmax;
-      font-size: 0.7em;
-      padding: 0em 0em;
-  }
-}
-
-@media screen and (max-width: 200px){
-  .content-home{
-      padding: 2em !important;
-  } 
-  .btn-copy{
-      height: 4vmax;
-      width: 20vmax;
-      font-size: 0.4em;
-      padding: 0em 0em;
-  }
-}
-
-@media screen and (max-width: 100px){
-  .content-home{
-      padding: 2em !important;
-  } 
-  .btn-copy{
-      height: 4vmax;
-      width: 15vmax;
-      font-size: 0.3em;
-      padding: 0em 0em;
-  }
-}
-
-
-@media screen and (max-width: 50px){
-  .content-home{
-      padding: 2em !important;
-  } 
-  .btn-copy{
-      height: 4vmax;
-      width: 4vmax;
-      padding: 0em 2em;
-  }
-}
+    
+    @media screen and (max-width: 4000px){
+        .content-home{
+            padding: 2em !important;
+        } 
+        .btn-copy{
+            height: 2vmax;
+            font-size: 3.5em;
+            padding: 0em 1em;
+            border-radius: 15em;
+            padding: 0.1em 0.6em 1.65em 0.6em;
+  
+        }
+        .title-table {
+            font-size: 3.2em;
+        }
+        .description-table {
+            font-size: 3.5em;
+        }
+        .purple-title {
+            font-size: 3.7em;
+        }
+        .raw-content {
+            font-size: 3.2em;
+        }
+        #text {
+            font-size: 1.2em;
+        }
+      }
+  
+    @media screen and (max-width: 3500px){
+      .content-home{
+          padding: 2em !important;
+      } 
+      .btn-copy{
+          height: 2vmax;
+          font-size: 3.2em;
+          padding: 0em 1em;
+          border-radius: 10em;
+          padding: 0.1em 0.5em 1.6em 0.5em;
+  
+      }
+      .title-table {
+          font-size: 3em;
+      }
+      .description-table {
+          font-size: 3em;
+      }
+      .purple-title {
+          font-size: 3em;
+      }
+      .raw-content {
+          font-size: 3em;
+      }
+      #text {
+          font-size: 1em;
+      }
+    }
+    
+    @media screen and (max-width: 3000px){
+      .content-home{
+          padding: 2em !important;
+      } 
+      .btn-copy{
+          height: 2.5vmax;
+          font-size: 2.7em;
+          padding: 0em 1em;
+          padding: 0.1em 0.5em 1.65em 0.5em;
+  
+      }
+      .title-table {
+          font-size: 2.5em;
+      }
+      .description-table {
+          font-size: 2.5em;
+      }
+      .purple-title {
+          font-size: 3em;
+      }
+      .raw-content {
+          font-size: 3em;
+      }
+      #text {
+          font-size: 1em;
+      }
+    }
+    
+    @media screen and (max-width: 2500px){
+      .content-home{
+          padding: 2em !important;
+      } 
+      .btn-copy{
+          height: 2.5vmax;
+          font-size: 2.7em;
+          padding: 0.1em 0.5em 1.65em 0.5em;
+      }
+      .title-table {
+          font-size: 2.5em;
+      }
+      .description-table {
+          font-size: 2.5em;
+      }
+      .purple-title {
+          font-size: 3em;
+      }
+      .raw-content {
+          font-size: 2.7em;
+      }
+      #text {
+          font-size: 1em;
+      }
+    }
+    
+    @media screen and (max-width: 2000px){
+        .content-home{
+            padding: 2em !important;
+        } 
+        .btn-copy{
+            height: 2.5vmax;
+            font-size: 2.2em;
+            padding: 0.1em 0.5em 1.6em 0.5em;
+  
+        }
+        .title-table {
+            font-size: 1.75em;
+        }
+        .description-table {
+            font-size: 1.75em;
+        }
+        .purple-title {
+            font-size: 1.75em;
+        }
+        .raw-content {
+            font-size: 2em;
+        }
+        #text {
+            font-size: 1em;
+        }
+    }
+    
+    @media screen and (max-width: 1500px){
+      .content-home{
+          padding: 2em !important;
+      } 
+      .btn-copy{
+          height: 3vmax;
+          font-size: 2em;
+          padding: 0em 1em;
+      }
+      .title-table {
+          font-size: 1.5em;
+      }
+      .description-table {
+          font-size: 1.5em;
+      }
+      .purple-title {
+          font-size: 1.5em;
+      }
+      .raw-content {
+          font-size: 1.5em;
+      }
+      #text {
+          font-size: 0.9em;
+      }
+    }
+    
+    
+    @media screen and (max-width: 1000px){
+        .content-home{
+          padding: 2em !important;
+      } 
+      .btn-copy{
+          height: 3vmax;
+          font-size: 1.5em;
+          padding: 0em 1em;
+      }
+      .title-table {
+          font-size: 1.5em;
+      }
+      .description-table {
+          font-size: 1.5em;
+      }
+      .purple-title {
+          font-size: 1.5em;
+      }
+      .raw-content {
+          font-size: 1.5em;
+      }
+      #text {
+          font-size: 0.9em;
+      }
+    
+    }
+    
+    @media screen and (max-width: 550px){
+      .content-home{
+          padding: 2em !important;
+      } 
+      .btn-copy{
+          height: 3vmax;
+          font-size: 1.5em;
+          padding: 0em 1em;
+      }
+      .title-table {
+          font-size: 1em;
+      }
+      .description-table {
+          font-size: 1em;
+      }
+      .purple-title {
+          font-size: 1em;
+      }
+      .raw-content {
+          font-size: 1em;
+      }
+      #text {
+          font-size: 0.8em;
+      }
+    
+    }
+    
+    @media screen and (max-width: 450px){
+      .content-home{
+          padding: 2em !important;
+      } 
+      .btn-copy{
+          height: 2vmax;
+          font-size: 0.8em;
+          padding: 0 0.5em;
+      }
+      .raw-content {
+        font-size: 1em;
+    }
+    }
+    
+    
+    @media screen and (max-width: 350px){
+      .content-home{
+          padding: 2em !important;
+      } 
+      .btn-copy{
+          height: 2vmax;
+          font-size: 0.8em;
+          padding: 0em 0.5em;
+      }
+      .raw-content {
+        font-size: 0.9em;
+    }
+    }
+    
+    
+    @media screen and (max-width: 250px){
+      .content-home{
+          padding: 2em !important;
+      } 
+      .btn-copy{
+          height: 2vmax;
+          font-size: 0.7em;
+          padding: 0em 0.5em;
+      }
+      .raw-content {
+        font-size: 0.9em;
+    }
+    }
+    
+    
+    @media screen and (max-width: 150px){
+      .content-home{
+          padding: 2em !important;
+      } 
+      .btn-copy{
+          height: 0.5vmax;
+          font-size: 0.4em;
+          padding: 0em 0em;
+      }
+      .raw-content {
+        font-size: 0.75em;
+    }
+    }
+    
+    @media screen and (max-width: 100px){
+      .content-home{
+          padding: 2em !important;
+      } 
+      .btn-copy{
+          height: 1vmax;
+          width: 15vmax;
+          font-size: 0.5em;
+          padding: 0em 0em;
+      }
+      .raw-content {
+        font-size: 0.5em;
+    }
+    }

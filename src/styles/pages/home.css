@@ -703,7 +703,7 @@
     font-size: 17px;
     padding: 0.5em 1.1em;
     word-wrap: break-word;
-    width: 28vmax;
+    width: 22vmax !important;
   }
   .tag-copy {
     padding: 0em 0.9em;
@@ -726,6 +726,12 @@
     min-width: 10vmax;
     max-width: 17vmax;
     padding: 0em 2em 0em 0em;
+  }
+  .input-https {
+    font-size: 17px;
+    padding: 0.5em 1.1em;
+    word-wrap: break-word;
+    width: 20vmax;
   }
 }
 
