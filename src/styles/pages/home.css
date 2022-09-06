@@ -609,11 +609,16 @@
 }
 @media screen and (max-width: 1050px) {
   .card-request {
-    width: 58vmax !important;
+    width: 78vmax !important;
   }
   .card-home {
     min-height: 100vmax;
     max-height: 800vmax !important;
+  }
+  .delete {
+    font-size: 22px;
+    height: 5vmax;
+    width: 6vmax;
   }
 }
 
@@ -645,7 +650,7 @@
     width: 40vmax;
   }
   .card-request {
-    width: 40vmax !important;
+    width: 55vmax !important;
   }
 }
 
@@ -657,8 +662,13 @@
 
 @media screen and (max-width: 650px) {
   .card-request {
-    min-width: 10vmax;
-    max-width: 28vmax;
+    min-width: 58vmax;
+    max-width: 62vmax;
+  }
+  .delete {
+    font-size: 22px;
+    height: 7vmax;
+    width: 7vmax;
   }
 }
 @media screen and (max-width: 500px) {
@@ -681,8 +691,8 @@
 
 @media screen and (max-width: 450px) {
   .card-request {
-    min-width: 10vmax;
-    max-width: 22vmax;
+    min-width: 30vmax;
+    max-width: 35vmax;
     padding: 0em 2em 0em 0em;
   }
 }
@@ -691,9 +701,14 @@
     padding: 2em !important;
   }
   .card-request {
-    min-width: 10vmax;
-    max-width: 20vmax;
+    min-width: 32vmax;
+    max-width: 36vmax;
     padding: 0em 2em 0em 0em;
+  }
+  .delete {
+    font-size: 22px;
+    height: 7vmax;
+    width: 7vmax;
   }
   .imgs-home {
     margin-top: 10px;
@@ -718,6 +733,12 @@
   .card-home {
     min-height: 100vmax;
     max-height: 800vmax !important;
+  }
+}
+@media screen and (max-width: 375px){
+  .card-request {
+    min-width: 38vmax;
+    max-width: 42vmax;
   }
 }
 
@@ -762,8 +783,7 @@
   }
   .card-request {
     min-width: 10vmax;
-    max-width: 12vmax;
-    padding: 0em 2em 0em 0em;
+    max-width: 32vmax;
     padding: 0em 2em 0em 0em;
   }
   .description-pass {
