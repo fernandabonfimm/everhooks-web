@@ -485,11 +485,24 @@
   }
 }
 
+@media screen and (max-width: 1024px){
+    /*navbar css responsive */
+    .navbarlayout {
+      height: 8vmax;
+      padding: 1em;
+    }
+      /*Header responsive css */
+  .content-announcement {
+    padding: 2em 8em;
+    height: 35vmax;
+  }
+}
+
 @media screen and (max-width: 995px) {
   /*navbar css responsive */
   .navbarlayout {
     height: 6vmax;
-    padding: 0em;
+    padding: 1em;
   }
   .logo-everhooks {
     width: 90px;
@@ -523,16 +536,16 @@
   /*Header responsive css */
   .content-announcement {
     padding: 2em 8em;
-    height: 30vmax;
+    height: 25vmax;
   }
   .white-titlenavbar {
-    font-size: 22px;
+    font-size: 25px;
   }
   .logo-evermart {
     width: 220px;
   }
   .white-subtitlenavbar {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 6mm;
   }
 }
@@ -554,7 +567,7 @@
   /*navbar css responsive */
   .navbarlayout {
     height: 12vmax;
-    padding: 0em;
+    padding: 0.5em;
   }
   .btnaccess-responsive {
     font-size: 24px;
@@ -575,13 +588,13 @@
   /*navbar css responsive */
   .navbarlayout {
     height: 13vmax;
-    padding: 0em;
+    padding: 0.5em;
   }
   .logo-everhooks {
     width: 80px;
     height: 45px;
     cursor: pointer;
-    margin-left: 8vmax;
+    margin-left: 2vmax;
   }
   .icon-navbar {
     font-size: 25px;
@@ -613,45 +626,54 @@
 
 }
 
-@media screen and (max-width: 360px) {
-    /*navbar css responsive */
-    .navbarlayout {
-      height: 18vmax;
-      padding: 0em;
-    }
-    .logo-everhooks {
-      width: 60px !important;
-      height: 35px !important;
-      cursor: pointer;
-      margin-left: 5vmax !important;
-    }
-    .icon-navbar {
-      font-size: 22px;
-      margin-top: 5px;
-    }
-    .btnaccess-responsive {
-      font-size: 20px;
-      height: 5.5vmax;
-      padding: 0em 0.5em;
-    }
-    a.ant-btn {
-      padding-top: .01px !important;
-      line-height: 8px !important;
-    }
+@media screen and (max-width: 420px){
+  /*navbar css responsive */
+  .navbarlayout {
+    height: 9vmax;
+    padding: 0.5em;
+  }
   /*Header responsive css */
   .content-announcement {
-    padding: 0.5em 3em;
-    height: 70vmax;
+    padding: 0.5em 4em;
+    height: 44vmax;
   }
   .white-titlenavbar {
-    font-size: 17px;
+    font-size: 22px;
   }
   .logo-evermart {
-    width: 150px;
+    width: 200px;
   }
   .white-subtitlenavbar {
-    font-size: 13px;
-    line-height: 5mm;
+    font-size: 18px;
+    line-height: 6mm;
   }
+}
 
+@media screen and (max-width: 300px){
+  /*navbar css responsive */
+  .navbarlayout {
+    height: 9vmax;
+    padding: 0.5em;
+  }
+  .logo-everhooks {
+    width: 60px;
+    height: 35px;
+    cursor: pointer;
+    margin-left: 1vmax;
+  }
+  /*Header responsive css */
+  .content-announcement {
+    padding: 0.2em 2em;
+    height: 48vmax;
+  }
+  .white-titlenavbar {
+    font-size: 18px;
+  }
+  .logo-evermart {
+    width: 180px;
+  }
+  .white-subtitlenavbar {
+    font-size: 14px;
+    line-height: 6mm;
+  }
 }
