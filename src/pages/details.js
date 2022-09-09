@@ -311,7 +311,7 @@ const Details = () => {
               </Card>
             </Col>
             <Col xs={24} xl={6}>
-              <CardDetails/>
+              <CardDetails />
             </Col>
           </Row>
         </Content>

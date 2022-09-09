@@ -64,8 +64,6 @@ const CardRequests = () => {
             <PerfectScrollbar className="perfect-scroll">
               {" "}
               {uuidList
-                .slice(0)
-                .reverse()
                 .map((dados, index) => {
                   var _index = index + 1;
                   return (
@@ -196,7 +194,7 @@ const CardRequests = () => {
                       </Card>
                     </Col>
                   );
-                })}
+                }).reverse()}
             </PerfectScrollbar>
           </Row>
         </Row>

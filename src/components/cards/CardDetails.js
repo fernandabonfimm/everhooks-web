@@ -1,5 +1,5 @@
 import React from "react";
-import {Row, Col, Card, Tag } from "antd";
+import { Row, Col, Card, Tag } from "antd";
 import "../../styles/pages/details.css";
 import { useLocation } from "react-router-dom";
 import PerfectScrollbar from "react-perfect-scrollbar";
@@ -17,7 +17,7 @@ const CardDetails = () => {
             <h3 className="purple-title">Valores do Formulário</h3>
           </Col>
           <PerfectScrollbar className="perfect-scroll">
-          <Col xs={24} xl={24}>
+            <Col xs={24} xl={24}>
               <Row gutter={[32, 22]}>
                 <Col xs={24} xl={12}>
                   <span className="request-divider-tag">oi </span>
@@ -26,7 +26,7 @@ const CardDetails = () => {
                   <span className="request-divider">teste</span>
                 </Col>
               </Row>
-          </Col>
+            </Col>
           </PerfectScrollbar>
         </Row>
       </Card>
