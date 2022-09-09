@@ -8,6 +8,7 @@ import "../styles/pages/details.css";
 import { getUuid } from "../services/apiUuid";
 import { useLocation } from "react-router-dom";
 import moment from "moment";
+import CardDetails from "../components/cards/CardDetails";
 
 const { Content } = Layout;
 
@@ -44,13 +45,13 @@ const Details = () => {
             <Col xs={24} xl={8}>
               <CardRequests />
             </Col>
-            <Col xs={24} xl={16}>
+            <Col xs={24} xl={10}>
               <Card className="card-home">
                 <Row gutter={[32, 22]}>
                   <Col xs={24} xl={24}>
                     <Row gutter={[32, 22]}>
                       <Col xs={24} xl={24}>
-                        <h3 className="purple-title">Request Details</h3>
+                        <h3 className="purple-title">Datalhes da Requisição</h3>
                       </Col>
                       <Col xs={24} xl={24}>
                         <div style={{ overflowX: "auto" }}>
@@ -181,7 +182,7 @@ const Details = () => {
                         </div>
                       </Col>
                       <Col xs={24} xl={24}>
-                        <h3 className="purple-title">Headers</h3>
+                        <h3 className="purple-title">Cabeçalhos</h3>
                       </Col>
                       <Col xs={24} xl={24}>
                         <div style={{ overflowX: "auto" }}>
@@ -308,6 +309,9 @@ const Details = () => {
                   </Col>
                 </Row>
               </Card>
+            </Col>
+            <Col xs={24} xl={6}>
+              <CardDetails/>
             </Col>
           </Row>
         </Content>

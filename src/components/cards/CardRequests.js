@@ -57,141 +57,146 @@ const CardRequests = () => {
       <Card className="card-home">
         <Row gutter={[32, 22]}>
           <Col xs={24} xl={24}>
-            <span className="titlegray">Requests</span>
+            <span className="titlegray">Requisições</span>
           </Col>
           <Row gutter={[32, 22]}>
             {" "}
             <PerfectScrollbar className="perfect-scroll">
               {" "}
-              {uuidList.slice(0).reverse().map((dados, index) => {
-                var _index = index + 1;
-                return (
-                  <Col xs={24} xl={24} style={{ marginTop: 10 }} key={index}>
-                    <Card
-                      className="card-request"
-                      onClick={() => goToDetails(_index)}
-                    >
-                      <Row gutter={[32, 22]}>
-                        <Col xs={18} xl={18}>
-                          <Row gutter={[32, 22]}>
-                            <Col xs={24} xl={24}>
-                              {dados.header.Type_Request === "post" ? (
-                                <Tag
-                                  className="tag-post"
-                                  style={{
-                                    backgroundColor: "#9d85bd",
-                                    border: "1px solid #7745ba",
-                                    color: "#fff",
-                                  }}
-                                >
-                                  {dados.header.Type_Request}
-                                </Tag>
-                              ) : dados.header.Type_Request === "get" ? (
-                                <Tag
-                                  className="tag-post"
-                                  style={{
-                                    backgroundColor: "#32cd32",
-                                    border: "1px solid #00c800",
-                                    color: "#fff",
-                                  }}
-                                >
-                                  {dados.header.Type_Request}
-                                </Tag>
-                              ) : dados.header.Type_Request === "delete" ? (
-                                <Tag
-                                  className="tag-post"
-                                  style={{
-                                    backgroundColor: "#e33f32",
-                                    border: "1px solid #ee0500",
-                                    color: "#fff",
-                                  }}
-                                >
-                                  {dados.header.Type_Request}
-                                </Tag>
-                              ) : dados.header.Type_Request === "put" ? (
-                                <Tag
-                                  className="tag-post"
-                                  style={{
-                                    backgroundColor: "#342bff",
-                                    border: "1px solid #0900be",
-                                    color: "#fff",
-                                  }}
-                                >
-                                  {dados.header.Type_Request}
-                                </Tag>
-                              ) : dados.header.Type_Request === "patch" ? (
-                                <Tag
-                                  className="tag-post"
-                                  style={{
-                                    backgroundColor: "#ffff00",
-                                    border: "1px solid #ffd700",
-                                    color: "#fff",
-                                  }}
-                                >
-                                  {dados.header.Type_Request}
-                                </Tag>
-                              ) : dados.header.Type_Request === "copy" ? (
-                                <Tag
-                                  className="tag-post"
-                                  style={{
-                                    backgroundColor: "#00ffff",
-                                    border: "1px solid #00ced1",
-                                    color: "#fff",
-                                  }}
-                                >
-                                  {dados.header.Type_Request}
-                                </Tag>
-                              ) : dados.header.Type_Request === "head" ? (
-                                <Tag
-                                  className="tag-post"
-                                  style={{
-                                    backgroundColor: "#ff40ff",
-                                    border: "1px solid #ff00ff",
-                                    color: "#fff",
-                                  }}
-                                >
-                                  {dados.header.Type_Request}
-                                </Tag>
-                              ) : dados.header.Type_Request ? (
-                                <Tag
-                                  className="tag-post"
-                                  style={{
-                                    backgroundColor: "#cdc6bd",
-                                    border: "1px solid #d6cfc7",
-                                    color: "#000",
-                                  }}
-                                >
-                                  {dados.header.Type_Request}
-                                </Tag>
-                              ) : null}
-                            </Col>
-                            <Col xs={24} xl={5} className="margintop-col">
-                              <span className="white-description">
-                                #{_index}
-                              </span>
-                            </Col>
-                            <Col xs={24} xl={12} className="margintop-col">
-                              <span className="white-description">
-                                {moment(dados.created_at).format("DD/MM/YYYY")}
-                              </span>
-                            </Col>
-                          </Row>
-                        </Col>
-                        <Col xs={6} xl={6}>
-                          <Button
-                            className="delete"
-                            type="primary"
-                            danger
-                            onClick={() => onDelete(_index)}
-                          >
-                            X
-                          </Button>
-                        </Col>
-                      </Row>
-                    </Card>
-                  </Col>
-                );
-              })}
+              {uuidList
+                .slice(0)
+                .reverse()
+                .map((dados, index) => {
+                  var _index = index + 1;
+                  return (
+                    <Col xs={24} xl={24} style={{ marginTop: 10 }} key={index}>
+                      <Card
+                        className="card-request"
+                        onClick={() => goToDetails(_index)}
+                      >
+                        <Row gutter={[32, 22]}>
+                          <Col xs={18} xl={18}>
+                            <Row gutter={[32, 22]}>
+                              <Col xs={24} xl={24}>
+                                {dados.header.Type_Request === "post" ? (
+                                  <Tag
+                                    className="tag-post"
+                                    style={{
+                                      backgroundColor: "#9d85bd",
+                                      border: "1px solid #7745ba",
+                                      color: "#fff",
+                                    }}
+                                  >
+                                    {dados.header.Type_Request}
+                                  </Tag>
+                                ) : dados.header.Type_Request === "get" ? (
+                                  <Tag
+                                    className="tag-post"
+                                    style={{
+                                      backgroundColor: "#32cd32",
+                                      border: "1px solid #00c800",
+                                      color: "#fff",
+                                    }}
+                                  >
+                                    {dados.header.Type_Request}
+                                  </Tag>
+                                ) : dados.header.Type_Request === "delete" ? (
+                                  <Tag
+                                    className="tag-post"
+                                    style={{
+                                      backgroundColor: "#e33f32",
+                                      border: "1px solid #ee0500",
+                                      color: "#fff",
+                                    }}
+                                  >
+                                    {dados.header.Type_Request}
+                                  </Tag>
+                                ) : dados.header.Type_Request === "put" ? (
+                                  <Tag
+                                    className="tag-post"
+                                    style={{
+                                      backgroundColor: "#342bff",
+                                      border: "1px solid #0900be",
+                                      color: "#fff",
+                                    }}
+                                  >
+                                    {dados.header.Type_Request}
+                                  </Tag>
+                                ) : dados.header.Type_Request === "patch" ? (
+                                  <Tag
+                                    className="tag-post"
+                                    style={{
+                                      backgroundColor: "#ffff00",
+                                      border: "1px solid #ffd700",
+                                      color: "#fff",
+                                    }}
+                                  >
+                                    {dados.header.Type_Request}
+                                  </Tag>
+                                ) : dados.header.Type_Request === "copy" ? (
+                                  <Tag
+                                    className="tag-post"
+                                    style={{
+                                      backgroundColor: "#00ffff",
+                                      border: "1px solid #00ced1",
+                                      color: "#fff",
+                                    }}
+                                  >
+                                    {dados.header.Type_Request}
+                                  </Tag>
+                                ) : dados.header.Type_Request === "head" ? (
+                                  <Tag
+                                    className="tag-post"
+                                    style={{
+                                      backgroundColor: "#ff40ff",
+                                      border: "1px solid #ff00ff",
+                                      color: "#fff",
+                                    }}
+                                  >
+                                    {dados.header.Type_Request}
+                                  </Tag>
+                                ) : dados.header.Type_Request ? (
+                                  <Tag
+                                    className="tag-post"
+                                    style={{
+                                      backgroundColor: "#cdc6bd",
+                                      border: "1px solid #d6cfc7",
+                                      color: "#000",
+                                    }}
+                                  >
+                                    {dados.header.Type_Request}
+                                  </Tag>
+                                ) : null}
+                              </Col>
+                              <Col xs={24} xl={5} className="margintop-col">
+                                <span className="white-description">
+                                  #{_index}
+                                </span>
+                              </Col>
+                              <Col xs={24} xl={12} className="margintop-col">
+                                <span className="white-description">
+                                  {moment(dados.created_at).format(
+                                    "DD/MM/YYYY"
+                                  )}
+                                </span>
+                              </Col>
+                            </Row>
+                          </Col>
+                          <Col xs={6} xl={6}>
+                            <Button
+                              className="delete"
+                              type="primary"
+                              danger
+                              onClick={() => onDelete(_index)}
+                            >
+                              X
+                            </Button>
+                          </Col>
+                        </Row>
+                      </Card>
+                    </Col>
+                  );
+                })}
             </PerfectScrollbar>
           </Row>
         </Row>
