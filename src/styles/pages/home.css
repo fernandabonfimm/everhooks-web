@@ -144,8 +144,8 @@
 @media screen and (max-width: 4000px) {
   /*card principal azul claro */
   .card-home {
-    min-height: 40vmax;
-    max-height: 40vmax !important;
+    min-height: 60vmax;
+    max-height: 60vmax !important;
     padding: 4em;
   }
   .perfect-scroll {
@@ -236,8 +236,8 @@
 @media screen and (max-width: 3600px) {
   /*card principal azul claro */
   .card-home {
-    min-height: 50vmax;
-    max-height: 50vmax !important;
+    min-height: 70vmax;
+    max-height: 70vmax !important;
     padding: 4em;
   }
   .perfect-scroll {
@@ -280,8 +280,8 @@
 @media screen and (max-width: 2600px) {
   /*card principal azul claro */
   .card-home {
-    min-height: 70vmax;
-    max-height: 70vmax !important;
+    min-height: 80vmax;
+    max-height: 80vmax !important;
     padding: 4em;
   }
   .perfect-scroll {
@@ -365,6 +365,13 @@
   }
 }
 
+@media screen and (max-width: 2200px){
+  .card-home {
+    min-height: 85vmax;
+    max-height: 85vmax !important;
+    padding: 3em;
+  }
+}
 @media screen and (max-width: 2000px) {
   /*card principal azul claro */
   .card-home {
@@ -381,8 +388,8 @@
 @media screen and (max-width: 1900px) {
   /*card principal azul claro */
   .card-home {
-    min-height: 70vmax;
-    max-height: 70vmax !important;
+    min-height: 88vmax;
+    max-height: 88vmax !important;
     padding: 3em;
   }
   .perfect-scroll {
@@ -468,8 +475,8 @@
 @media screen and (max-width: 1650px) {
   /*card principal azul claro */
   .card-home {
-    min-height: 65vmax;
-    max-height: 65vmax !important;
+    min-height: 88vmax;
+    max-height: 88vmax !important;
     padding: 2em;
   }
   .perfect-scroll {

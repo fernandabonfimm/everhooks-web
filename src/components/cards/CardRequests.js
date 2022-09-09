@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../styles/pages/home.css";
 import moment from "moment";
-import { MdOutlineSearch } from "react-icons/md";
 import { Row, Col, Card, Input, Tag, Button } from "antd";
 import "react-perfect-scrollbar/dist/css/styles.css";
 import { getUuid, getFirstId, deleteUuid } from "../../services/apiUuid";
