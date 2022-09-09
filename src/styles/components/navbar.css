@@ -121,9 +121,9 @@
     font-weight: 650;
   }
   a.ant-btn {
-    padding-top: .01px !important;
+    padding-top: 0.01px !important;
     line-height: 90px !important;
-   }
+  }
 
   /*Header responsive css */
   .content-announcement {
@@ -159,10 +159,10 @@
     font-weight: 650;
   }
   a.ant-btn {
-    padding-top: .01px !important;
+    padding-top: 0.01px !important;
     line-height: 90px;
   }
-   
+
   /*Header responsive css */
   .content-announcement {
     padding: 5em 10em;
@@ -214,7 +214,7 @@
     font-weight: 650;
   }
   a.ant-btn {
-    padding-top: .01px !important;
+    padding-top: 0.01px !important;
     line-height: 70px !important;
   }
   /*Header responsive css */
@@ -264,7 +264,7 @@
     font-weight: 650;
   }
   a.ant-btn {
-    padding-top: .01px !important;
+    padding-top: 0.01px !important;
     line-height: 60px !important;
   }
   /*Header responsive css */
@@ -296,7 +296,7 @@
   }
   .hyperlink {
     margin-top: 15px !important;
-    font-size: 30px ;
+    font-size: 30px;
   }
   .btnaccess {
     font-size: 25px;
@@ -304,7 +304,7 @@
     font-weight: 600;
   }
   a.ant-btn {
-    padding-top: .01px !important;
+    padding-top: 0.01px !important;
     line-height: 50px !important;
   }
   /*Header responsive css */
@@ -352,7 +352,7 @@
     padding: 0em 2em !important;
   }
   a.ant-btn {
-    padding-top: .01px !important;
+    padding-top: 0.01px !important;
     line-height: 45px !important;
   }
   /*Header responsive css */
@@ -401,7 +401,7 @@
     padding: 0em 1em !important;
   }
   a.ant-btn {
-    padding-top: .01px !important;
+    padding-top: 0.01px !important;
     line-height: 45px !important;
   }
   /*Header responsive css */
@@ -450,7 +450,7 @@
     padding: 0em 1em !important;
   }
   a.ant-btn {
-    padding-top: .01px !important;
+    padding-top: 0.01px !important;
     line-height: 35px !important;
   }
   /*Header responsive css */
@@ -485,13 +485,13 @@
   }
 }
 
-@media screen and (max-width: 1024px){
-    /*navbar css responsive */
-    .navbarlayout {
-      height: 8vmax;
-      padding: 1em;
-    }
-      /*Header responsive css */
+@media screen and (max-width: 1024px) {
+  /*navbar css responsive */
+  .navbarlayout {
+    height: 8vmax;
+    padding: 1em;
+  }
+  /*Header responsive css */
   .content-announcement {
     padding: 2em 8em;
     height: 35vmax;
@@ -530,7 +530,7 @@
     padding: 1em 0.5em;
   }
   a.ant-btn {
-    padding-top: .01px !important;
+    padding-top: 0.01px !important;
     line-height: 45px !important;
   }
   /*Header responsive css */
@@ -574,7 +574,7 @@
     padding: 0em 0.5em;
   }
   a.ant-btn {
-    padding-top: .01px !important;
+    padding-top: 0.01px !important;
     line-height: 35px !important;
   }
   /*Header responsive css */
@@ -605,7 +605,7 @@
     padding: 0em 0.5em;
   }
   a.ant-btn {
-    padding-top: .01px !important;
+    padding-top: 0.01px !important;
     line-height: 35px !important;
   }
   /*Header responsive css */
@@ -623,10 +623,9 @@
     font-size: 14px;
     line-height: 6mm;
   }
-
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 420px) {
   /*navbar css responsive */
   .navbarlayout {
     height: 9vmax;
@@ -649,7 +648,7 @@
   }
 }
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 300px) {
   /*navbar css responsive */
   .navbarlayout {
     height: 9vmax;
