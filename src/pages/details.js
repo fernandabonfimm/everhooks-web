@@ -257,7 +257,7 @@ const Details = () => {
                                 </td>
                                 <td className="td">
                                   <span className="description-table">
-                                    {dados.header.date}
+                                  {moment(dados.created_at).format("lll")}
                                   </span>
                                 </td>
                                 <td className="td">

@@ -15,3 +15,12 @@ code {
   padding: 1em 2em;
 }
 
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li{
+  color: #0e164b;
+  font-size: 16px;
+}

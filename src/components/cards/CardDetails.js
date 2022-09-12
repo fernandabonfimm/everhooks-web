@@ -18,14 +18,15 @@ const CardDetails = () => {
           </Col>
           <PerfectScrollbar className="perfect-scroll">
             <Col xs={24} xl={24}>
-              <Row gutter={[32, 22]}>
-                <Col xs={24} xl={12}>
-                  <span className="request-divider-tag">oi </span>
-                </Col>
-                <Col xs={24} xl={12}>
-                  <span className="request-divider">teste</span>
-                </Col>
-              </Row>
+              <ul>
+                {Object.keys(dados.form_values).map((key) => {
+                  return (
+                    <li key={key}>
+                      {key}:{JSON.stringify(dados.form_values[key])}
+                    </li>
+                  );
+                })}
+              </ul>
             </Col>
           </PerfectScrollbar>
         </Row>
