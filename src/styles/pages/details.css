@@ -84,16 +84,16 @@ td {
     border-radius: 15em;
   }
   .title-table {
-    font-size: 3.2em;
+    font-size: 3em;
   }
   .description-table {
-    font-size: 3.5em;
+    font-size: 3em;
   }
   .purple-title {
-    font-size: 3.7em;
+    font-size: 3.2em;
   }
   .raw-content {
-    font-size: 3.2em;
+    font-size: 2.5em;
   }
   #text {
     font-size: 1.2em;
@@ -114,13 +114,13 @@ td {
     font-size: 3em;
   }
   .description-table {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   .purple-title {
     font-size: 3em;
   }
   .raw-content {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   #text {
     font-size: 1em;
@@ -141,13 +141,13 @@ td {
     font-size: 2.5em;
   }
   .description-table {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .purple-title {
     font-size: 3em;
   }
   .raw-content {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   #text {
     font-size: 1em;
@@ -165,16 +165,16 @@ td {
     border-radius: 15em;
   }
   .title-table {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .description-table {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .purple-title {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   .raw-content {
-    font-size: 2.7em;
+    font-size: 2.3em;
   }
   #text {
     font-size: 1em;
@@ -192,16 +192,16 @@ td {
     border-radius: 15em;
   }
   .title-table {
-    font-size: 1.75em;
+    font-size: 1.50em;
   }
   .description-table {
-    font-size: 1.75em;
+    font-size: 1.50em;
   }
   .purple-title {
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
   .raw-content {
-    font-size: 2em;
+    font-size: 1.75em;
   }
   #text {
     font-size: 1em;
@@ -218,16 +218,16 @@ td {
     padding: 0em 1em !important;
   }
   .title-table {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .description-table {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .purple-title {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .raw-content {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   #text {
     font-size: 0.9em;
@@ -244,16 +244,16 @@ td {
     padding: 0em 1em !important;
   }
   .title-table {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .description-table {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .purple-title {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .raw-content {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   #text {
     font-size: 0.9em;
@@ -296,7 +296,7 @@ td {
     padding: 0 0.5em;
   }
   .raw-content {
-    font-size: 1em;
+    font-size: 0.90em;
   }
 }
 
