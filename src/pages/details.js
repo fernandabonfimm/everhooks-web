@@ -15,7 +15,6 @@ const { Content } = Layout;
 const Details = () => {
   const location = useLocation();
   const dados = location.state.list;
-  console.log(dados);
 
   const { TextArea } = Input;
 
