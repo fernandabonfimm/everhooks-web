@@ -22,7 +22,7 @@ const CardDetails = () => {
                 {Object.keys(dados.form_values).map((key) => {
                   return (
                     <li key={key}>
-                      {key}:{dados.form_values[key]}
+                      {key}:{JSON.parse(JSON.stringify(dados.form_values[key]))}
                     </li>
                   );
                 })}
